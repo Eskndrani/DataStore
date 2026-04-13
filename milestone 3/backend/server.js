@@ -30,8 +30,9 @@ app.use(cors({
     const allowedOrigins = new Set([...configuredOrigins, ...localhostOrigins]);
     const isRailwayOrigin = Boolean(origin) && /^https?:\/\/[a-z0-9-]+(\.up)?\.railway\.app$/i.test(origin);
     const isVercelOrigin = Boolean(origin) && /^https?:\/\/[a-z0-9-]+(?:-[a-z0-9-]+)*\.vercel\.app$/i.test(origin);
+    const isLocalNetworkOrigin = Boolean(origin) && /^https?:\/\/(localhost|127\.0\.0\.1|10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+|172\.(1[6-9]|2\d|3[0-1])\.\d+\.\d+)(:\d+)?$/i.test(origin);
 
-    if (!origin || allowedOrigins.has(origin) || isRailwayOrigin || isVercelOrigin) {
+    if (!origin || allowedOrigins.has(origin) || isRailwayOrigin || isVercelOrigin || isLocalNetworkOrigin) {
       return callback(null, true);
     }
 

@@ -1,10 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 
 function normalizeApiBaseUrl(rawValue) {
-  const fallback = 'http://localhost:5000';
   const normalized = String(rawValue || '').trim();
   if (!normalized) {
-    return fallback;
+    return import.meta.env.DEV
+      ? 'http://localhost:5000'
+      : 'https://datastore-production.up.railway.app';
   }
 
   const withProtocol = /^https?:\/\//i.test(normalized)
