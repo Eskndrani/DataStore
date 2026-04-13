@@ -402,11 +402,12 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
     LIMIT ${limit} OFFSET ${offset}
   `;
 
-  const [[{ total: totalCount }], [rows]] = await Promise.all([
+  const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
     pool.execute(sql, params),
   ]);
 
+  const totalCount = countResult[0]?.[0]?.total || 0;
   const totalPages = Math.ceil(totalCount / limit);
 
   res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
@@ -620,11 +621,12 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
     LIMIT ${limit} OFFSET ${offset}
   `;
 
-  const [[{ total: totalCount }], [rows]] = await Promise.all([
+  const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
     pool.execute(sql, params),
   ]);
 
+  const totalCount = countResult[0]?.[0]?.total || 0;
   const totalPages = Math.ceil(totalCount / limit);
 
   res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
@@ -768,11 +770,12 @@ app.get('/api/projects', asyncHandler(async (req, res) => {
       LIMIT ${limit} OFFSET ${offset}
     `;
 
-  const [[{ total: totalCount }], [rows]] = await Promise.all([
+  const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
     pool.execute(sql, params),
   ]);
 
+  const totalCount = countResult[0]?.[0]?.total || 0;
   const totalPages = Math.ceil(totalCount / limit);
 
   res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
