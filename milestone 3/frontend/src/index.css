@@ -601,6 +601,59 @@ tbody tr:hover td {
   background: #13243b;
 }
 
+.dataset-multiselect {
+  display: grid;
+  gap: 8px;
+}
+
+.selected-dataset-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.dataset-tag {
+  border: 1px solid #355986;
+  border-radius: 999px;
+  background: #13243b;
+  color: #b8d4ff;
+  padding: 5px 9px;
+  font-size: 0.82rem;
+}
+
+.dataset-suggestion-list {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: #0e1726;
+  max-height: 190px;
+  overflow: auto;
+  display: grid;
+}
+
+.dataset-suggestion-item {
+  text-align: left;
+  border: 0;
+  border-bottom: 1px solid #1b2a40;
+  background: transparent;
+  color: var(--text);
+  padding: 9px 10px;
+  display: grid;
+  gap: 2px;
+}
+
+.dataset-suggestion-item:last-child {
+  border-bottom: 0;
+}
+
+.dataset-suggestion-item:hover {
+  background: #15253d;
+}
+
+.dataset-suggestion-item span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 @media (max-width: 1200px) {
   .stats-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

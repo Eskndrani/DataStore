@@ -36,7 +36,7 @@ const defaultRegisterForm = {
 
 const defaultUsageForm = {
   email: '',
-  datasetName: '',
+  datasetNames: [],
   projectName: '',
   projectType: 'analytics',
   usageDate: '',
@@ -448,6 +448,61 @@ function FilterChecklist({ title, items, selectedValues, onToggle }) {
   );
 }
 
+function SearchableDatasetMultiSelect({
+  searchValue,
+  onSearchChange,
+  suggestions,
+  selectedDatasets,
+  onSelect,
+  onRemove,
+  loading,
+}) {
+  return (
+    <div className="dataset-multiselect">
+      <input
+        type="text"
+        value={searchValue}
+        onChange={(event) => onSearchChange(event.target.value)}
+        placeholder="Search datasets by name, title, or organization..."
+      />
+
+      {selectedDatasets.length ? (
+        <div className="selected-dataset-tags">
+          {selectedDatasets.map((dataset) => (
+            <button
+              key={dataset.dataset_name}
+              type="button"
+              className="dataset-tag"
+              onClick={() => onRemove(dataset.dataset_name)}
+              title="Remove dataset"
+            >
+              {dataset.dataset_title || dataset.dataset_name} ×
+            </button>
+          ))}
+        </div>
+      ) : (
+        <div className="muted-copy">No datasets selected. You can submit with zero datasets.</div>
+      )}
+
+      <div className="dataset-suggestion-list">
+        {loading ? <div className="muted-copy">Searching datasets...</div> : null}
+        {!loading && suggestions.length ? suggestions.map((item) => (
+          <button
+            key={item.dataset_name}
+            type="button"
+            className="dataset-suggestion-item"
+            onClick={() => onSelect(item)}
+          >
+            <strong>{item.dataset_title || item.dataset_name}</strong>
+            <span>{item.dataset_name}</span>
+          </button>
+        )) : null}
+        {!loading && !suggestions.length ? <div className="muted-copy">No matching datasets.</div> : null}
+      </div>
+    </div>
+  );
+}
+
 export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('datasets');
   const [meta, setMeta] = useState(defaultMeta);
@@ -461,6 +516,9 @@ export default function Dashboard() {
   const [projectSearch, setProjectSearch] = useState('');
   const [registerForm, setRegisterForm] = useState(defaultRegisterForm);
   const [usageForm, setUsageForm] = useState(defaultUsageForm);
+  const [usageDatasetSearch, setUsageDatasetSearch] = useState('');
+  const [usageDatasetSuggestions, setUsageDatasetSuggestions] = useState([]);
+  const [usageDatasetLookupLoading, setUsageDatasetLookupLoading] = useState(false);
   const [usageLookupEmail, setUsageLookupEmail] = useState('');
   const [usageHistory, setUsageHistory] = useState([]);
   const [message, setMessage] = useState({ type: '', text: '' });
@@ -498,31 +556,67 @@ export default function Dashboard() {
     [meta.projectTypeOptions]
   );
 
-  const datasetOptions = useMemo(() => {
-    const optionMap = new Map();
+  const selectedUsageDatasets = useMemo(() => {
+    const selectedNames = new Set(usageForm.datasetNames || []);
+    return usageDatasetSuggestions
+      .filter((row) => selectedNames.has(row.dataset_name))
+      .concat(
+        (usageForm.datasetNames || [])
+          .filter((name) => !usageDatasetSuggestions.some((row) => row.dataset_name === name))
+          .map((name) => ({ dataset_name: name, dataset_title: name }))
+      );
+  }, [usageDatasetSuggestions, usageForm.datasetNames]);
 
-    datasets.forEach((row) => {
-      if (row.dataset_name) {
-        optionMap.set(row.dataset_name, row.dataset_title || row.dataset_name);
+  useEffect(() => {
+    let cancelled = false;
+
+    async function searchDatasets() {
+      setUsageDatasetLookupLoading(true);
+      try {
+        const params = new URLSearchParams();
+        params.set('limit', '20');
+        if (hasText(usageDatasetSearch)) {
+          params.set('q', usageDatasetSearch.trim());
+        }
+
+        const response = await fetchJson(`/api/datasets/search?${params.toString()}`);
+        if (!cancelled) {
+          const selected = new Set(usageForm.datasetNames || []);
+          setUsageDatasetSuggestions((response.data || []).filter((row) => !selected.has(row.dataset_name)));
+        }
+      } catch {
+        if (!cancelled) {
+          setUsageDatasetSuggestions([]);
+        }
+      } finally {
+        if (!cancelled) {
+          setUsageDatasetLookupLoading(false);
+        }
       }
-    });
+    }
 
-    overview.topDatasets.forEach((row) => {
-      if (row.dataset_name) {
-        optionMap.set(row.dataset_name, row.dataset_title || row.dataset_name);
-      }
-    });
+    const handle = setTimeout(searchDatasets, 220);
+    return () => {
+      cancelled = true;
+      clearTimeout(handle);
+    };
+  }, [usageDatasetSearch, usageForm.datasetNames]);
 
-    usageHistory.forEach((row) => {
-      if (row.dataset_name) {
-        optionMap.set(row.dataset_name, row.dataset_title || row.dataset_name);
-      }
+  function addUsageDatasetSelection(item) {
+    setUsageForm((current) => {
+      const existing = new Set(current.datasetNames || []);
+      existing.add(item.dataset_name);
+      return { ...current, datasetNames: Array.from(existing) };
     });
+    setUsageDatasetSearch('');
+  }
 
-    return Array.from(optionMap.entries())
-      .map(([value, label]) => ({ value, label }))
-      .sort((a, b) => a.label.localeCompare(b.label));
-  }, [datasets, overview.topDatasets, usageHistory]);
+  function removeUsageDatasetSelection(datasetName) {
+    setUsageForm((current) => ({
+      ...current,
+      datasetNames: (current.datasetNames || []).filter((name) => name !== datasetName),
+    }));
+  }
 
   function updateLoading(key, value) {
     setLoading((current) => ({ ...current, [key]: value }));
@@ -776,6 +870,8 @@ export default function Dashboard() {
         ...defaultUsageForm,
         projectType: current.projectType,
       }));
+      setUsageDatasetSearch('');
+      setUsageDatasetSuggestions([]);
       loadOverview();
       loadProjects(projectSearch);
     } catch (error) {
@@ -1260,17 +1356,16 @@ export default function Dashboard() {
                   />
                 </label>
                 <label>
-                  Dataset Name
-                  <select
-                    value={usageForm.datasetName}
-                    onChange={(event) => setUsageForm((current) => ({ ...current, datasetName: event.target.value }))}
-                    required
-                  >
-                    <option value="">Select a dataset</option>
-                    {datasetOptions.map((option) => (
-                      <option key={option.value} value={option.value}>{option.label}</option>
-                    ))}
-                  </select>
+                  Datasets (0 or more)
+                  <SearchableDatasetMultiSelect
+                    searchValue={usageDatasetSearch}
+                    onSearchChange={setUsageDatasetSearch}
+                    suggestions={usageDatasetSuggestions}
+                    selectedDatasets={selectedUsageDatasets}
+                    onSelect={addUsageDatasetSelection}
+                    onRemove={removeUsageDatasetSelection}
+                    loading={usageDatasetLookupLoading}
+                  />
                 </label>
                 <label>
                   Project Name

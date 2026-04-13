@@ -236,7 +236,8 @@ function usageProjectInsertSql() {
 
 function usageInsertSql() {
   if (schemaInfo.schemaMode === 'dataset_usage') {
-    return 'INSERT INTO dataset_usage (email, dataset_id, project_name, project_category, usage_date) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE project_category = VALUES(project_category), usage_date = VALUES(usage_date)';
+    const datasetColumn = schemaInfo.hasColumn('dataset_usage', 'dataset_id') ? 'dataset_id' : 'dataset_name';
+    return `INSERT INTO dataset_usage (email, ${datasetColumn}, project_name, project_category, usage_date) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE project_category = VALUES(project_category), usage_date = VALUES(usage_date)`;
   }
 
   return 'INSERT INTO project_dataset (email, project_name, dataset_name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE dataset_name = VALUES(dataset_name)';
@@ -459,6 +460,46 @@ app.get('/api/datasets/filter-options', asyncHandler(async (req, res) => {
       tags: tagRows[0].map((row) => row.value),
     },
   });
+}));
+
+app.get('/api/datasets/search', asyncHandler(async (req, res) => {
+  const q = normalizeText(req.query.q);
+  const rawLimit = Number.parseInt(req.query.limit, 10);
+  const limit = Number.isFinite(rawLimit) ? Math.max(1, Math.min(rawLimit, 50)) : 20;
+
+  let sql = `
+    SELECT
+      d.name AS dataset_name,
+      d.title AS dataset_title,
+      o.name AS organization_name,
+      o.title AS organization_title
+    FROM dataset d
+    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+  `;
+  const params = [];
+
+  if (q) {
+    sql += `
+      WHERE (
+        LOWER(d.name) LIKE LOWER(?)
+        OR LOWER(COALESCE(d.title, '')) LIKE LOWER(?)
+        OR LOWER(COALESCE(o.name, '')) LIKE LOWER(?)
+        OR LOWER(COALESCE(o.title, '')) LIKE LOWER(?)
+      )
+    `;
+    const like = `%${q}%`;
+    params.push(like, like, like, like);
+  }
+
+  sql += `
+    ORDER BY
+      CASE WHEN d.title IS NULL OR TRIM(d.title) = '' THEN d.name ELSE d.title END ASC,
+      d.name ASC
+    LIMIT ${limit}
+  `;
+
+  const [rows] = await pool.execute(sql, params);
+  res.json({ success: true, data: rows });
 }));
 
 app.get('/api/datasets/:datasetName/details', asyncHandler(async (req, res) => {
@@ -971,13 +1012,19 @@ app.post('/api/auth/register', asyncHandler(async (req, res) => {
 
 app.post('/api/usage', asyncHandler(async (req, res) => {
   const email = normalizeText(req.body.email);
-  const datasetName = normalizeText(req.body.datasetName || req.body.dataset_name);
+  const singleDatasetName = normalizeText(req.body.datasetName || req.body.dataset_name);
+  const datasetNames = Array.isArray(req.body.datasetNames)
+    ? req.body.datasetNames.map((value) => normalizeText(value)).filter(Boolean)
+    : [];
+  const selectedDatasetNames = Array.from(new Set(
+    singleDatasetName ? [singleDatasetName, ...datasetNames] : datasetNames
+  ));
   const projectName = normalizeText(req.body.projectName || req.body.project_name);
   const projectType = normalizeEnumValue(req.body.projectType || req.body.project_category);
   const usageDate = normalizeText(req.body.usageDate || req.body.usage_date) || new Date().toISOString().slice(0, 10);
 
-  if (!email || !datasetName || !projectName || !projectType) {
-    return badRequest(res, 'email, datasetName, projectName, and projectType are required');
+  if (!email || !projectName || !projectType) {
+    return badRequest(res, 'email, projectName, and projectType are required');
   }
 
   const projectTypeOptions = schemaInfo.enumValues(
@@ -995,19 +1042,64 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
       throw Object.assign(new Error('User not found'), { statusCode: 404 });
     }
 
-    const [datasetRows] = await connection.execute('SELECT name FROM dataset WHERE name = ?', [datasetName]);
-    if (!datasetRows.length) {
-      throw Object.assign(new Error('Dataset not found'), { statusCode: 404 });
+    let datasetRows = [];
+    if (selectedDatasetNames.length) {
+      const placeholders = selectedDatasetNames.map(() => '?').join(', ');
+      const [rows] = await connection.execute(
+        `SELECT name${schemaInfo.hasColumn('dataset', 'dataset_id') ? ', dataset_id' : ''} FROM dataset WHERE name IN (${placeholders})`,
+        selectedDatasetNames
+      );
+      datasetRows = rows;
+
+      const existingDatasetNames = new Set(datasetRows.map((row) => row.name));
+      const missingDatasets = selectedDatasetNames.filter((name) => !existingDatasetNames.has(name));
+      if (missingDatasets.length) {
+        throw Object.assign(new Error(`Dataset not found: ${missingDatasets.join(', ')}`), { statusCode: 404 });
+      }
     }
 
     if (schemaInfo.schemaMode === 'dataset_usage') {
-      await connection.execute(
-        usageInsertSql(),
-        [email, datasetName, projectName, projectType, usageDate]
+      const [existingProjectRows] = await connection.execute(
+        'SELECT project_category FROM dataset_usage WHERE project_name = ? LIMIT 1',
+        [projectName]
       );
+      const resolvedProjectType = existingProjectRows[0]?.project_category || projectType;
+
+      if (schemaInfo.hasTable('project')) {
+        await connection.execute(
+          'INSERT INTO project (email, project_name, project_type) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE project_type = VALUES(project_type)',
+          [email, projectName, resolvedProjectType]
+        );
+      }
+
+      if (selectedDatasetNames.length === 0) {
+        return;
+      }
+
+      const datasetKeyByName = new Map(datasetRows.map((row) => [
+        row.name,
+        schemaInfo.hasColumn('dataset_usage', 'dataset_id') ? (row.dataset_id || row.name) : row.name,
+      ]));
+
+      for (const datasetName of selectedDatasetNames) {
+        const datasetKey = datasetKeyByName.get(datasetName);
+        await connection.execute(
+          usageInsertSql(),
+          [email, datasetKey, projectName, resolvedProjectType, usageDate]
+        );
+      }
     } else {
-      await connection.execute(usageProjectInsertSql(), [email, projectName, projectType]);
-      await connection.execute(usageInsertSql(), [email, projectName, datasetName]);
+      const [existingProjectRows] = await connection.execute(
+        'SELECT project_type FROM project WHERE project_name = ? LIMIT 1',
+        [projectName]
+      );
+      const resolvedProjectType = existingProjectRows[0]?.project_type || projectType;
+
+      await connection.execute(usageProjectInsertSql(), [email, projectName, resolvedProjectType]);
+
+      for (const datasetName of selectedDatasetNames) {
+        await connection.execute(usageInsertSql(), [email, projectName, datasetName]);
+      }
     }
   }).catch((error) => {
     if (error.statusCode === 404) {
@@ -1021,7 +1113,7 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
     message: 'Usage record saved successfully',
     data: {
       email,
-      datasetName,
+      datasetNames: selectedDatasetNames,
       projectName,
       projectType,
       usageDate: schemaInfo.schemaMode === 'dataset_usage' ? usageDate : null,
