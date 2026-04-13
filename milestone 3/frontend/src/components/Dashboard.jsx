@@ -618,13 +618,20 @@ export default function Dashboard() {
       filters.tag.forEach((value) => params.append('tag', value));
 
       const response = await fetchJson(`/api/datasets?${params.toString()}`);
-      setDatasets(response.data || []);
-      setTotalCountDatasets(response.totalCount || 0);
-      setTotalPagesDatasets(response.totalPages || 0);
+      const datasets = response.data || [];
+      const totalCount = Number.isFinite(response.totalCount) ? response.totalCount : datasets.length;
+      const totalPages = Number.isFinite(response.totalPages) ? response.totalPages : (totalCount > 0 ? 1 : 0);
+      
+      setDatasets(datasets);
+      setTotalCountDatasets(totalCount);
+      setTotalPagesDatasets(totalPages);
       setCurrentPageDatasets(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
+      setDatasets([]);
+      setTotalCountDatasets(0);
+      setTotalPagesDatasets(0);
     } finally {
       updateLoading('datasets', false);
     }
@@ -640,13 +647,20 @@ export default function Dashboard() {
         params.set('q', searchValue);
       }
       const response = await fetchJson(`/api/organizations${params.toString() ? `?${params.toString()}` : ''}`);
-      setOrganizations(response.data || []);
-      setTotalCountOrganizations(response.totalCount || 0);
-      setTotalPagesOrganizations(response.totalPages || 0);
+      const organizations = response.data || [];
+      const totalCount = Number.isFinite(response.totalCount) ? response.totalCount : organizations.length;
+      const totalPages = Number.isFinite(response.totalPages) ? response.totalPages : (totalCount > 0 ? 1 : 0);
+      
+      setOrganizations(organizations);
+      setTotalCountOrganizations(totalCount);
+      setTotalPagesOrganizations(totalPages);
       setCurrentPageOrganizations(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
+      setOrganizations([]);
+      setTotalCountOrganizations(0);
+      setTotalPagesOrganizations(0);
     } finally {
       updateLoading('organizations', false);
     }
@@ -662,13 +676,20 @@ export default function Dashboard() {
         params.set('q', searchValue);
       }
       const response = await fetchJson(`/api/projects${params.toString() ? `?${params.toString()}` : ''}`);
-      setProjects(response.data || []);
-      setTotalCountProjects(response.totalCount || 0);
-      setTotalPagesProjects(response.totalPages || 0);
+      const projects = response.data || [];
+      const totalCount = Number.isFinite(response.totalCount) ? response.totalCount : projects.length;
+      const totalPages = Number.isFinite(response.totalPages) ? response.totalPages : (totalCount > 0 ? 1 : 0);
+      
+      setProjects(projects);
+      setTotalCountProjects(totalCount);
+      setTotalPagesProjects(totalPages);
       setCurrentPageProjects(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
+      setProjects([]);
+      setTotalCountProjects(0);
+      setTotalPagesProjects(0);
     } finally {
       updateLoading('projects', false);
     }
