@@ -28,8 +28,9 @@ app.use(cors({
 
     const localhostOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'];
     const allowedOrigins = new Set([...configuredOrigins, ...localhostOrigins]);
+    const isRailwayOrigin = Boolean(origin) && /^https?:\/\/[a-z0-9-]+(\.up)?\.railway\.app$/i.test(origin);
 
-    if (!origin || allowedOrigins.has(origin)) {
+    if (!origin || allowedOrigins.has(origin) || isRailwayOrigin) {
       return callback(null, true);
     }
 
@@ -292,8 +293,12 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
   const orgTypes = parseFilterValues(req.query.orgType);
   const tags = parseFilterValues(req.query.tag);
   const formats = parseFilterValues(req.query.format);
+  
+  const rawPage = Number.parseInt(req.query.page, 10);
   const rawLimit = Number.parseInt(req.query.limit, 10);
-  const limit = Number.isFinite(rawLimit) ? Math.max(1, Math.min(rawLimit, 100)) : 100;
+  const page = Number.isFinite(rawPage) ? Math.max(1, rawPage) : 1;
+  const limit = Number.isFinite(rawLimit) ? Math.max(1, Math.min(rawLimit, 100)) : 20;
+  const offset = (page - 1) * limit;
 
   const whereClauses = [];
   const params = [];
@@ -369,6 +374,15 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
         AND TRIM(rf.format) <> ''
     )`;
 
+  const whereClause = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
+
+  const countSql = `
+    SELECT COUNT(*) AS total
+    FROM dataset d
+    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+    ${whereClause}
+  `;
+
   const sql = `
     SELECT
       ${datasetIdColumn} AS dataset_id,
@@ -383,13 +397,19 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
       o.org_type
     FROM dataset d
     LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-    ${whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : ''}
+    ${whereClause}
     ORDER BY d.title ASC
-    LIMIT ${limit}
+    LIMIT ${limit} OFFSET ${offset}
   `;
 
-  const [rows] = await pool.execute(sql, params);
-  res.json({ success: true, data: rows });
+  const [[{ total: totalCount }], [rows]] = await Promise.all([
+    pool.execute(countSql, params),
+    pool.execute(sql, params),
+  ]);
+
+  const totalPages = Math.ceil(totalCount / limit);
+
+  res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
 }));
 
 app.get('/api/datasets/filter-options', asyncHandler(async (req, res) => {
@@ -564,6 +584,12 @@ app.get('/api/datasets/:datasetName/details', asyncHandler(async (req, res) => {
 
 app.get('/api/organizations', asyncHandler(async (req, res) => {
   const q = normalizeText(req.query.q);
+  const rawPage = Number.parseInt(req.query.page, 10);
+  const rawLimit = Number.parseInt(req.query.limit, 10);
+  const page = Number.isFinite(rawPage) ? Math.max(1, rawPage) : 1;
+  const limit = Number.isFinite(rawLimit) ? Math.max(1, Math.min(rawLimit, 100)) : 20;
+  const offset = (page - 1) * limit;
+
   const whereClauses = [];
   const params = [];
 
@@ -571,6 +597,14 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
     whereClauses.push("(LOWER(o.name) LIKE LOWER(?) OR LOWER(o.title) LIKE LOWER(?) OR LOWER(COALESCE(o.org_type, '')) LIKE LOWER(?))");
     params.push(`%${q}%`, `%${q}%`, `%${q}%`);
   }
+
+  const whereClause = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
+
+  const countSql = `
+    SELECT COUNT(DISTINCT o.name) AS total
+    FROM organization o
+    ${whereClause}
+  `;
 
   const sql = `
     SELECT
@@ -580,13 +614,20 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
       COUNT(d.name) AS dataset_count
     FROM organization o
     LEFT JOIN dataset d ON ${datasetOrgJoinCondition()}
-    ${whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : ''}
+    ${whereClause}
     GROUP BY o.name, o.title, o.org_type
     ORDER BY o.title ASC, o.name ASC
+    LIMIT ${limit} OFFSET ${offset}
   `;
 
-  const [rows] = await pool.execute(sql, params);
-  res.json({ success: true, data: rows });
+  const [[{ total: totalCount }], [rows]] = await Promise.all([
+    pool.execute(countSql, params),
+    pool.execute(sql, params),
+  ]);
+
+  const totalPages = Math.ceil(totalCount / limit);
+
+  res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
 }));
 
 app.get('/api/organizations/:organizationName/details', asyncHandler(async (req, res) => {
@@ -659,6 +700,36 @@ app.get('/api/organizations/:organizationName/details', asyncHandler(async (req,
 
 app.get('/api/projects', asyncHandler(async (req, res) => {
   const q = normalizeText(req.query.q);
+  const rawPage = Number.parseInt(req.query.page, 10);
+  const rawLimit = Number.parseInt(req.query.limit, 10);
+  const page = Number.isFinite(rawPage) ? Math.max(1, rawPage) : 1;
+  const limit = Number.isFinite(rawLimit) ? Math.max(1, Math.min(rawLimit, 100)) : 20;
+  const offset = (page - 1) * limit;
+  const params = [];
+
+  if (q) {
+    params.push(`%${q}%`, `%${q}%`);
+  }
+
+  const countSql = schemaInfo.schemaMode === 'dataset_usage'
+    ? `
+      SELECT COUNT(DISTINCT u.project_name, u.project_category) AS total
+      FROM dataset_usage u
+      WHERE u.project_name IS NOT NULL
+        AND TRIM(u.project_name) <> ''
+        AND u.project_category IS NOT NULL
+        AND TRIM(u.project_category) <> ''
+        ${q ? 'AND (LOWER(u.project_name) LIKE LOWER(?) OR LOWER(u.project_category) LIKE LOWER(?))' : ''}
+    `
+    : `
+      SELECT COUNT(DISTINCT p.project_name, p.project_type) AS total
+      FROM project p
+      WHERE p.project_name IS NOT NULL
+        AND TRIM(p.project_name) <> ''
+        AND p.project_type IS NOT NULL
+        AND TRIM(p.project_type) <> ''
+        ${q ? 'AND (LOWER(p.project_name) LIKE LOWER(?) OR LOWER(p.project_type) LIKE LOWER(?))' : ''}
+    `;
 
   const sql = schemaInfo.schemaMode === 'dataset_usage'
     ? `
@@ -676,6 +747,7 @@ app.get('/api/projects', asyncHandler(async (req, res) => {
         ${q ? 'AND (LOWER(u.project_name) LIKE LOWER(?) OR LOWER(u.project_category) LIKE LOWER(?))' : ''}
       GROUP BY u.project_name, u.project_category
       ORDER BY u.project_name ASC, u.project_category ASC
+      LIMIT ${limit} OFFSET ${offset}
     `
     : `
       SELECT
@@ -693,10 +765,17 @@ app.get('/api/projects', asyncHandler(async (req, res) => {
         ${q ? 'AND (LOWER(p.project_name) LIKE LOWER(?) OR LOWER(p.project_type) LIKE LOWER(?))' : ''}
       GROUP BY p.project_name, p.project_type
       ORDER BY p.project_name ASC, p.project_type ASC
+      LIMIT ${limit} OFFSET ${offset}
     `;
 
-  const [rows] = q ? await pool.execute(sql, [`%${q}%`, `%${q}%`]) : await pool.execute(sql);
-  res.json({ success: true, data: rows });
+  const [[{ total: totalCount }], [rows]] = await Promise.all([
+    pool.execute(countSql, params),
+    pool.execute(sql, params),
+  ]);
+
+  const totalPages = Math.ceil(totalCount / limit);
+
+  res.json({ success: true, data: rows, totalCount, totalPages, page, limit });
 }));
 
 app.get('/api/projects/details', asyncHandler(async (req, res) => {

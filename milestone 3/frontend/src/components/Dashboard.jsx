@@ -1,6 +1,20 @@
 import { useEffect, useMemo, useState } from 'react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+function normalizeApiBaseUrl(rawValue) {
+  const fallback = 'http://localhost:5000';
+  const normalized = String(rawValue || '').trim();
+  if (!normalized) {
+    return fallback;
+  }
+
+  const withProtocol = /^https?:\/\//i.test(normalized)
+    ? normalized
+    : `https://${normalized}`;
+
+  return withProtocol.replace(/\/+$/, '');
+}
+
+const API_BASE_URL = normalizeApiBaseUrl(import.meta.env.VITE_API_URL);
 
 const tabs = [
   { id: 'datasets', label: 'Datasets' },
@@ -97,6 +111,10 @@ async function fetchJson(path, options = {}) {
 
   if (!response.ok || payload.success === false) {
     throw new Error(payload.message || `Request failed (${response.status})`);
+  }
+
+  if (typeof payload !== 'object' || payload === null || !('data' in payload)) {
+    throw new Error('Invalid API response format.');
   }
 
   return payload;
@@ -371,6 +389,41 @@ function EntityModal({ state, onClose }) {
   );
 }
 
+function PaginationControls({ currentPage, totalPages, onPrevious, onNext, isLoading, itemStart, itemEnd, totalCount }) {
+  return (
+    <div className="pagination-controls">
+      <div className="pagination-info">
+        {totalCount > 0 ? (
+          <span>Showing {itemStart}–{itemEnd} of {totalCount} results</span>
+        ) : (
+          <span>No results</span>
+        )}
+      </div>
+      <div className="pagination-buttons">
+        <button
+          type="button"
+          className="button button-secondary"
+          onClick={onPrevious}
+          disabled={currentPage === 1 || isLoading}
+        >
+          ← Previous
+        </button>
+        <span className="pagination-page-info">
+          Page {totalPages > 0 ? currentPage : '—'} of {totalPages}
+        </span>
+        <button
+          type="button"
+          className="button button-secondary"
+          onClick={onNext}
+          disabled={currentPage >= totalPages || isLoading || totalPages === 0}
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+  );
+}
+
 function FilterChecklist({ title, items, selectedValues, onToggle }) {
   return (
     <section className="filter-group">
@@ -411,6 +464,18 @@ export default function Dashboard() {
   const [usageHistory, setUsageHistory] = useState([]);
   const [message, setMessage] = useState({ type: '', text: '' });
   const [modalState, setModalState] = useState({ open: false, type: '', loading: false, error: '', data: null });
+  
+  // Pagination state
+  const [currentPageDatasets, setCurrentPageDatasets] = useState(1);
+  const [currentPageOrganizations, setCurrentPageOrganizations] = useState(1);
+  const [currentPageProjects, setCurrentPageProjects] = useState(1);
+  const [totalCountDatasets, setTotalCountDatasets] = useState(0);
+  const [totalCountOrganizations, setTotalCountOrganizations] = useState(0);
+  const [totalCountProjects, setTotalCountProjects] = useState(0);
+  const [totalPagesDatasets, setTotalPagesDatasets] = useState(0);
+  const [totalPagesOrganizations, setTotalPagesOrganizations] = useState(0);
+  const [totalPagesProjects, setTotalPagesProjects] = useState(0);
+  
   const [loading, setLoading] = useState({
     meta: false,
     overview: false,
@@ -480,21 +545,22 @@ export default function Dashboard() {
     updateLoading('meta', true);
     try {
       const response = await fetchJson('/api/meta');
-      setMeta(response.data);
-      if (response.data.genderOptions?.length) {
+      const metaData = response.data || defaultMeta;
+      setMeta(metaData);
+      if (metaData.genderOptions?.length) {
         setRegisterForm((current) => ({
           ...current,
-          gender: response.data.genderOptions.includes(current.gender)
+          gender: metaData.genderOptions.includes(current.gender)
             ? current.gender
-            : response.data.genderOptions[0],
+            : metaData.genderOptions[0],
         }));
       }
-      if (response.data.projectTypeOptions?.length) {
+      if (metaData.projectTypeOptions?.length) {
         setUsageForm((current) => ({
           ...current,
-          projectType: response.data.projectTypeOptions.includes(current.projectType)
+          projectType: metaData.projectTypeOptions.includes(current.projectType)
             ? current.projectType
-            : response.data.projectTypeOptions[0],
+            : metaData.projectTypeOptions[0],
         }));
       }
     } catch (error) {
@@ -541,17 +607,22 @@ export default function Dashboard() {
     }
   }
 
-  async function loadDatasets(filters = datasetFilters) {
+  async function loadDatasets(filters = datasetFilters, page = 1) {
     updateLoading('datasets', true);
     try {
       const params = new URLSearchParams();
-      params.set('limit', '100');
+      params.set('page', page);
+      params.set('limit', '20');
       filters.orgType.forEach((value) => params.append('orgType', value));
       filters.format.forEach((value) => params.append('format', value));
       filters.tag.forEach((value) => params.append('tag', value));
 
       const response = await fetchJson(`/api/datasets?${params.toString()}`);
-      setDatasets(response.data);
+      setDatasets(response.data || []);
+      setTotalCountDatasets(response.totalCount || 0);
+      setTotalPagesDatasets(response.totalPages || 0);
+      setCurrentPageDatasets(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
     } finally {
@@ -559,15 +630,21 @@ export default function Dashboard() {
     }
   }
 
-  async function loadOrganizations(searchValue = '') {
+  async function loadOrganizations(searchValue = '', page = 1) {
     updateLoading('organizations', true);
     try {
       const params = new URLSearchParams();
+      params.set('page', page);
+      params.set('limit', '20');
       if (hasText(searchValue)) {
         params.set('q', searchValue);
       }
       const response = await fetchJson(`/api/organizations${params.toString() ? `?${params.toString()}` : ''}`);
-      setOrganizations(response.data);
+      setOrganizations(response.data || []);
+      setTotalCountOrganizations(response.totalCount || 0);
+      setTotalPagesOrganizations(response.totalPages || 0);
+      setCurrentPageOrganizations(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
     } finally {
@@ -575,15 +652,21 @@ export default function Dashboard() {
     }
   }
 
-  async function loadProjects(searchValue = '') {
+  async function loadProjects(searchValue = '', page = 1) {
     updateLoading('projects', true);
     try {
       const params = new URLSearchParams();
+      params.set('page', page);
+      params.set('limit', '20');
       if (hasText(searchValue)) {
         params.set('q', searchValue);
       }
       const response = await fetchJson(`/api/projects${params.toString() ? `?${params.toString()}` : ''}`);
-      setProjects(response.data);
+      setProjects(response.data || []);
+      setTotalCountProjects(response.totalCount || 0);
+      setTotalPagesProjects(response.totalPages || 0);
+      setCurrentPageProjects(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       showMessage('error', error.message);
     } finally {
@@ -699,13 +782,51 @@ export default function Dashboard() {
   }
 
   function applyDatasetFilters() {
-    loadDatasets(datasetFilters);
+    setCurrentPageDatasets(1);
+    loadDatasets(datasetFilters, 1);
   }
 
   function clearDatasetFilters() {
     const emptyFilters = { orgType: [], format: [], tag: [] };
     setDatasetFilters(emptyFilters);
-    loadDatasets(emptyFilters);
+    setCurrentPageDatasets(1);
+    loadDatasets(emptyFilters, 1);
+  }
+
+  function goToPreviousDatasetPage() {
+    if (currentPageDatasets > 1) {
+      loadDatasets(datasetFilters, currentPageDatasets - 1);
+    }
+  }
+
+  function goToNextDatasetPage() {
+    if (currentPageDatasets < totalPagesDatasets) {
+      loadDatasets(datasetFilters, currentPageDatasets + 1);
+    }
+  }
+
+  function goToPreviousOrganizationPage() {
+    if (currentPageOrganizations > 1) {
+      loadOrganizations(organizationSearch, currentPageOrganizations - 1);
+    }
+  }
+
+  function goToNextOrganizationPage() {
+    if (currentPageOrganizations < totalPagesOrganizations) {
+      loadOrganizations(organizationSearch, currentPageOrganizations + 1);
+    }
+  }
+
+  function goToPreviousProjectPage() {
+    if (currentPageProjects > 1) {
+      loadProjects(projectSearch, currentPageProjects - 1);
+    }
+  }
+
+  function goToNextProjectPage() {
+    if (currentPageProjects < totalPagesProjects) {
+      loadProjects(projectSearch, currentPageProjects + 1);
+    }
   }
 
   const usageHistoryColumns = [
@@ -795,15 +916,27 @@ export default function Dashboard() {
 
             <div className="catalog-content">
               {datasets.length ? (
-                <div className="catalog-grid">
-                  {datasets.map((item, index) => (
-                    <DatasetCard
-                      key={`${item.dataset_name || item.dataset_title || 'dataset'}-${index}`}
-                      item={item}
-                      onOpen={openDatasetModal}
-                    />
-                  ))}
-                </div>
+                <>
+                  <div className="catalog-grid">
+                    {datasets.map((item, index) => (
+                      <DatasetCard
+                        key={`${item.dataset_name || item.dataset_title || 'dataset'}-${index}`}
+                        item={item}
+                        onOpen={openDatasetModal}
+                      />
+                    ))}
+                  </div>
+                  <PaginationControls
+                    currentPage={currentPageDatasets}
+                    totalPages={totalPagesDatasets}
+                    onPrevious={goToPreviousDatasetPage}
+                    onNext={goToNextDatasetPage}
+                    isLoading={loading.datasets}
+                    itemStart={totalCountDatasets > 0 ? (currentPageDatasets - 1) * 20 + 1 : 0}
+                    itemEnd={Math.min(currentPageDatasets * 20, totalCountDatasets)}
+                    totalCount={totalCountDatasets}
+                  />
+                </>
               ) : (
                 <div className="empty-state">No datasets found for these filters.</div>
               )}
@@ -828,17 +961,29 @@ export default function Dashboard() {
               onChange={(event) => setOrganizationSearch(event.target.value)}
               placeholder="Search organizations..."
             />
-            <button type="button" className="button button-secondary" onClick={() => loadOrganizations(organizationSearch)} disabled={loading.organizations}>
+            <button type="button" className="button button-secondary" onClick={() => { setCurrentPageOrganizations(1); loadOrganizations(organizationSearch, 1); }} disabled={loading.organizations}>
               {loading.organizations ? 'Searching...' : 'Search'}
             </button>
           </div>
 
           {organizations.length ? (
-            <div className="catalog-grid">
-              {organizations.map((item, index) => (
-                <OrganizationCard key={`${item.organization_name || 'org'}-${index}`} item={item} onOpen={openOrganizationModal} />
-              ))}
-            </div>
+            <>
+              <div className="catalog-grid">
+                {organizations.map((item, index) => (
+                  <OrganizationCard key={`${item.organization_name || 'org'}-${index}`} item={item} onOpen={openOrganizationModal} />
+                ))}
+              </div>
+              <PaginationControls
+                currentPage={currentPageOrganizations}
+                totalPages={totalPagesOrganizations}
+                onPrevious={goToPreviousOrganizationPage}
+                onNext={goToNextOrganizationPage}
+                isLoading={loading.organizations}
+                itemStart={totalCountOrganizations > 0 ? (currentPageOrganizations - 1) * 20 + 1 : 0}
+                itemEnd={Math.min(currentPageOrganizations * 20, totalCountOrganizations)}
+                totalCount={totalCountOrganizations}
+              />
+            </>
           ) : (
             <div className="empty-state">No organization records available.</div>
           )}
@@ -861,17 +1006,29 @@ export default function Dashboard() {
               onChange={(event) => setProjectSearch(event.target.value)}
               placeholder="Search projects by name or type..."
             />
-            <button type="button" className="button button-secondary" onClick={() => loadProjects(projectSearch)} disabled={loading.projects}>
+            <button type="button" className="button button-secondary" onClick={() => { setCurrentPageProjects(1); loadProjects(projectSearch, 1); }} disabled={loading.projects}>
               {loading.projects ? 'Searching...' : 'Search'}
             </button>
           </div>
 
           {projects.length ? (
-            <div className="catalog-grid">
-              {projects.map((item, index) => (
-                <ProjectCard key={`${item.project_name || 'project'}-${index}`} item={item} onOpen={openProjectModal} />
-              ))}
-            </div>
+            <>
+              <div className="catalog-grid">
+                {projects.map((item, index) => (
+                  <ProjectCard key={`${item.project_name || 'project'}-${index}`} item={item} onOpen={openProjectModal} />
+                ))}
+              </div>
+              <PaginationControls
+                currentPage={currentPageProjects}
+                totalPages={totalPagesProjects}
+                onPrevious={goToPreviousProjectPage}
+                onNext={goToNextProjectPage}
+                isLoading={loading.projects}
+                itemStart={totalCountProjects > 0 ? (currentPageProjects - 1) * 20 + 1 : 0}
+                itemEnd={Math.min(currentPageProjects * 20, totalCountProjects)}
+                totalCount={totalCountProjects}
+              />
+            </>
           ) : (
             <div className="empty-state">No project records available.</div>
           )}
