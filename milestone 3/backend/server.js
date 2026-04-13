@@ -29,8 +29,9 @@ app.use(cors({
     const localhostOrigins = ['http://localhost:5173', 'http://localhost:5174', 'http://localhost:5175'];
     const allowedOrigins = new Set([...configuredOrigins, ...localhostOrigins]);
     const isRailwayOrigin = Boolean(origin) && /^https?:\/\/[a-z0-9-]+(\.up)?\.railway\.app$/i.test(origin);
+    const isVercelOrigin = Boolean(origin) && /^https?:\/\/[a-z0-9-]+(?:-[a-z0-9-]+)*\.vercel\.app$/i.test(origin);
 
-    if (!origin || allowedOrigins.has(origin) || isRailwayOrigin) {
+    if (!origin || allowedOrigins.has(origin) || isRailwayOrigin || isVercelOrigin) {
       return callback(null, true);
     }
 
