@@ -1210,7 +1210,7 @@ export default function Dashboard() {
                 columns={[
                   { key: 'project_type', label: 'Project Type', render: (row) => labelize(row.project_type) },
                   { key: 'usage_count', label: 'Usage Count', render: (row) => formatNumber(row.usage_count) },
-                  { key: 'user_count', label: 'Users', render: (row) => formatNumber(row.user_count) },
+                  { key: 'userCount', label: 'Users', render: (row) => formatNumber(row.userCount ?? row.users ?? row.user_count) },
                   { key: 'dataset_count', label: 'Datasets', render: (row) => formatNumber(row.dataset_count) },
                 ]}
               />

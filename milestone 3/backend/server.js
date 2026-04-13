@@ -1392,9 +1392,11 @@ app.get('/api/stats/usage-by-project-type', asyncHandler(async (req, res) => {
       SELECT
         u.project_category AS project_type,
         COUNT(*) AS usage_count,
-        COUNT(DISTINCT u.email) AS user_count,
+        COUNT(DISTINCT u.email) AS userCount,
+        COUNT(DISTINCT u.email) AS users,
         COUNT(DISTINCT u.dataset_id) AS dataset_count
       FROM dataset_usage u
+      LEFT JOIN app_user au ON au.email = u.email
       GROUP BY u.project_category
       ORDER BY usage_count DESC, u.project_category ASC
     `
@@ -1403,9 +1405,11 @@ app.get('/api/stats/usage-by-project-type', asyncHandler(async (req, res) => {
         p.project_type AS project_type,
         COUNT(*) AS usage_count,
         COUNT(DISTINCT CONCAT_WS('::', p.email, p.project_name)) AS project_count,
+        COUNT(DISTINCT pd.email) AS userCount,
+        COUNT(DISTINCT pd.email) AS users,
         COUNT(DISTINCT pd.dataset_name) AS dataset_count
       FROM project p
-      JOIN project_dataset pd ON pd.email = p.email AND pd.project_name = p.project_name
+      LEFT JOIN project_dataset pd ON pd.email = p.email AND pd.project_name = p.project_name
       GROUP BY p.project_type
       ORDER BY usage_count DESC, p.project_type ASC
     `;
