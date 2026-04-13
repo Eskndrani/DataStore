@@ -78,30 +78,31 @@ VITE_API_URL=http://localhost:5000
 ### Metadata
 - `GET /api/meta` - Schema information
 
-## Deployment on Render
+## Deployment on Railway
 
 ### Backend Deployment
 
-1. Create new Web Service on Render
-2. Connect GitHub repository: `https://github.com/Eskndrani/DataStore.git`
-3. Set Build Command: `cd milestone\ 3/backend && npm install`
-4. Set Start Command: `cd milestone\ 3/backend && npm start`
-5. Add Environment Variables:
-   - `DB_HOST` - Your Aiven MySQL host
-   - `DB_PORT` - 17687 (or your port)
-   - `DB_USER` - Your DB username
-   - `DB_PASSWORD` - Your DB password
-   - `DB_NAME` - datagov_db
-   - `CORS_ORIGIN` - Your frontend URL on Render
+1. Create a new Railway project and link this repository.
+2. Add a new service and set Root Directory to `milestone 3/backend`.
+3. Leave Railway builder as Nixpacks (default).
+4. Start Command: `npm start`.
+5. Add the backend environment variables in Railway dashboard:
+   - `PORT`
+   - `DB_HOST`
+   - `DB_PORT`
+   - `DB_USER`
+   - `DB_PASSWORD`
+   - `DB_NAME`
+   - `CORS_ORIGIN`
 
 ### Frontend Deployment
 
-1. Create new Static Site on Render
-2. Connect GitHub repository
-3. Build Command: `cd milestone\ 3/frontend && npm install && npm run build`
-4. Publish Directory: `milestone\ 3/frontend/dist`
-5. Add Environment Variable:
-   - `VITE_API_URL` - Your backend URL on Render
+1. Add a second Railway service for the frontend.
+2. Set Root Directory to `milestone 3/frontend`.
+3. Build Command: `npm install && npm run build`.
+4. Start Command (if using static serve): `npx serve -s dist -l $PORT`.
+5. Add frontend env var:
+   - `VITE_API_URL` (set to your backend Railway URL)
 
 ## File Structure
 
@@ -128,7 +129,7 @@ VITE_API_URL=http://localhost:5000
 - **Frontend**: React, Vite, CSS3
 - **Backend**: Express.js, Node.js
 - **Database**: MySQL, Aiven Cloud
-- **Deployment**: Render
+- **Deployment**: Railway
 - **Tools**: Git, npm, nodemon
 
 ## License

@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-# Build script for Render deployment
+# Build script for local or CI usage
 set -e
 
 echo "Building backend..."
