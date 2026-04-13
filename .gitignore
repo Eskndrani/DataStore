@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.venv/
+venv/
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+**/.env
+.env.local
+.env.*
+.env.*.local
+**/.env.local
+**/.env.*
+**/.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build outputs
+dist/
+build/
+**/dist/
+**/build/
+coverage/
+**/coverage/
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+.cache/

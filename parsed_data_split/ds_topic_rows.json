@@ -1,0 +1,5786 @@
+[
+  {
+    "dataset_id": "844dbad1-ee1e-44b8-9799-34cb7ed24640",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "694609f9-efa2-4cc6-ac94-acf083cf57b7",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "38aac441-ad72-4fe3-a6e6-c259e0c1e4d6",
+    "topic_name": "Chronic Disease Indicators"
+  },
+  {
+    "dataset_id": "a1cbf6e9-6a08-4288-8b6b-a3c5666b7c2d",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6558e045-c63c-4b12-9342-c7899688ff66",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9b8c4f87-15a5-40a3-ac82-cd637e3535c4",
+    "topic_name": "Community/Recreation"
+  },
+  {
+    "dataset_id": "2eb5b083-2b33-466c-90dc-dc1ebd844ed8",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "656e0b2d-60f1-49e8-a3a7-073602d441a2",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "f9880479-bf5c-477c-ba8e-0651a0e054a5",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "d76c7561-286d-4aae-b1c5-40f452f12645",
+    "topic_name": "Public Health Surveillance"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "teachers-and-administrators"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "k-12"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "student-demographics"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "english-language-learners"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "suspension-discipline"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "stem"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "safety-bullying"
+  },
+  {
+    "dataset_id": "9daae01a-235e-44d9-8913-b25162a1dbe5",
+    "topic_name": "special-education"
+  },
+  {
+    "dataset_id": "96223bb8-ac6d-4168-a367-1f817f29d0f9",
+    "topic_name": "search tool"
+  },
+  {
+    "dataset_id": "96223bb8-ac6d-4168-a367-1f817f29d0f9",
+    "topic_name": "user controlled"
+  },
+  {
+    "dataset_id": "96223bb8-ac6d-4168-a367-1f817f29d0f9",
+    "topic_name": "dynamic"
+  },
+  {
+    "dataset_id": "96223bb8-ac6d-4168-a367-1f817f29d0f9",
+    "topic_name": "business information"
+  },
+  {
+    "dataset_id": "96223bb8-ac6d-4168-a367-1f817f29d0f9",
+    "topic_name": "SBA registered"
+  },
+  {
+    "dataset_id": "05bceb99-66ac-47d5-a612-a2b18ee4b973",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f2e604c6-9c1e-4271-bdbb-f1f60ad06a16",
+    "topic_name": "Nutrition"
+  },
+  {
+    "dataset_id": "f2e604c6-9c1e-4271-bdbb-f1f60ad06a16",
+    "topic_name": "Physical Activity"
+  },
+  {
+    "dataset_id": "f2e604c6-9c1e-4271-bdbb-f1f60ad06a16",
+    "topic_name": "and Obesity"
+  },
+  {
+    "dataset_id": "8254e8fd-12e8-4e5f-8a6c-6f7b3c12d089",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "3a087ced-91ef-46aa-9d69-9ab4ea9e9376",
+    "topic_name": "Recreation"
+  },
+  {
+    "dataset_id": "67bb074c-c8d3-46ea-90d2-76fceb290094",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "5cb8d78e-54d3-4a36-bb51-190c316829f7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2d0e242c-88f0-43de-b6c5-da9b9d88864f",
+    "topic_name": "tariff codes"
+  },
+  {
+    "dataset_id": "2d0e242c-88f0-43de-b6c5-da9b9d88864f",
+    "topic_name": "tariff rates"
+  },
+  {
+    "dataset_id": "37110cca-9d46-4b5e-9bc2-0e938ae4f980",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "a7ea74cb-075f-42ab-a267-6c105d7e7563",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "29aa21ae-b135-4227-9db6-6dd283715900",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "4541f970-4e4b-442e-bf40-10e02f535b15",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "3b5373a4-81e6-42f7-a5e4-171a08ae602b",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6a729632-dd9a-4a0b-9bca-ea76fc9ba169",
+    "topic_name": "Disability &amp; Health"
+  },
+  {
+    "dataset_id": "9d6bf556-e746-4ecd-906d-56a2b2dac2ae",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "727e0a6d-c8a0-48f5-b85b-25b7aca9d22d",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "f9a2b1da-af74-452f-b056-110496e646eb",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "d8af19af-0595-476b-ab90-324d618c1886",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "ca76b6a7-75b9-4107-b7f6-483832446c4a",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "96811ca5-e32e-4f41-abca-dec4f07ffdff",
+    "topic_name": "Housing and Development"
+  },
+  {
+    "dataset_id": "8f51a658-e9e2-4c93-ba15-7be91a95c29f",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5ea6ed00-b4ea-4b04-80f8-c156ff47019f",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "81ce570b-7701-49fd-833c-948be42f9556",
+    "topic_name": "Agriculture"
+  },
+  {
+    "dataset_id": "81ce570b-7701-49fd-833c-948be42f9556",
+    "topic_name": "Weather"
+  },
+  {
+    "dataset_id": "81ce570b-7701-49fd-833c-948be42f9556",
+    "topic_name": "Climate"
+  },
+  {
+    "dataset_id": "81ce570b-7701-49fd-833c-948be42f9556",
+    "topic_name": "Research"
+  },
+  {
+    "dataset_id": "084e5f24-1585-43c0-a674-62a3ea757d6c",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "c5f53aa3-78a2-4b3b-acc2-57396fa30b6e",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "3fdb5bea-e09e-4ab6-ade8-f4a76b2d3b34",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "df8aed5c-2c07-4c31-b492-0ab6bca94575",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "5bea86c6-2e70-4069-82dc-3dfe3baf2c8e",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "b5d1fb82-a2ca-42ab-a911-173c57297545",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "71b27167-9c74-4895-9750-bb8bc7af3e1c",
+    "topic_name": "Consumer Protection"
+  },
+  {
+    "dataset_id": "f6731209-f2b6-4786-9ce2-306d9accb8f6",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "7401571a-9009-44d1-96ad-b7003221ec72",
+    "topic_name": "Demographics"
+  },
+  {
+    "dataset_id": "8f460008-33b2-42b8-b90d-af054200d518",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "a47e8d73-50e3-4cda-bb6a-bdd63a0d1d4a",
+    "topic_name": "Primary & Secondary Ed"
+  },
+  {
+    "dataset_id": "0bc811eb-da21-4c8c-aa7a-36a5af76428a",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "be824791-ca7c-4047-b104-fb6d9b049faf",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "0ce86a15-992f-4f99-8417-56ef36ffa766",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "e8b0f150-b268-4c62-ac3d-51a09b450239",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "648a0725-6f0e-419f-8209-308ce15069cd",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "83cbf755-612a-40f8-9225-f3461dc5df01",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "6ccf91b8-4a94-427b-9d8b-bb3ca4bf4d70",
+    "topic_name": "Law Enforcement"
+  },
+  {
+    "dataset_id": "ca4f3296-7231-4434-a679-30a3d9c5824f",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "ff59e88c-a7c5-40ea-a61a-87b703a335c9",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "d1ee33fb-43f5-4eeb-b78a-f6a02eda5c69",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "776823b3-25c7-4b9e-941c-72c5a62b2a4f",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "261f90d6-f7c8-4f58-bdd5-f608346a6f92",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a19ead19-2bca-440b-9e77-0661e78232c9",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "e06ee364-b778-4263-9b19-35efddf236a5",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "38dedda6-76aa-4265-a51c-c031b0d93c81",
+    "topic_name": "Active Specifications"
+  },
+  {
+    "dataset_id": "093c57c8-baf4-4c67-ac21-897a57fd3789",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "2e04d42d-257d-476b-a672-b2368ac91ff0",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "99632220-80a7-4efc-9c5f-4f0dd33d2d43",
+    "topic_name": "international"
+  },
+  {
+    "dataset_id": "99632220-80a7-4efc-9c5f-4f0dd33d2d43",
+    "topic_name": "food security"
+  },
+  {
+    "dataset_id": "a03a53f7-954b-483d-b83e-7931c0d6b3fb",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "b2625d08-2053-472a-a974-b54fbfe79f6f",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "0b8c3a89-9fba-4d9b-9922-40129ca70bce",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "37629409-f9b7-4438-9bc7-0ceb97e842ba",
+    "topic_name": "Agriculture"
+  },
+  {
+    "dataset_id": "37629409-f9b7-4438-9bc7-0ceb97e842ba",
+    "topic_name": "Weather"
+  },
+  {
+    "dataset_id": "37629409-f9b7-4438-9bc7-0ceb97e842ba",
+    "topic_name": "Climate"
+  },
+  {
+    "dataset_id": "37629409-f9b7-4438-9bc7-0ceb97e842ba",
+    "topic_name": "Research"
+  },
+  {
+    "dataset_id": "716b3a4c-c9b8-4237-89d8-d0f85f4ef13b",
+    "topic_name": "Other"
+  },
+  {
+    "dataset_id": "dec542d3-94e6-4501-abae-bf3ea2ed3d68",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "698b8fae-30de-466d-ba91-8152de666e88",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "53847b4b-17ba-458f-a6e9-992766f787cd",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "a6ae14d9-dac2-44b9-8e80-37b2f3a4a1af",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "0af23347-261b-4c6a-8bfc-eba51ec105a7",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "0114be92-ea27-4927-8437-ed98ed40bc7b",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "1a8854c6-269d-40f8-a190-206cac7b2df7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "03f70936-6b92-4243-b9b8-db41b56cf3a9",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "af52b5e3-b6ad-4bf1-9b66-91d7c3bf0e4b",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "667f0489-41a1-4f19-a79a-861ce85258e0",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "405652c8-9146-4e16-8604-c6c04892a956",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "f2d32095-e727-4c3f-ae3d-bdcebb734f85",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "f38562ef-d332-45d3-88dd-8deac9b8b2a4",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "56437874-bd74-4cb6-b7b8-e7d2e7ff174f",
+    "topic_name": "Environmental Health & Toxicology"
+  },
+  {
+    "dataset_id": "482e9bb7-f6e7-4f92-8c6e-8110f2e6fcf5",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "31546198-1506-4f97-b11c-f064fd0a76ce",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "97946696-a2f7-4d58-beb7-8e556251e698",
+    "topic_name": "Elections"
+  },
+  {
+    "dataset_id": "3ff01ba0-195b-42e2-b509-4a93467b158d",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "7b1f960e-3078-46cd-851b-87004adb9870",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "bd3d4a76-5712-423e-87e4-f0e7b7d50e54",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "db4ddd44-4d79-42d9-b159-849476734e72",
+    "topic_name": "Section 5.  Law Enforcement"
+  },
+  {
+    "dataset_id": "db4ddd44-4d79-42d9-b159-849476734e72",
+    "topic_name": "Courts"
+  },
+  {
+    "dataset_id": "db4ddd44-4d79-42d9-b159-849476734e72",
+    "topic_name": "and Prisons"
+  },
+  {
+    "dataset_id": "246b5bd1-dd66-41bf-8fd5-7b9a7e0e27f9",
+    "topic_name": "Data-MarketStructure"
+  },
+  {
+    "dataset_id": "93aeb744-72a2-4f6a-bd3e-68cbc16b163f",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8dc5d5f6-9799-4230-9a90-7d7d77853cbe",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "19f8d2b7-c502-4ed2-9d2d-195474a51d89",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "980dacd1-2e84-4b73-8289-81d20a52e1d0",
+    "topic_name": "Regulation"
+  },
+  {
+    "dataset_id": "ad19de56-38b2-4881-a600-e9722f1d0426",
+    "topic_name": "Space Science"
+  },
+  {
+    "dataset_id": "b7d32a1d-ee45-4a49-b161-682a34013f01",
+    "topic_name": "Automobiles"
+  },
+  {
+    "dataset_id": "91e89ac1-71e0-4b9f-9e2b-6fff9cf0ee00",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "677b3fd6-5e81-4887-ab6a-59283028b5b7",
+    "topic_name": "Equity & Justice"
+  },
+  {
+    "dataset_id": "6327d845-f1d9-4158-a7c5-ba33f4b82364",
+    "topic_name": "environment"
+  },
+  {
+    "dataset_id": "361f6e22-af6e-4432-a987-843f1f147b14",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "cba2d9ad-1b38-436e-9abf-9060db3fb113",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "f787042f-b3f8-4046-8d40-0a9d1bbddf79",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "68303c45-51d0-49f8-b9b1-2ccaf8848161",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "84b34815-2181-4554-a0a9-30ba1db1a0d7",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "809ce62a-ca65-476c-be24-5542523f92bf",
+    "topic_name": "Data-MarketStructure"
+  },
+  {
+    "dataset_id": "a41ab606-8480-4eeb-a208-4d52c4779e30",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "31484040-b5ba-42a8-9ec1-1fe318127372",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "8b90e26d-4241-4f62-8ffa-20ec0775c245",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "37ccd819-9b93-4396-8aae-0c97c139eec7",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "d37645d2-fe27-4303-b43f-ae40da965998",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "689bdebc-c63d-4ebc-81a2-3c801683ec60",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "444af698-f3ae-4aa3-906a-4a65ac1d037d",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "dfcafad6-42ce-469d-b665-67eafaf5369e",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "bee503da-8557-4a28-b890-96ad87606eb1",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "3c43e241-d9f0-4e04-b0fd-a42fff7d60ae",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c8459072-1a78-4986-8f9f-b7e140cab3c9",
+    "topic_name": "Space Science"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "19834ddc-94e9-4f10-8610-ca4dcd5dbb05",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "d4f2c3dd-fa8d-47ac-9448-5332b4a6132c",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "83571960-a781-4a80-8f83-2fca4eaa4380",
+    "topic_name": "Recreation"
+  },
+  {
+    "dataset_id": "44ed8078-df52-4a6f-978b-4413a113aaeb",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5e182ab9-8d3d-4717-9188-b02d459b260b",
+    "topic_name": "Section 9. Federal Government Finances and Employment"
+  },
+  {
+    "dataset_id": "025b187c-6a5f-442c-a9b3-b771561c8f76",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "62163f8e-d9ed-4397-b7a1-ae73d6cbe9d4",
+    "topic_name": "ACF"
+  },
+  {
+    "dataset_id": "aa251e79-e0fd-4d4e-b0b2-e7ea2b66d5e5",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "e644ea2f-ca32-4dcb-8775-d0142f4bf714",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "f556a25f-e478-4cae-bb8c-410ff898259d",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "0425346d-fbf5-48d2-99f4-f301e8d8ecfd",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "f8dc52f7-51f1-4653-b4e4-4287ddb67500",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "77eb9c85-e7d1-4dea-a78a-aefc4fc45bbf",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "0141064d-fa85-4b82-8562-e97bc3ec13da",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "c7bd86e0-3672-420a-8e91-3b8eb6562d54",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "fa40fd37-a64f-45f0-a7e3-f87117646755",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "ef8d1a1e-64ef-44bc-913c-8039448f870a",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "224efb50-7f21-4500-a0ed-569562b23236",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "2903bbda-7bad-4cfe-be3f-f7e896a71a4b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "04981518-7e79-4fe2-b996-3b77cb3602e4",
+    "topic_name": "Generic Dataset"
+  },
+  {
+    "dataset_id": "170f0fcc-9ce3-456c-b8a3-d15a4066b875",
+    "topic_name": "Housing & Properties"
+  },
+  {
+    "dataset_id": "167181b2-9c85-431a-a39b-2c40eaed948c",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "e22008f7-4c2a-4729-aa3c-db658dbf5671",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "07335a15-74c8-468b-a812-bd4de83df726",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "5783256a-2218-43d8-9649-e9cfc0c40642",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "547d5506-d2cb-4052-8e9b-220793da1495",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "1b7f2866-87a3-43d7-ba26-1ad82a3f3424",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "088a2b07-ca7d-4a44-b0da-f575a22d7fdb",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "3214bd20-c67d-41b8-a670-180e457c4c30",
+    "topic_name": "Healthy Aging"
+  },
+  {
+    "dataset_id": "7c1ddaab-77d4-43ae-9d19-8b3c2b60edb3",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "65cc74e6-e1a6-4e0e-84c4-1582dfa53351",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "36c98e72-32f3-4fff-9f7b-a82c0e3b0e5d",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "32b1872e-1faf-477e-99fc-bcad2a69729a",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "3903d50a-ed4b-42af-9a35-b506c1095f2a",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6adea956-be24-40e3-ab05-393a44d94444",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "1e5add2c-88db-4a35-b23d-289db927f57a",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "fbe7187d-c4fe-4ab2-9f22-48352d20fea9",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "02c3ed42-9018-450d-96bd-0b53bd615923",
+    "topic_name": "Correctional System"
+  },
+  {
+    "dataset_id": "e8b72f75-d03e-43f7-b3da-c8ff54ef3993",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "27d10dd9-ac6d-49e7-a794-6c14834acf1d",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "9a34e61b-c922-4b30-b1c1-8ba0ab26021b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "36a8896f-626b-4aee-be2b-ffbf457658b5",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "9f440483-56ed-4d7c-a464-c660949808ba",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c47eede0-0ebb-47e8-a37f-3a9b9eb6e03a",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "c47eede0-0ebb-47e8-a37f-3a9b9eb6e03a",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "c9617d22-82d2-4780-ac14-007c5bf631b6",
+    "topic_name": "ACF"
+  },
+  {
+    "dataset_id": "29aa7281-6eb3-4a67-bc0c-ddc5658bfecc",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "abecde22-91b2-4ce4-b66c-14f765aba912",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6cb5d8cd-0d85-4db4-9243-c9250bede4f1",
+    "topic_name": "Terminology"
+  },
+  {
+    "dataset_id": "d462ce91-0fd3-4453-a3ff-663f58ab08e1",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "ecca1547-4109-4d8a-bf9d-64f256d96a75",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "87ebdc09-0804-4e7b-a847-0383479c3f6c",
+    "topic_name": "Community"
+  },
+  {
+    "dataset_id": "87ebdc09-0804-4e7b-a847-0383479c3f6c",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "87ebdc09-0804-4e7b-a847-0383479c3f6c",
+    "topic_name": "National"
+  },
+  {
+    "dataset_id": "87ebdc09-0804-4e7b-a847-0383479c3f6c",
+    "topic_name": "State"
+  },
+  {
+    "dataset_id": "cf0ad775-d739-4324-8ffc-dccd19318028",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "c2b9cde2-8de2-4643-8681-d6f829849ef5",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "0bcb1bcd-9283-4328-b8ed-a8e3d6a8202a",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "02300200-a311-43b5-8cb5-10dc81ced205",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6f2f7b6d-d824-4286-92f0-7118c25b7c21",
+    "topic_name": "Building and Development"
+  },
+  {
+    "dataset_id": "5ced1076-b68e-4299-a5b6-db2986737b78",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "f2f2c734-a051-4c38-9e97-5a737c1c1ee1",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "fe5429eb-0ec1-4629-912a-6e19fa2883eb",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "ac31f393-673c-4d53-9c19-c355b99917ce",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "48a97e22-c539-4088-97f7-796efc61debd",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "4866b1f6-bb52-430d-8fbc-4cb6272a3e96",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "f4eb9391-1d31-4ba7-8404-a6e668872e08",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "b6d0d15e-de2c-413c-a315-b50ae3c3e3d8",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "b6d0d15e-de2c-413c-a315-b50ae3c3e3d8",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "a681e0ff-78f2-4413-b099-6645fa63b40f",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "eef430f5-be1e-47be-b51d-c519f9544dcb",
+    "topic_name": "Health and Social Services"
+  },
+  {
+    "dataset_id": "31699480-c936-4b83-bd53-2c0c82e328ba",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "3f0181c6-acb5-4371-b8e8-6bd3cf9782fa",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "e73aaf8d-250f-4655-b196-fe0397b33f90",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "e9f5bcc9-f849-4e35-93fa-76a79b848ba9",
+    "topic_name": "Diagnostic Imaging"
+  },
+  {
+    "dataset_id": "c4b5d101-c183-4ea4-a6b1-ed2fb8be3a30",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "c4b5d101-c183-4ea4-a6b1-ed2fb8be3a30",
+    "topic_name": "Chemistry:Theoretical chemistry and modeling"
+  },
+  {
+    "dataset_id": "f047b651-160c-447b-8c96-1da78719f914",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "1b38ef32-5d16-4205-8c73-9909a0ff8611",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "teachers-and-administrators"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "k-12"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "student-demographics"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "english-language-learners"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "suspension-discipline"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "stem"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "safety-bullying"
+  },
+  {
+    "dataset_id": "9093959a-279d-49de-bb0d-475987cd700d",
+    "topic_name": "special-education"
+  },
+  {
+    "dataset_id": "12836357-0d1c-41de-ace7-fdc728fbf765",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "ee635e53-3089-4f0f-97ad-6abf4b341bac",
+    "topic_name": "Nutrition"
+  },
+  {
+    "dataset_id": "ee635e53-3089-4f0f-97ad-6abf4b341bac",
+    "topic_name": "Physical Activity"
+  },
+  {
+    "dataset_id": "ee635e53-3089-4f0f-97ad-6abf4b341bac",
+    "topic_name": "and Obesity"
+  },
+  {
+    "dataset_id": "e82a90a9-047e-4736-a562-1dac0f1cec17",
+    "topic_name": "[ 'Health' ]"
+  },
+  {
+    "dataset_id": "8b6a21d3-4207-4ed6-ba80-f572692da6af",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "a12c1bf8-1c6e-4005-89cd-f1142f79af60",
+    "topic_name": "Health and Community Services"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "tsv"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "dta"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "artificial"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "intelligence"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "machine"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "learning"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "patent"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "application"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "classification"
+  },
+  {
+    "dataset_id": "cf7485e5-bcca-45cf-9db5-07f340525f4f",
+    "topic_name": "landscape"
+  },
+  {
+    "dataset_id": "638eb910-07d9-474c-adf8-7f3b1d6cbb86",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "ca645d13-71b7-463f-9717-f0ecbed0397f",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "8239d728-0e3c-4f1b-976b-36fbabfcf376",
+    "topic_name": "[ 'Health' ]"
+  },
+  {
+    "dataset_id": "29bb536c-454d-4247-a2c3-8c0e11581883",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "4037ef56-58ee-4088-9090-f8b8f9c642b4",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "72120674-9a96-4dc2-9a36-8fa449cffae3",
+    "topic_name": "tariff codes"
+  },
+  {
+    "dataset_id": "72120674-9a96-4dc2-9a36-8fa449cffae3",
+    "topic_name": "tariff rates"
+  },
+  {
+    "dataset_id": "20183824-e105-4418-91f3-599a5a1825bb",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6aeabd3b-960d-48ed-ad46-4c69d87b841e",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "f6e4ae96-6f43-4229-ba38-145d5459f22a",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "21268d95-e29c-4b46-81af-bbab1652daf7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "76d64680-4623-4ef6-96d9-f8d20da70163",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "dcc3c880-77aa-4b62-9a61-8726fd9edc76",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "dd494c77-6516-4e5f-8c90-cf547acbb7af",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "a1a3bce5-9a04-427c-8bb5-085fee7f691f",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "581a2d5e-0e8f-4a2e-8f88-03b0899702b6",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "76a65b81-dd3d-4616-a42e-b2fa49122f38",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "81320b25-eda9-41e4-ab0e-3b176d14a862",
+    "topic_name": "Economy and Community"
+  },
+  {
+    "dataset_id": "20eec212-4327-4a6d-bd58-13bce2402022",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "ea60e872-288d-462a-9681-cae6797c836d",
+    "topic_name": "Government Employees"
+  },
+  {
+    "dataset_id": "40122c23-230a-4cc2-b595-f0754c2411b4",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "47fe4102-b66a-483c-b73f-f569c123de67",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2d582002-9da0-48ff-8ccc-f45f697939bf",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "942969c7-ab62-459f-9630-27fcb57e6e97",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "b3b4c7a5-b911-4b25-9ee3-ffdaae71d571",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "7ff78641-49d8-4322-9db2-1cfced727ced",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "25468228-2d12-410a-97b2-d77017d89e1d",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "51bb2259-73d9-4837-9389-2d961bcceac5",
+    "topic_name": "Social Services"
+  },
+  {
+    "dataset_id": "c3a56322-b688-416a-95b0-361e6ec27504",
+    "topic_name": "Equity & Justice"
+  },
+  {
+    "dataset_id": "71d3c117-fa52-42e9-b726-f4c43884d4f4",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "472797e6-fbe3-4e79-bedb-8c9e860d0f2d",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "8dbc1a43-846b-4471-9dd3-ba2da278b28c",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "b271fc5f-f44c-44fa-84d3-6be3e5b5c87e",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "b271fc5f-f44c-44fa-84d3-6be3e5b5c87e",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "b271fc5f-f44c-44fa-84d3-6be3e5b5c87e",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "b6f9ae59-fa61-464b-8e36-9607cb2b383a",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "490d789c-0684-4987-8592-e6660016e3a6",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "82e47e79-0f46-4ad3-9bed-72537b1c6a24",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "b0276934-4432-4bb5-909e-2230365678b4",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "9271779a-eef3-493c-bc27-bb606bd71a81",
+    "topic_name": "Building and Development"
+  },
+  {
+    "dataset_id": "0471450a-0f09-4278-8e3a-505410ce54c7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "3cd650f0-40f2-4301-b091-e39c027709d0",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "22e7890c-b6b1-47ba-ab3e-8174142390b4",
+    "topic_name": "Diagnostic Imaging"
+  },
+  {
+    "dataset_id": "eecba8ca-01ea-40f5-adb2-62370569ed18",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "e216c5ac-9c21-4260-ae6e-9201a81609db",
+    "topic_name": "Manufacturing:Supply chain"
+  },
+  {
+    "dataset_id": "e216c5ac-9c21-4260-ae6e-9201a81609db",
+    "topic_name": "Information Technology:Cybersecurity"
+  },
+  {
+    "dataset_id": "8cd12963-5461-441d-83ca-a874d92a6187",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "b6f469ef-63b3-4ed9-9d9a-c4a5764b3b93",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "84fdd390-cf70-4573-be10-12931680a838",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "cf2a4924-dc0d-4f6a-ad6b-89af84646349",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "1671a1ec-62f2-486c-a8f5-0a1007c21a59",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "4d561ef8-ff1e-4fda-9f23-128142acaf48",
+    "topic_name": "Active Specifications"
+  },
+  {
+    "dataset_id": "83f11c96-4fd5-4ae4-a5e6-dfb013e5b317",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "da608c33-4746-45cb-9220-b5c9f36f2e26",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "c9ea19cd-1848-4a9b-ac6d-a3999ce2817d",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "49227ac1-3484-4dff-91f9-cee23909ce98",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "1accdd1d-7e05-4937-b111-d4bb37d33ff2",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "1accdd1d-7e05-4937-b111-d4bb37d33ff2",
+    "topic_name": "Physics:Radiation"
+  },
+  {
+    "dataset_id": "2789c6df-60c2-42fd-b9a9-5ff3d5bf71ba",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "a0b740e9-b111-42cc-8fce-b0a448f7e49f",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "978ec0bf-43eb-48a5-b4d8-2ecff7f36cfc",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "ea05d88d-49fc-4897-a540-c41b28d8ab0a",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "7924c09f-d17b-423d-b8b5-d94df2c233cd",
+    "topic_name": "Business"
+  },
+  {
+    "dataset_id": "a8535dcc-c70c-44f4-898c-07f2680080b8",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "947b4701-5e85-4a87-9527-72cf3d17b10b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a6fe0ee4-4a47-440d-bf7f-6d616efe2b75",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "a31e8e17-de3f-4a32-a9f0-1d9830fef95f",
+    "topic_name": "Recreation and Culture"
+  },
+  {
+    "dataset_id": "620c4b7c-c4b4-4406-91a8-e5c0f6ecca39",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "7186ea3f-2d70-4cbc-8e88-1bec51628a3d",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "51de8d06-df33-44b9-8a5e-3ffb55401f02",
+    "topic_name": "Finance & Operations"
+  },
+  {
+    "dataset_id": "e3c06415-3a4f-4dd5-be42-9bb2dff6169d",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "7f4d8fee-ad95-458e-8c15-67abf093ac4d",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "c612f761-6ef8-44b3-a220-6674551784d3",
+    "topic_name": "Government Publications"
+  },
+  {
+    "dataset_id": "c612f761-6ef8-44b3-a220-6674551784d3",
+    "topic_name": "Data catalog"
+  },
+  {
+    "dataset_id": "bff8a129-00ca-41a1-9e16-4fd4d3ef2bed",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "34b20208-d070-476b-8c44-35b10abd81ea",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "a2bff4c4-2b91-415a-8816-aa5b7cbea97b",
+    "topic_name": "Navigation"
+  },
+  {
+    "dataset_id": "a2bff4c4-2b91-415a-8816-aa5b7cbea97b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a2bff4c4-2b91-415a-8816-aa5b7cbea97b",
+    "topic_name": "Flood Risk Management"
+  },
+  {
+    "dataset_id": "99bca63e-b30b-48c2-a80b-a69d2c76d117",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "48b8ef71-9141-41fb-b8e7-bf092757b24d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2bd2ddd1-6b06-4ec7-b31e-d17219449f65",
+    "topic_name": "State Drug Utilization"
+  },
+  {
+    "dataset_id": "2418f154-5752-4fa0-9187-70a4b4e9fde4",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "0406b0fe-9217-4e34-a1cc-93e647944e8c",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "40566a21-df6e-40f3-a372-f7d67e8a811d",
+    "topic_name": "Technology"
+  },
+  {
+    "dataset_id": "262bb228-40fe-4cdd-baf3-9b7b18e4c092",
+    "topic_name": "API"
+  },
+  {
+    "dataset_id": "7649ebd2-9c61-45f7-8e41-660e1f165d4b",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "b9c2d9e0-4882-4561-96de-cc0681cf6587",
+    "topic_name": "Public Safety and Preparedness"
+  },
+  {
+    "dataset_id": "a973c217-46eb-4e29-81f6-323d69f0297d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "e3725a5b-d1fd-46e8-bb68-c999d3061e0a",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "01c3f2da-394b-4657-91d6-7f021e6b633f",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "1c249f51-eb6d-4f04-86fc-a7979bcc8518",
+    "topic_name": "Student Aid"
+  },
+  {
+    "dataset_id": "97df5679-d0e2-4700-a088-c0a920538769",
+    "topic_name": "Automobiles"
+  },
+  {
+    "dataset_id": "37638dde-191b-4626-a2c2-c41d3635d40e",
+    "topic_name": "Consumer Protection"
+  },
+  {
+    "dataset_id": "605990c1-8fc0-4ba1-892c-e21cded1413f",
+    "topic_name": "Housing & Properties"
+  },
+  {
+    "dataset_id": "067b7fb4-11d3-478c-9c0b-6754676afe31",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "b2afd304-1055-41d8-9155-5315dea93ce1",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "4e49962e-cf5a-4004-bd59-9b98585aa47e",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "72704b4a-0ff7-421b-8b4f-69e41f83de39",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ce250b4a-1bba-49d2-b186-4d315d952b51",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8aebf65d-f30c-428f-99f1-c6256e3570b2",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "40e1cd46-a6d9-42a0-87df-0aac9f3e36f3",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "9784b2cc-c345-4b34-9508-61b9629f0dd1",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "d086e2e2-a6e7-4948-a2f3-98357f10aa5e",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "4320101d-3cdc-4604-aab5-8cc808eb2b39",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "cd077c4c-6278-42a7-847e-1f5508a86cf9",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "9c92bd1e-3bf8-47d7-9405-8c7e868a1b6c",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "571e631b-95bb-4a1c-bdf1-0dad7dcb51da",
+    "topic_name": "publications"
+  },
+  {
+    "dataset_id": "2ada416d-30e3-4214-af09-503087a31313",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "f4eda04c-af48-4561-b9e1-28c5f25a670d",
+    "topic_name": "Wireless"
+  },
+  {
+    "dataset_id": "f4b0b67b-2300-4967-b54a-5a65b4e1150e",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "06f85fd4-e2ab-483e-a6a1-aa60fbbdf41d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "1fba97f4-ae3d-45aa-bbbe-d3efd66eca17",
+    "topic_name": "demographics"
+  },
+  {
+    "dataset_id": "e20ce950-2728-4129-8aca-7e2010d6527d",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6b689232-8231-409c-aaf0-0fea36280e67",
+    "topic_name": "EPI"
+  },
+  {
+    "dataset_id": "6b689232-8231-409c-aaf0-0fea36280e67",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "dd634e59-d1ca-4ab6-b79c-80083c71a8b3",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "9450f398-77b8-4f7f-829f-ee5f782016a3",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "58e5dbc3-a25f-4e3e-898d-bbd45d79c72c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "35ff4b4a-9167-400f-aec3-34a04561b7d2",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9fdb4aee-7d25-41fd-9d0b-0cb83b333867",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "40c33245-cda0-48f1-ad1c-b9a8fd3a6e1f",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "534c1caf-36ba-4e3d-a53a-c4a1f872cfe8",
+    "topic_name": "City Management and Ethics"
+  },
+  {
+    "dataset_id": "38abf113-bf77-42da-a746-e2cdc00b01c5",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Chemistry: Chemical engineering and processing"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Chemistry: Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Standards: Reference data"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Chemistry: Thermochemical properties"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Chemistry: Analytical chemistry"
+  },
+  {
+    "dataset_id": "4c9cd2a8-09d7-4699-b5b2-36afcb0ba9ff",
+    "topic_name": "Physics: Spectroscopy"
+  },
+  {
+    "dataset_id": "3ca330bb-a5de-4504-ad2b-7fef578356e4",
+    "topic_name": "Trucking and Motorcoaches"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "6798f89e-21f7-4560-b716-9a4c060e153f",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "86591256-cf94-488f-9e37-4e8b26965cf3",
+    "topic_name": "Behavioral Risk Factors"
+  },
+  {
+    "dataset_id": "f446aa60-f471-43d2-b3b4-01e82dd87a6d",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "aa3bc757-38f8-42b5-932e-9b8af3e45628",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "f3b65e9b-cb73-4213-ab34-40e1dfe794b2",
+    "topic_name": "transportation"
+  },
+  {
+    "dataset_id": "dfa9b8fd-ce6c-41a3-ae16-124ff05bb8e6",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "c6cdff05-0865-44c7-b758-2ec83b972ae2",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "6f920d6d-5060-48bd-8c86-a54368791a6c",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "87dbbdaf-8ea8-427d-acd8-8915231cca65",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "843515ca-a96e-450e-ba36-4ccc8470f75c",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "5723ad86-c98a-4d92-9052-0d4a890bbe71",
+    "topic_name": "Science and Engineering Workforce"
+  },
+  {
+    "dataset_id": "47e30d0b-9e70-4055-8ace-e417266f444e",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "f422ae7c-8e74-4832-8e60-1f045ce5c4d6",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "df1ec511-995e-4cd2-99c9-ae0368118d77",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "21f3abc9-acca-4df8-b81b-0b9d45a816f3",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "4b48d305-4a4a-4c5a-848e-40a839dcda06",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "994e2226-8b48-4e86-a81c-efd3cb77ef9d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6af206e1-73b8-4f74-8596-1f49ef65b15e",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "1f5bd536-5778-4e42-9f6d-4e887400f822",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "524467e9-8b55-48f8-94f0-b5d6ad370c6f",
+    "topic_name": "Sales & Distribution"
+  },
+  {
+    "dataset_id": "35898b3d-c6e4-4b95-a6c9-e611cd9ac7e3",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "bf1e54f0-fd2f-4513-8cbd-139be81c1dbf",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "5a1d8a64-060c-4c54-becf-ff5e8ce5f8cc",
+    "topic_name": "Demographics"
+  },
+  {
+    "dataset_id": "23e8c7ee-8bad-4590-82fd-ec99f5685ec1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2c991bb1-eec4-4ebd-9506-75dbf8b74b45",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "06cb118a-dffe-4744-b52f-66bacba45035",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "3016fc35-6012-4840-911b-9ebe7fb7c709",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5497dbc1-410b-404a-b56a-9cae716d5ff8",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "f6c99344-6faf-42f7-b67f-540a09427c7c",
+    "topic_name": "CMS"
+  },
+  {
+    "dataset_id": "6e30d62c-8e37-471d-9697-2426c673e988",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "0cae19ec-e795-4512-8bcb-f06d9ca8b74e",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "71b39ef1-2253-406e-88c2-4b0a1c6c3ed5",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "f959e034-704d-40fc-ad8a-887c7682c664",
+    "topic_name": "[ 'Health' ]"
+  },
+  {
+    "dataset_id": "433b43d1-415b-462e-b6a3-6bd5c1104962",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "0da0c1ce-8e08-4f4a-ba8b-c078cb7783b2",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "0ee3e47d-04f8-4fed-b036-36c852f72a9f",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2d6a7855-f2ff-45fb-848d-e54f6395a778",
+    "topic_name": "science"
+  },
+  {
+    "dataset_id": "41ad9adb-b2b4-45af-b391-a6b178f9a936",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "26f7331b-9d4c-49c4-8705-c3167ce76284",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "a2bff970-607e-4bd1-962a-040d89eee145",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "98f9aa47-ab58-4c84-a23d-d1ed64ba1cf3",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "a1c104f9-8973-495e-a4ae-838cf9a7c170",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "12506a80-d006-45dd-8935-a3ff6bc5a60a",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "57f64f2c-fb36-42ea-a923-402a7e683f30",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "a1b7211f-3a7b-437f-a077-0f62237e3dcf",
+    "topic_name": "Health and Community Services"
+  },
+  {
+    "dataset_id": "ad37f5a7-b9cc-4e4a-affd-febd9b4237ff",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "eba8a107-21c0-43bd-9c0c-fd2312f3fd74",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "4b155ace-481a-4d93-9ef4-cdc0ddea99e1",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "1973f252-656a-4873-8775-41399ccbf869",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "6b5f80b3-7c75-4127-9ada-75d5dd6feebf",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "13329dc6-9437-4f12-b08b-b1f765a7e343",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "ade2eb1f-5484-40a2-a66e-39da06a3aab0",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9649be5e-9597-471f-9e60-3ce0e78ecf92",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "b97bcbd1-cfd2-49c1-8111-2e70b98aed47",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "7b02ddb7-4212-4497-8be7-da32b74eb7de",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "107c4708-4683-423e-8804-20c9eba4cb87",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "224a145c-d8b8-4ca2-90ce-be4ee10bbf70",
+    "topic_name": "Housing & Properties"
+  },
+  {
+    "dataset_id": "dad236c1-ad74-49e7-bfa6-eb92fe748216",
+    "topic_name": "Information Technology:Cybersecurity"
+  },
+  {
+    "dataset_id": "dad236c1-ad74-49e7-bfa6-eb92fe748216",
+    "topic_name": "Information Technology"
+  },
+  {
+    "dataset_id": "cabfade2-406b-474a-8def-972ec2bce73d",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "43ae6960-0ed5-44ea-aac6-fbd925538abf",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f2a069e2-d440-4eba-898a-beecf34c23c7",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "e1de8ce7-2eb7-4393-9660-22752cfe596b",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "eebd5a77-52e0-48b4-a02b-48514668d9b6",
+    "topic_name": "public search tool"
+  },
+  {
+    "dataset_id": "eebd5a77-52e0-48b4-a02b-48514668d9b6",
+    "topic_name": "subcontracting opportunities"
+  },
+  {
+    "dataset_id": "de7df4d0-aab6-4de1-9329-1db57e84a22e",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "0ccfd6d7-5970-4e0a-972f-b3fa75887084",
+    "topic_name": "Boundaries"
+  },
+  {
+    "dataset_id": "34f9de72-0bcc-4943-a999-1c554f8f34d7",
+    "topic_name": "Fire"
+  },
+  {
+    "dataset_id": "34f9de72-0bcc-4943-a999-1c554f8f34d7",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "9880c862-680f-45e6-9a08-8ea25b09a074",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "56f1c010-2cae-4868-9be5-84b5790b3bec",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "70e2c276-b85e-4e1d-b016-5c87b9408dc3",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "f43dc576-b04e-4465-8dd3-be5a20a85769",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "606289e0-174c-41de-979d-0faa6c59a854",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "026ffbd1-3b92-4f52-b8da-8cab08002e1d",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "026ffbd1-3b92-4f52-b8da-8cab08002e1d",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "e6b986c4-ff1e-43a6-856e-b9f08157f033",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "f771149a-de05-4ab2-87c1-19203648b107",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "5ad6c000-e017-48a3-b774-802a5d7ecb01",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a398c1f4-c52c-4a4b-8bb1-ae7bb852c10a",
+    "topic_name": "Public Safety and Preparedness"
+  },
+  {
+    "dataset_id": "9f955c8c-70de-4be7-b362-ee3f120ecd73",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "uspto"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "trademark"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "status"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "image"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "search"
+  },
+  {
+    "dataset_id": "cf4dba69-32e9-47ad-bdca-cfd079dca6b4",
+    "topic_name": "api"
+  },
+  {
+    "dataset_id": "fdbca8f5-3e41-49cc-ae9b-eeae6515d04c",
+    "topic_name": "Railroads"
+  },
+  {
+    "dataset_id": "2710c1e2-8217-41f6-946d-f9c818c37282",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "07473427-326d-468d-bc6c-57d9adc02dc5",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "cc8d842d-8565-44ef-ab70-5633a4645ada",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "f5f62028-999c-4da5-9141-1e9550e033bb",
+    "topic_name": "Literature"
+  },
+  {
+    "dataset_id": "538d0823-9c2f-4a39-bc3b-08295eafcd7b",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "b70f197c-4601-4549-9743-afecf2b604e8",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "32eb7335-9c6e-4856-8406-29d62b9555cb",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "655517cc-7811-4179-8139-5b7bc0e3f68e",
+    "topic_name": "Transit"
+  },
+  {
+    "dataset_id": "9cc1c178-e35e-4f05-b6ab-934c68a8aa6e",
+    "topic_name": "Revenue & Expense"
+  },
+  {
+    "dataset_id": "80417e47-f94c-43f2-8620-dcfecaacee45",
+    "topic_name": "Consumer Protection"
+  },
+  {
+    "dataset_id": "a1a03780-e0eb-47a7-89f4-d18280b8666b",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "25d35ac6-57d9-49ba-a432-b13c2f03f4e1",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "e9944174-3118-4a6b-9fdb-1b8a0bd4325f",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "20c0f5e0-6b88-4482-b3c4-0461150711aa",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "4b63c829-2e5b-41cf-af53-e45b7fcb59c4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "06c6bcd3-ed88-4e1d-967e-af0b5d253bd0",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9f17e1f5-3007-4dee-8bbe-31c8f89a8966",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "80775b8d-e2c8-4128-93d9-d8b59fe71ec1",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "14ea59a3-a458-4d10-9ff4-a6e8c77d8baa",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "d49dddb0-21ba-49d9-8964-ced79072f2d7",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "1eeea44b-086c-467f-8ed1-e9e9f5ee93f6",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a25c6dbb-5aba-4ce9-837e-6fbb0cdcd856",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "a25c6dbb-5aba-4ce9-837e-6fbb0cdcd856",
+    "topic_name": "Chemistry:Thermochemical properties"
+  },
+  {
+    "dataset_id": "9914a26f-edde-4b53-8265-664b52acfaf7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "0264496a-b163-4e27-b9b7-4ab0fe6a2389",
+    "topic_name": "tariff codes"
+  },
+  {
+    "dataset_id": "0264496a-b163-4e27-b9b7-4ab0fe6a2389",
+    "topic_name": "tariff rates"
+  },
+  {
+    "dataset_id": "2f7a168a-22ee-4e73-89cd-0857ef3daec1",
+    "topic_name": "Information Technology:Data and informatics"
+  },
+  {
+    "dataset_id": "16c6d800-c87f-46ed-a932-907ad618bb16",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "f575eb49-248f-4a47-bd2e-e0991ecba050",
+    "topic_name": "Transportation and Mobility"
+  },
+  {
+    "dataset_id": "3c6f0a1b-2a9a-4408-af7c-4d1d0ef5e647",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "e517b454-64e0-4dea-a0bf-05ee04c409f3",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "58c3ecd1-f47d-4929-923a-73cf01f00854",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "d3f7c449-621c-4399-9fea-6a56c41f2d25",
+    "topic_name": "Politics"
+  },
+  {
+    "dataset_id": "f433b91b-bfbd-4c3b-aa24-13716ea1c7a2",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "3fd995f9-907a-45e4-b865-a730eac11079",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "49a50b91-25f8-472d-941a-e344b606a4c5",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "9094e2b6-0168-4d4f-b619-14a33e15c8d1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8971bd20-619f-477a-8501-c07daf7b8c6d",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "41e00997-d97a-4529-9c10-2df5b69ed5bb",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2ba4da3d-d5dd-48e5-9b59-70da10150393",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "cdd2573f-01c5-4fcd-baed-a3b2fcc93a64",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "ff32aac2-af35-4c91-8544-a465e5d8f8a8",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "a215d875-70b2-4899-8483-1f667dc1f2cd",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "5b5e7ffa-4870-42d1-8ecc-692f1ebabeed",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "3f849684-d6c9-4d65-9c32-45733a2d2bfb",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "8651b91b-7f79-49b3-b3e8-fae702464590",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "fee2ff01-6178-42e2-bf6e-9f6f9e4e6b79",
+    "topic_name": "[ 'Health' ]"
+  },
+  {
+    "dataset_id": "83f8525a-8ef8-4f5b-897f-51c91756daca",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "c1096722-3e0d-4476-9362-d5d9ab74ad27",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "54c9bd57-5f60-47f8-aaa2-a3066a52ed86",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "dbd79830-be2d-403e-b10e-aa6f2731d094",
+    "topic_name": "Relational Database"
+  },
+  {
+    "dataset_id": "aaa68d71-2f71-44e8-bd0c-a24abe8758bb",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "44d8ab60-d8db-430d-857a-a10125b95267",
+    "topic_name": "NIH"
+  },
+  {
+    "dataset_id": "dfb125ee-9a75-4031-8eb9-55832638bc71",
+    "topic_name": "Reports and Publications-Other"
+  },
+  {
+    "dataset_id": "1ba37c22-a40f-490b-b2d5-1ca22b65b840",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "71e02822-133b-4aa0-b24a-87aaa648990f",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "057034b9-4da5-45b4-96d5-847c5fde7167",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "69ec8980-70b3-4713-b623-a57e135f899d",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "2b3a5f0b-e420-4207-93c2-5a50f6e37e97",
+    "topic_name": "Public Health Surveillance"
+  },
+  {
+    "dataset_id": "0e18b81b-2e78-40ef-8d63-2d1cbffb9e56",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "ba011dbe-b4d2-4bf5-bea1-799dc36d1b79",
+    "topic_name": "Primary & Secondary Ed"
+  },
+  {
+    "dataset_id": "1d3feb4d-1c74-4bc0-8c5a-d3145aaccb5a",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "7e9d7ded-bcf8-4ee9-895e-f821c3c5067a",
+    "topic_name": "Manufacturing:Sustainable manufacturing"
+  },
+  {
+    "dataset_id": "673a6c04-ed44-4846-9381-58ec27021bef",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f468fe8a-a319-464f-9374-f77128ffc9dc",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6c03ba85-a50f-4b7f-832f-19c485d4ce86",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "df5c02f0-972b-4cfd-a028-0144e5c89402",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "1a996438-75bd-4ae2-9984-29a68ffee7af",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "c2923538-ad7c-492d-a696-52d6b0d387cd",
+    "topic_name": "Colleges/Universities"
+  },
+  {
+    "dataset_id": "c2923538-ad7c-492d-a696-52d6b0d387cd",
+    "topic_name": "Student Aid"
+  },
+  {
+    "dataset_id": "d05fb3e8-1da3-4356-ade1-19309d4e6d03",
+    "topic_name": "Housing and Development"
+  },
+  {
+    "dataset_id": "eeb912f7-a7ca-4452-8fcb-4c557a2986f7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "25ed2062-ad2e-4fd9-95a8-ea8d467fe90e",
+    "topic_name": "Business"
+  },
+  {
+    "dataset_id": "1ca7fdc8-5bc9-4d2c-a253-4d98c0ae2129",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "125f3ce3-97b2-4c15-bb7d-e21ad1882ad7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "e39d606d-f821-4630-b6fd-0759795e2da4",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "4c788b94-f70f-4ba7-a004-cd60f7bb06fb",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "3cf478be-ca52-47dd-802e-5727f0f54db1",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "b394178d-9871-476c-94de-a63b520b34f4",
+    "topic_name": "ASTP"
+  },
+  {
+    "dataset_id": "562cb1e4-22b3-45e9-8d24-ad7def6af979",
+    "topic_name": "[ 'Health' ]"
+  },
+  {
+    "dataset_id": "070453d8-abcb-4aaf-8dcd-f74724be45a7",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "12a086e1-bae4-4d62-8399-b896905af7b7",
+    "topic_name": "NNDSS"
+  },
+  {
+    "dataset_id": "4bd8e0d8-8677-4fa7-bc8a-ecbace195478",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "58cdfcbd-8fad-4be6-9255-7aebb0203758",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "e3c0a4e0-6e61-481a-949d-a60f1c584e18",
+    "topic_name": "Maps"
+  },
+  {
+    "dataset_id": "7ba40cb6-8684-4d6c-88cb-ee9341e951fa",
+    "topic_name": "Manufacturing:Interoperability in manufacturing"
+  },
+  {
+    "dataset_id": "534d2a45-9f61-4741-9290-650c91d8d937",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "534d2a45-9f61-4741-9290-650c91d8d937",
+    "topic_name": "National"
+  },
+  {
+    "dataset_id": "6e730e43-c43a-4337-81c3-891a99585fe4",
+    "topic_name": "Quality"
+  },
+  {
+    "dataset_id": "ed912b13-3a64-41eb-9e6a-886a4a061516",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "ec31deb5-9694-40e9-85f4-7c2fe1bb3ab6",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8706e3bf-2da9-4f2e-bd82-e6d8c77a269c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "67cf81e5-fd73-4744-a33e-41b1cea421b2",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "f7cd1fe0-69fd-4f41-9685-1b1fc453c682",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "687bf043-a952-4570-b728-be82b7e61d96",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "4dc95226-2068-4856-9392-c63e36d91bb5",
+    "topic_name": "City Infrastructure & Service Requests"
+  },
+  {
+    "dataset_id": "c7db36f0-6be3-4e72-92c8-6675185913bc",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "fada9747-2766-452d-9e02-ee26a5be5e85",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "b60dcfc4-dd51-427b-8fb1-ab5632633c8d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "fb1484b0-ecdc-49e9-b404-813289250004",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "fb1484b0-ecdc-49e9-b404-813289250004",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "fb1484b0-ecdc-49e9-b404-813289250004",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "69072ce5-d4fb-4bc0-9af5-3f9660737f7e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "eaabe89a-7f94-4be2-b04d-7c806086d790",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "5971dec7-0926-4987-9cec-f82111049991",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "fe27fb71-f8b9-41d6-a8ce-fd1a59d8e9ea",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "20a2d03c-651c-4bf6-84ad-778fdbf3c4df",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "a966ff6b-13fe-4e17-b10b-7fdbf0f6a87c",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "d95c5418-e73b-4cef-8b7b-537901230774",
+    "topic_name": "Terminology"
+  },
+  {
+    "dataset_id": "f7c22a8b-73ad-4969-b96d-7d7388a1079c",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "3e12297f-4f0c-4b77-aa74-75814b0a3cf8",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "7fc51060-27f6-4d60-bbbf-fe76cff68818",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "49b3585c-48d5-4b90-ab6c-d4ba2e5e6bd4",
+    "topic_name": "Enrollment"
+  },
+  {
+    "dataset_id": "cfbad4b4-3536-47ac-9fec-b0373d2bd193",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "a2a134df-8915-40cc-9e3c-3e44f56c213f",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "f3499507-ea70-4006-8abe-00cf3de2587c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "aed86c60-e4f0-40e9-a643-960899f80dd4",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "e249e110-5824-49be-87e1-9c153ed57c8c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "d75c74fe-36fd-49c5-8154-2b27e5a72ac0",
+    "topic_name": "CWIC"
+  },
+  {
+    "dataset_id": "d75c74fe-36fd-49c5-8154-2b27e5a72ac0",
+    "topic_name": "ESIP"
+  },
+  {
+    "dataset_id": "d75c74fe-36fd-49c5-8154-2b27e5a72ac0",
+    "topic_name": "LDCM"
+  },
+  {
+    "dataset_id": "d75c74fe-36fd-49c5-8154-2b27e5a72ac0",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a60b44a8-abc4-461e-93b8-7a031c0cbad1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "37ef78e0-b7f4-43f8-97e9-f77bf292ac9e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "aed86c60-e4f0-40e9-a643-960899f80dd4",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "fabee0c8-0fa5-42d1-b567-38c9d209bfb1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "336d34a0-688c-42f1-a318-56459de5b889",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a16f8fef-c80c-4840-b07d-23a72fd8dadb",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "152a9d4e-98df-469b-ae89-66efbefc2c1b",
+    "topic_name": "Community and Culture"
+  },
+  {
+    "dataset_id": "4ddd8c4a-320f-40c8-be4b-77e9d19aa0fe",
+    "topic_name": "Health and Social Services"
+  },
+  {
+    "dataset_id": "dc5c29b8-3469-4cf9-a591-668681757597",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "854f3cb8-7aae-4f2d-9c1c-8f13707e3f43",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "64c69ee5-9194-4fb9-8d6b-249caec6be2e",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "03f67934-d41b-4cb9-9065-53a877dc4d89",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "03f67934-d41b-4cb9-9065-53a877dc4d89",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "76362b14-4894-4320-a740-1be6c5ff99fd",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "54d0c139-ea91-4425-9430-ae2d71bb83de",
+    "topic_name": "Public Health Surveillance"
+  },
+  {
+    "dataset_id": "76362b14-4894-4320-a740-1be6c5ff99fd",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "b552ed8a-ff2f-4055-8a77-be69e3f99bb4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5df9aff3-71d4-4937-9329-cf304a759cff",
+    "topic_name": "Government and Taxes"
+  },
+  {
+    "dataset_id": "60343ca1-fdf8-4034-bacd-0a1cae5edfd7",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "4fef4e2d-fe19-43ee-9220-ef90b0314c61",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "4fef4e2d-fe19-43ee-9220-ef90b0314c61",
+    "topic_name": "Geoscientific Information"
+  },
+  {
+    "dataset_id": "4fef4e2d-fe19-43ee-9220-ef90b0314c61",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4fef4e2d-fe19-43ee-9220-ef90b0314c61",
+    "topic_name": "Location"
+  },
+  {
+    "dataset_id": "1df5737c-30e7-4c40-85dc-e8bd9e1c5848",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6adb035c-73cd-4ab4-9d29-29a46290363f",
+    "topic_name": "Biomedical Research"
+  },
+  {
+    "dataset_id": "4658c8c1-6e52-4f9a-8a5b-8193b99cd381",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "b5f4f0cf-dd87-478c-b3d5-03630bc1bdc0",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "306305a7-23e3-49c8-a0ba-4907617c24c5",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "bca17ec1-320a-4c16-8f26-2d1cfb9bbc78",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "5ac81320-f369-4198-8365-b83804d6cf8f",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "c1d16bc6-0f6a-4c4b-855a-cf2697ac08bd",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "0f69b5af-1d28-4ef8-bdfe-5c559a165b8e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "793c5659-7b66-4b0b-87a4-811e260c905d",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "6dce4aba-afa9-4ad2-959a-25c8fc8cfc2a",
+    "topic_name": "NCHS"
+  },
+  {
+    "dataset_id": "2770f96d-4416-4553-a0ba-c7c9c81d1fca",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "b5f4f0cf-dd87-478c-b3d5-03630bc1bdc0",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "306305a7-23e3-49c8-a0ba-4907617c24c5",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "bca17ec1-320a-4c16-8f26-2d1cfb9bbc78",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "71d74d5b-3bc9-4a4c-b494-402c5a3a0f03",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "2cf6c50a-cf37-4caf-9f1a-516f5baa91a2",
+    "topic_name": "Administrative"
+  },
+  {
+    "dataset_id": "98cce81f-c1de-49fa-9fc2-b0bdd325290e",
+    "topic_name": "environment"
+  },
+  {
+    "dataset_id": "1ba34910-895e-4b2d-a38e-7aa7d15bd70d",
+    "topic_name": "Property & Taxation"
+  },
+  {
+    "dataset_id": "dcc9bda2-5cd6-4456-8748-6c852481d660",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f3b5dd67-0d5f-4c7c-a4fa-aa5a05743072",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "00f0d5e4-4c5b-46e6-8616-7abf7cbc7ab4",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "00f0d5e4-4c5b-46e6-8616-7abf7cbc7ab4",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "00f0d5e4-4c5b-46e6-8616-7abf7cbc7ab4",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "dae1ad0b-aa81-492a-9cf9-e9ff3fb0f6a1",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "e32d6126-e39b-4777-a0a1-1666c602be85",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "e32d6126-e39b-4777-a0a1-1666c602be85",
+    "topic_name": "Water"
+  },
+  {
+    "dataset_id": "c7cf05c1-4ea1-4770-a9fd-ca6400ffde10",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "e0ad6d1c-dfdb-4ac6-9874-1f341c6ccad8",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "8d8e5b7c-0cfa-4215-8228-eae5170ff5c2",
+    "topic_name": "ACF"
+  },
+  {
+    "dataset_id": "f381e34f-72dd-4877-866f-823bd4a07607",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "85c9375a-1dc0-47ef-b6f0-1521e1811b22",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "015af7d6-dad5-4eff-b057-e653f073062e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "82d328d1-4230-404e-9d5b-562ab533b111",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "fbf7b994-733f-495c-86ea-253a72a3753a",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "ab00c3e1-1e88-4085-a6bc-91f35d78805b",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "7947f85d-f82a-4e2e-9f1d-a97b173e1700",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c66beeae-8853-480c-ab6e-6359d5e31430",
+    "topic_name": "Vaccinations"
+  },
+  {
+    "dataset_id": "4ee39730-4581-43c5-960e-7eaf725b5ab6",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "e7a37f1b-1d86-430f-9d27-377c0bd6c778",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "c1ce336c-6bc5-4384-9ccd-84dddca3c2a6",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "26a77f0e-54ae-43a1-8f96-69909d8a3be2",
+    "topic_name": "City Infrastructure & Service Requests"
+  },
+  {
+    "dataset_id": "09e8eba0-537a-4eeb-83e2-fd6733eaed6d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "551407be-3c49-40e7-8725-b8a6931673a3",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "583afc2d-5f40-4c21-a2e7-c02c076b9316",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "b3c4491d-50dc-47f0-9cb5-174f4ebcddcf",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "0abebf14-9236-4f28-9c68-2e642303847f",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "c79ad8d8-c40c-4b9b-964b-4c9d13cc1c27",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "fbd70e7e-70fa-418b-b689-8520fbaa4971",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "45d4f8de-4f69-4d73-897d-1da6cf84ee3f",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "1c4663f1-400b-4f7b-a3b3-55749d9a03c8",
+    "topic_name": "Flu Vaccinations"
+  },
+  {
+    "dataset_id": "d5ba0d60-7d0b-4b9b-804e-4e6409433cab",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "bcc68121-da39-470f-ac9d-3ef679c34ea7",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "56985883-7a41-48c8-bbfc-3874b1b15fa8",
+    "topic_name": "Atomic / molecular / quantum"
+  },
+  {
+    "dataset_id": "56985883-7a41-48c8-bbfc-3874b1b15fa8",
+    "topic_name": "Physics:Radiation"
+  },
+  {
+    "dataset_id": "56985883-7a41-48c8-bbfc-3874b1b15fa8",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "538025e1-7495-4f6d-9e80-d4af6660156b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "0a9f294d-ee66-4925-9445-95426dbc902c",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "73c29e41-a85e-4d91-8350-7fe50b49399d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2fa94220-90ba-4a65-8879-b0ee54b0dd80",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "ddfefb47-de92-4a56-9b59-2187e3f20b3c",
+    "topic_name": "Economic Statistics"
+  },
+  {
+    "dataset_id": "e780549b-17c3-4eb2-abd5-f54d06762879",
+    "topic_name": "National Service"
+  },
+  {
+    "dataset_id": "f10996aa-48ce-44a9-9077-66a77a3bf777",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "78f98038-e56e-4e12-9128-73439728f907",
+    "topic_name": "Quality"
+  },
+  {
+    "dataset_id": "78f98038-e56e-4e12-9128-73439728f907",
+    "topic_name": "State"
+  },
+  {
+    "dataset_id": "8a3f4006-de98-4c73-b551-1e3b80f642cc",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "42d63eee-c84d-4069-b326-d5fa70e92d0e",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "004627ee-a5d6-4b7f-8af1-80cd7939e0c1",
+    "topic_name": "Medicaid"
+  },
+  {
+    "dataset_id": "8e17bd70-c3bd-4637-a793-21c28c8bf931",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "21a82131-d9cc-4ffc-8c5b-0d099d7537be",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "b073dc93-ca16-47d7-bb21-08f0d0c279c0",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "510a9c4d-2e70-4234-8f8f-853d5acc7990",
+    "topic_name": "Management/Operations"
+  },
+  {
+    "dataset_id": "64984c1c-08b0-4a84-897c-e24d2948158c",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "2f1a0ee9-47e3-415b-8c16-a24c40e5157f",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "7e7233b0-f732-46f6-98fd-6be6ea76b899",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "8c11f6a3-cc63-4ea5-831e-448485c00d14",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "22bdb0a5-94d6-4a35-a6f8-3d29feaf99a4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8afbf07d-7099-4d6b-af59-8d9d8075710d",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "c17799d0-420c-4c0e-bed7-679f5b8c024d",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "7ddac5c6-2e09-4dd2-9da6-68b6e49af9e8",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "21124681-17c2-4591-a748-d53d49cbe775",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "ed146613-84a4-47ab-999b-9cad700cf917",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "97d4a963-6d67-4dbe-a8bf-3a22bc2bd031",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "2944cfd6-9209-44d3-ae83-471afe652429",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "34b9a376-fc66-48fc-8e5c-250771d8488a",
+    "topic_name": "Public Safety and Preparedness"
+  },
+  {
+    "dataset_id": "c3cd1264-30a6-4f93-abdf-eb466b1a89a6",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "47c455ea-f1ea-40bf-8263-abe72d146c96",
+    "topic_name": "regulations"
+  },
+  {
+    "dataset_id": "dfb4285b-a2aa-4e18-b613-34292577f4d6",
+    "topic_name": "Utilities & Telecommunications"
+  },
+  {
+    "dataset_id": "79ac2fdc-6d53-4444-b7f0-05fd34342915",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "68dc7859-35b0-490a-a495-855d55f84851",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "5ea81f68-f1e9-4a76-8641-a6cb9d683cfd",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "27705550-42cf-4424-8130-b760a4ad53d8",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "a0bce87c-81dd-4c73-8920-572bf0c5e61f",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "f3c835ee-df97-478c-aabe-171f352f4539",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "07456d9e-ba3d-4fc7-b3c7-ab7d29e91830",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "acbb9dd1-1654-4ceb-9968-fc70eb7cf265",
+    "topic_name": "Drug Pricing and Payment"
+  },
+  {
+    "dataset_id": "65ce6bb6-e4d0-4420-a1e3-253a0054f5da",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "167a5d89-27db-4ddd-9c1c-ead88a068e78",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "b40895a2-6571-4430-970f-b2feb8ea8cc8",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "0ca9f7ae-6343-4a91-8a48-c2cfed272b32",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "2555d4b6-6187-4e61-97ce-796aa5a58d44",
+    "topic_name": "Diabetes State-level Data"
+  },
+  {
+    "dataset_id": "c542ef80-7530-4ee1-924e-5665d12ff691",
+    "topic_name": "ACF"
+  },
+  {
+    "dataset_id": "8ac5262c-710c-4c7c-9643-99790d023e7f",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "9eed21af-cb5e-4c74-a858-1f1d8736c06e",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "2e519953-2741-460f-a590-9fbd2c7a54b0",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "03215180-2757-4263-bdf0-66a445e34ec4",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "ed3d12cb-537f-4120-a828-6406cc705c34",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "5ec933b7-de0c-479a-8c0b-b4712b580e9c",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "8a60559c-78c9-4ae8-b268-939bf7522e3c",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "adb9b91b-392a-45ce-b8e4-b1d036fb1e6c",
+    "topic_name": "SRTM"
+  },
+  {
+    "dataset_id": "adb9b91b-392a-45ce-b8e4-b1d036fb1e6c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "3e171d11-0f1d-4203-894e-cff943d02159",
+    "topic_name": "Location"
+  },
+  {
+    "dataset_id": "9a10efbd-2c08-4dfb-8ca9-508556a237ea",
+    "topic_name": "Railroads"
+  },
+  {
+    "dataset_id": "165b187d-21ee-4daf-a1c1-9bd00d0c2239",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "539097c5-6578-42e9-bc03-ca514b9b1520",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "1e5de923-a922-477d-9342-91b8b9f580f3",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "26d2a3f7-21dd-48b3-91da-223cf6b17e1e",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "26d2a3f7-21dd-48b3-91da-223cf6b17e1e",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "26d2a3f7-21dd-48b3-91da-223cf6b17e1e",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "a7d5bb02-7eea-4c9f-8ed3-f97de470364e",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "7878bb89-fbd6-4f58-a6a4-92100d86de7d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "b37d0d2c-90bf-40a9-8a8d-b3596974ea7a",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2689e932-7d1f-4a00-90cb-b0252eddc5a2",
+    "topic_name": "Research and Development"
+  },
+  {
+    "dataset_id": "0fc7cc94-e037-49d5-8cc3-c2c7ddcdb115",
+    "topic_name": "Raw Data"
+  },
+  {
+    "dataset_id": "23cda0e6-055d-4d90-8e67-4f73e8c4e612",
+    "topic_name": "Recreation"
+  },
+  {
+    "dataset_id": "d83f7b39-dc67-4d01-82ea-9b07fb0a4cfe",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "a1176510-52a5-44a5-be48-5056d9997819",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "400fadd0-57ad-4219-9b7d-700a0d29b10c",
+    "topic_name": "Health and Social Services"
+  },
+  {
+    "dataset_id": "c0d5cb7a-347f-4301-9831-b1ce7d70d43c",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "914c4814-2aec-4041-8f82-01d2d3872ffb",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "5839604b-cb2f-4a3d-ba8d-d9c6123d2e95",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "6d5e747e-2b10-4446-99a4-a437b9d834b7",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "80e86182-5561-43a1-9806-4882a4852a88",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "d4a9aa44-f03e-4a4e-97e0-b1c5245f7776",
+    "topic_name": "API"
+  },
+  {
+    "dataset_id": "4211f5e5-a8ef-446a-a44d-bfcdb6e21e0f",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "fa118c2d-6586-487b-bb7c-444884a49383",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "f28c83cf-1999-4973-ac50-45a4a005abf6",
+    "topic_name": "ESI"
+  },
+  {
+    "dataset_id": "f28c83cf-1999-4973-ac50-45a4a005abf6",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "d1d03f71-ae82-4d8d-bf2e-066c361f9ab8",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "b026e530-dcb8-465a-b97c-1d890d958e0b",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "b2b2629c-a34e-42ed-a287-5eb61d861826",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "dee8638c-e25d-4e68-baa7-bbaddf0339ef",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "b1a93310-8f3f-4e35-ad9a-cdb4f4ca4dcf",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "334d9872-4fd7-46c4-8c56-32d9d74e808e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f441dcb4-1fc5-49fb-b2e4-7cb8ce8b15b2",
+    "topic_name": "Economy and Community"
+  },
+  {
+    "dataset_id": "0f4cfe15-9adf-47d6-bafd-5968e618d3e5",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "1611f945-b1d2-47cc-b226-a721eaed178a",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "46873a65-470c-456a-b14f-02c04d1ab4aa",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "77b4951f-bf81-4795-89db-ed01f809f1b2",
+    "topic_name": "Law Enforcement & Safety"
+  },
+  {
+    "dataset_id": "c19a7b25-65bb-41c6-8030-38ed7257d1e2",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "22a8c96e-caa4-43cc-8ab2-d440c476e625",
+    "topic_name": "Terminology"
+  },
+  {
+    "dataset_id": "e95dae61-7209-411d-a862-4d84dceac1cf",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "31cde75e-7dda-43e9-bc68-133d5a1d1c72",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ab5f2bd0-be55-483f-a170-7d28218bca8b",
+    "topic_name": "Materials:Materials characterization"
+  },
+  {
+    "dataset_id": "ab5f2bd0-be55-483f-a170-7d28218bca8b",
+    "topic_name": "Materials:Metals"
+  },
+  {
+    "dataset_id": "ab5f2bd0-be55-483f-a170-7d28218bca8b",
+    "topic_name": "Manufacturing:Additive manufacturing"
+  },
+  {
+    "dataset_id": "4d633e6a-e6a8-43ce-94e8-d68e1744e46e",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "1e833da4-00db-4e23-b2a1-a38fea5897d5",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "8ef8456b-90a0-4f16-b21a-46546d3a87d3",
+    "topic_name": "Drug Pricing and Payment"
+  },
+  {
+    "dataset_id": "8ef8456b-90a0-4f16-b21a-46546d3a87d3",
+    "topic_name": "National Average Drug Acquisition Cost"
+  },
+  {
+    "dataset_id": "88335e88-2ea2-4a8c-bab6-cb896733f7d9",
+    "topic_name": "Manufacturing:Robotics in manufacturing"
+  },
+  {
+    "dataset_id": "44b4ff75-75f5-496c-a9db-f4faccd33fc6",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "daac997b-fafa-4cd4-889f-b8d42e735b22",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "740e6c47-f6e4-4b71-8023-b071013bcd8d",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "856a6a60-868b-43e2-9c90-57970e0c56e7",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "703a44bc-e083-40a3-8319-cc659e4d109b",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "1ee64b6a-d339-44ad-a89c-64d44f8fca26",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "78c9abd5-69ed-4fec-8729-fd444020152f",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "e32bfb97-ab9b-47c7-a272-3d2a694f61eb",
+    "topic_name": "Environment and Natural Resources"
+  },
+  {
+    "dataset_id": "fbead7c7-c810-4bc6-adc8-dc22b35fc9a2",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "a0d73e80-cb3f-4567-b572-6546db5701a6",
+    "topic_name": "Public Health Surveillance"
+  },
+  {
+    "dataset_id": "0edb05c4-470b-48df-abb9-4fd377450ac5",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "6c4e2995-7bdf-4c37-a269-386348be7e65",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "5d33057c-bb61-413b-b70e-e382656ac4ec",
+    "topic_name": "Case Surveillance"
+  },
+  {
+    "dataset_id": "8dd7a791-16b0-46b5-b039-cc33a45dade5",
+    "topic_name": "Automobiles"
+  },
+  {
+    "dataset_id": "8679a88a-a3a2-4004-9d18-53e5dae1277e",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "d673d43e-8478-45b0-99a2-139d9b8ceb03",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "f1189720-b27d-4ccf-8048-3ee49ee03017",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9a3f8485-2c4b-4a42-94b8-1c6ed46d4537",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "0915f925-43ab-4c8a-a228-c97b82363199",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "abb43811-4d1d-42e5-8960-03c5bf92e761",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "6693adfd-80f6-4a75-8e3b-9fec5e5d77f7",
+    "topic_name": "Property & Assessments"
+  },
+  {
+    "dataset_id": "3109755a-95b6-4ab8-b96d-25434deeadcc",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "09df84c6-30b3-4962-abb1-cfb519e49b09",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "b0321124-87fc-4823-a7c5-dfbaa6d3949f",
+    "topic_name": "State Drug Utilization"
+  },
+  {
+    "dataset_id": "2436f258-4e64-4692-9b19-3a90249d0de7",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "fa13e408-9b78-40c7-9216-b50908fe432b",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "8140e3ab-4959-4dea-9332-082c0da93ef1",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "5d01e82b-93b7-4817-ad2e-ee3ef7721769",
+    "topic_name": "IDS"
+  },
+  {
+    "dataset_id": "5d01e82b-93b7-4817-ad2e-ee3ef7721769",
+    "topic_name": "Investigations"
+  },
+  {
+    "dataset_id": "5d01e82b-93b7-4817-ad2e-ee3ef7721769",
+    "topic_name": "Unfair Import"
+  },
+  {
+    "dataset_id": "5d01e82b-93b7-4817-ad2e-ee3ef7721769",
+    "topic_name": "Import Injury"
+  },
+  {
+    "dataset_id": "5d01e82b-93b7-4817-ad2e-ee3ef7721769",
+    "topic_name": "Factfinding"
+  },
+  {
+    "dataset_id": "72fac1a8-7193-4868-b3a3-5780d9318db1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "7ba69a05-fdf3-4d6c-bbcc-642a26046249",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "f36851f5-a6fe-4f58-9fc1-a32e078f36c3",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "07581212-0326-4ab8-82e9-eb6f6e4cac4a",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "a8cfa309-c9d0-4205-8624-643bbaedad40",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2e7475b2-359b-4cb0-a5bf-305e38750947",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2aefb6f6-3c41-4748-a321-04411b8bf9a4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "7c341316-e404-4376-99db-b0b65caf932e",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "d8e4cf21-eb64-494a-8fc4-b5d24a0da344",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "2c219ca6-a8ef-4bbc-b005-d764fb687c96",
+    "topic_name": "Roads and Highways"
+  },
+  {
+    "dataset_id": "fb1d8ddc-9d45-48b5-bf34-8dc44bf62f38",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f5c07a90-e05c-4659-a2ef-a5f15ef290cb",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "f49074cf-bbd8-47ab-a006-b7d799d461f2",
+    "topic_name": "Politics"
+  },
+  {
+    "dataset_id": "9b50bb0a-371e-40b4-a993-172353f770ac",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "813a7fd3-5475-4c07-a1dd-b1ac327b43f4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4982305a-ea39-4c87-b735-457bed0ececf",
+    "topic_name": "Regulatory"
+  },
+  {
+    "dataset_id": "4148c7df-ed99-4397-b90b-9ee45ee14f1c",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "bc4b5d0e-b267-42b9-af9a-66338a2c234a",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "60303874-730f-4d38-9715-443c800741bd",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c67b3684-97d9-45cb-b902-22688f85fbe3",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "be49d8d4-2791-4970-8aff-b2ada6b06bd3",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "c6ef72ae-1ffc-4696-bacc-508b940e305e",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "c6ef72ae-1ffc-4696-bacc-508b940e305e",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "f9b4dd85-1c66-427a-9603-7a4947c748a5",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "ea9e91df-013c-4d6d-8952-273022ca59b6",
+    "topic_name": "NCHS"
+  },
+  {
+    "dataset_id": "73e338d7-dfbc-40c3-8ed2-b162c045a9e6",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "c83c78be-0552-417b-b584-0bda4b465c51",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "9c96e7a7-9d3d-4d83-8544-dcbd957db3f0",
+    "topic_name": "Business"
+  },
+  {
+    "dataset_id": "17db5667-8dc2-48f5-aba9-e42cbb10a1f2",
+    "topic_name": "Vision & Eye Health"
+  },
+  {
+    "dataset_id": "a900f6c5-8515-4ff6-bb15-03e4fb5ed39c",
+    "topic_name": "Health and Social Services"
+  },
+  {
+    "dataset_id": "d9854b20-3cac-4d5e-9201-a62eb1ba1049",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "19984443-9c80-4dd4-9225-659662869b2d",
+    "topic_name": "Advanced Communications:Wireless (RF)"
+  },
+  {
+    "dataset_id": "f28be541-0e6b-4df5-a884-fdfef07b6a18",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "90125544-b346-4589-a387-86a1bdaee786",
+    "topic_name": "Health and Community Services"
+  },
+  {
+    "dataset_id": "3873ad1e-65a1-4dd5-92af-7e97ec50214e",
+    "topic_name": "Other"
+  },
+  {
+    "dataset_id": "6d2c256f-03d3-476a-ba6f-f641ad4ea4ca",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "ad4edb6a-898e-4746-b0a0-163bf02dab4f",
+    "topic_name": "Information Management"
+  },
+  {
+    "dataset_id": "7a456d71-1a24-425b-a2e7-8f1926802fd2",
+    "topic_name": "Transportation and Mobility"
+  },
+  {
+    "dataset_id": "94bb4bf6-8764-4740-b35b-5db5f41f4cdb",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f992698f-fb67-4383-b29a-9f8d22a40caa",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "a0b9854d-8e6c-471c-80a1-ac964c7d711f",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "15aabdfb-4554-4970-9eb5-e4c467beeaa2",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "f3a363f9-30e7-4855-903a-612e5f92e9fb",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "3c4ffb9d-fb05-4001-ba71-630cb4bee771",
+    "topic_name": "food"
+  },
+  {
+    "dataset_id": "d6bfb631-611a-4201-ba7c-0e9a55402761",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "1be54dd2-c244-42a6-b3c1-f40c61d708d1",
+    "topic_name": "Acquisition"
+  },
+  {
+    "dataset_id": "0ae0b6fa-2801-4c45-8f26-73dad7d8ae70",
+    "topic_name": "Housing, Land Use, and Blight"
+  },
+  {
+    "dataset_id": "9ec3af43-83bd-488e-aac4-aaa123c63c2b",
+    "topic_name": "Forensics:Digital and multimedia evidence"
+  },
+  {
+    "dataset_id": "0a336ac6-283f-422b-b49e-d9ed87f3dd05",
+    "topic_name": "Fire"
+  },
+  {
+    "dataset_id": "0a336ac6-283f-422b-b49e-d9ed87f3dd05",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "5d2652a9-e983-48ee-acc5-19d4dbfe65c8",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "867fe8da-60f1-428d-b0bb-71a0f88be0e9",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "f8b87036-0833-4152-b4f1-e16e67e4e235",
+    "topic_name": "Automobiles"
+  },
+  {
+    "dataset_id": "0d2978ed-a1b7-4c97-b153-89b30d6769ab",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "07f37508-cbc1-4454-9ba2-00d1051f1632",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "07f37508-cbc1-4454-9ba2-00d1051f1632",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "07f37508-cbc1-4454-9ba2-00d1051f1632",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "8ea42538-fa76-4c35-bfeb-25498cb818ff",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "8168ac49-a76b-4819-a8c1-22dbb9120261",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "ae747aa5-8189-4103-8df4-d8782964e311",
+    "topic_name": "City Management and Ethics"
+  },
+  {
+    "dataset_id": "a6ce09a2-d157-4f28-8898-e79b71b4bcd9",
+    "topic_name": "demographics"
+  },
+  {
+    "dataset_id": "612a7fd4-3a51-4d06-ad40-c493f68a1d0c",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "eeb8a675-9c07-47bf-b3e4-25bb423add0b",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "eeb8a675-9c07-47bf-b3e4-25bb423add0b",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "6686746b-f7e1-400a-9b94-660b28db5355",
+    "topic_name": "Business"
+  },
+  {
+    "dataset_id": "2abf4fde-55a9-49ca-bb2e-4f51dff57970",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "6cbba0f3-e889-4567-a745-900c4af355f9",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "8f23b1cd-5795-449a-ad77-5899f814bd9e",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "f57b7a2c-2f07-4416-ae7f-ba074bc5a767",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "800f2cb0-5471-40ca-866c-c3331dabde11",
+    "topic_name": "Generic Dataset"
+  },
+  {
+    "dataset_id": "210162fd-2cf4-4c18-b9b2-477cd76d1cd1",
+    "topic_name": "Social Services"
+  },
+  {
+    "dataset_id": "b0cf1caf-8ac7-4575-be0c-e8332ce3ba04",
+    "topic_name": "Real Estate"
+  },
+  {
+    "dataset_id": "2c99093b-1fda-4bb9-add8-cdba978535ef",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "ba107979-5129-453d-8e6d-c52a368a9e6f",
+    "topic_name": "Transportation:Automotive"
+  },
+  {
+    "dataset_id": "ba107979-5129-453d-8e6d-c52a368a9e6f",
+    "topic_name": "Information Technology:Networking"
+  },
+  {
+    "dataset_id": "ba107979-5129-453d-8e6d-c52a368a9e6f",
+    "topic_name": "Information Technology:Interoperability testing"
+  },
+  {
+    "dataset_id": "ba107979-5129-453d-8e6d-c52a368a9e6f",
+    "topic_name": "Information Technology:Internet of Things (IoT)"
+  },
+  {
+    "dataset_id": "ba107979-5129-453d-8e6d-c52a368a9e6f",
+    "topic_name": "Advanced Communications"
+  },
+  {
+    "dataset_id": "9c9a7b59-d9fe-441b-a056-fc7f872a2618",
+    "topic_name": "API"
+  },
+  {
+    "dataset_id": "2007d41d-c65d-40b8-929f-47b1131625b9",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "21329715-c01c-434b-b29d-e75f390ce3ba",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "3749f822-a0ae-4e6b-af51-1202f6d855d3",
+    "topic_name": "Physics:Time and frequency"
+  },
+  {
+    "dataset_id": "601360e7-8cc1-4734-8ca4-032563fbd981",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "58fd0e3a-2503-4952-88d3-fbe88f5e3b34",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "614e4574-f513-4d4b-99f9-e684580a5efd",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "714b418f-04a6-43d4-b347-4f1909de9f2b",
+    "topic_name": "Public Safety and Preparedness"
+  },
+  {
+    "dataset_id": "c00ece9e-0b47-47d2-9e19-6069c94d2361",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "f7dcb1b1-c0b2-4b25-8f63-b81951da203b",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "d101adbf-dda6-49ba-8ca6-2142d03840db",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "373b7658-f0e7-4ce6-8e95-8b8b6687b264",
+    "topic_name": "PMP"
+  },
+  {
+    "dataset_id": "373b7658-f0e7-4ce6-8e95-8b8b6687b264",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "83c208f3-86e1-4909-8a63-9daf804698c8",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "48276bad-e67e-4629-b865-24ca1ec79bc4",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "75a3d4fb-3c95-460a-9005-a3a1af0e1f9c",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "85d335ac-dad3-4cd1-b101-ce7702074224",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4a028b9e-41d8-4c80-afa0-f39674cbe15a",
+    "topic_name": "business"
+  },
+  {
+    "dataset_id": "424037f2-b65f-44ce-b901-dfee4c849dbb",
+    "topic_name": "Case Surveillance"
+  },
+  {
+    "dataset_id": "0a829897-cd1e-4ed9-9616-5d028e459651",
+    "topic_name": "Built Environment"
+  },
+  {
+    "dataset_id": "325bc095-bb23-4efb-b7f5-ef0751e39a1f",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "81046f10-846c-4bc1-b044-95462e4d4190",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "e6fdbb65-c9d0-4bd6-92ce-6d86f14ad9c5",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "d3b83279-9de7-47f1-84e0-32ddb18c8ff8",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "af1c824c-5bce-4810-af92-d6b0893c2f53",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "881bf00a-b929-49f9-89dc-9a585fe68785",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "b756ce6a-e1df-4f6c-b659-c3379c8e7ec0",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "3b9d632f-b42b-4e98-b460-9edd471a037d",
+    "topic_name": "Directory"
+  },
+  {
+    "dataset_id": "dbc633e1-79c4-49b6-bb44-aa9a6a3bffd8",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "163b7a19-1af3-48b4-8d2e-568cb4c07529",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "4e91483b-e090-4e11-bad7-e7210afefcf7",
+    "topic_name": "transportation"
+  },
+  {
+    "dataset_id": "3be497ec-b004-4312-b591-1d5ec79085c2",
+    "topic_name": "Housing & Development"
+  },
+  {
+    "dataset_id": "5a274ca4-7a5c-49bc-a123-41f3bc883db6",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "b3b0292f-c79a-4662-a122-c376e6cc61be",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f1ddf060-d002-4b48-b5c9-1443097c45a0",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "68d08eb9-e15a-40e5-89e1-71d7163207d3",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "58731159-029e-41db-8fd1-17e6da03f8b0",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "6dc97ff5-b136-43f5-849e-226905873d9b",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "332771cb-3877-4b01-837c-3c7745fb7d62",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "b67c38d1-ba3a-41bc-a51b-241fe8235910",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "889b1356-8c68-4609-b2a5-cc67f2b32cc4",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "cd85b843-79d9-479e-9baa-6ec9bb2ec973",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4f45d26a-2292-47c6-96b6-1c6e76b48718",
+    "topic_name": "Nutrition"
+  },
+  {
+    "dataset_id": "4f45d26a-2292-47c6-96b6-1c6e76b48718",
+    "topic_name": "Physical Activity"
+  },
+  {
+    "dataset_id": "4f45d26a-2292-47c6-96b6-1c6e76b48718",
+    "topic_name": "and Obesity"
+  },
+  {
+    "dataset_id": "f58d645d-f233-49a3-9793-1e8db2e2e051",
+    "topic_name": "Student Aid"
+  },
+  {
+    "dataset_id": "f58d645d-f233-49a3-9793-1e8db2e2e051",
+    "topic_name": "Colleges/Universities"
+  },
+  {
+    "dataset_id": "0ee4a6ba-fea4-42c9-8327-10e42b3f022c",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "a02a90e1-315e-4d20-8402-b5558b6c717e",
+    "topic_name": "NCHS"
+  },
+  {
+    "dataset_id": "b02c01fb-a7b8-4671-b244-51195cef2224",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "06d0e918-f2d4-4fd8-8610-c621d6c84e42",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "16d2a444-2d97-453a-b70a-1304cd57e1b8",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "064b4247-4ed1-4a36-97c5-f093d2b7f369",
+    "topic_name": "Housing and Development"
+  },
+  {
+    "dataset_id": "23ff11c6-995e-406d-bc45-d333a9d05ee6",
+    "topic_name": "tariff codes"
+  },
+  {
+    "dataset_id": "23ff11c6-995e-406d-bc45-d333a9d05ee6",
+    "topic_name": "tariff rates"
+  },
+  {
+    "dataset_id": "57550dbd-049d-491a-b8e4-a4cefba6bca9",
+    "topic_name": "Biology"
+  },
+  {
+    "dataset_id": "1e518a2c-650e-4c92-9ef3-9c0fa9f8e3d9",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "7286d045-5c69-4989-b227-68577672cb52",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f77a0eae-832b-428a-b8f2-5f172400964d",
+    "topic_name": "CDDC"
+  },
+  {
+    "dataset_id": "f77a0eae-832b-428a-b8f2-5f172400964d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a994f95e-85ff-47e9-bcb0-28c03a78c9d9",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "7631e9eb-146c-4693-938f-8ff48c97616c",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "292c0eb4-3863-4fa7-83b5-165865b6cf27",
+    "topic_name": "Energy and Environment"
+  },
+  {
+    "dataset_id": "b220d2a3-082f-4a08-a866-da8a9efd0f44",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6431c74b-6fa1-4863-85d4-fbe0acfa27a7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "56fbfb2b-9b24-4524-bf05-f1b5be2ab261",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "756a153e-4fee-4fa8-a833-36f5539e3cfd",
+    "topic_name": "Pets"
+  },
+  {
+    "dataset_id": "9bce6559-bf48-47cf-8239-7dd1716200e0",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "dd6f505d-9c8e-427d-8036-162d5a5ac58f",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "fc896fa8-3484-4bf1-b063-9b1d0eb2d2c9",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "f83c5b0b-da40-424f-890b-afc1a850b6aa",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "f83c5b0b-da40-424f-890b-afc1a850b6aa",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "f83c5b0b-da40-424f-890b-afc1a850b6aa",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "e104f5ce-49e8-4a62-b22e-789d785247f8",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "43b97bc3-c29c-4b09-a52a-b6266a2c3173",
+    "topic_name": "Information Technology:Cybersecurity"
+  },
+  {
+    "dataset_id": "9e1dd458-b620-4488-a0fc-cba9288fe575",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "6d199531-7f5a-4e7f-8f34-6b47a8536803",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "6189cd5e-70d1-47eb-9d2b-5656bc99efc1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ff2961d3-434d-4f75-92b2-903fab479a3b",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "8ab5d011-6299-4077-8285-ae185b008da7",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "03c3f961-b33c-4ede-aec8-9df5bc5d9d16",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "785ee14a-e5f8-49e5-80c4-b4e9c17a0021",
+    "topic_name": "Service Requests"
+  },
+  {
+    "dataset_id": "24fbd58f-8811-471c-ac8a-9abfb42f3557",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "28543af8-5494-46bd-b786-bb7489c668fb",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "1b6abdbe-a2d0-49da-98ab-89b9f7ac231d",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "43945a3c-e6ad-43b8-8e2e-c4af9fc98f1c",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "aad5bcb1-aa3e-406c-90ee-97610752bb1f",
+    "topic_name": "Health: Medical imaging"
+  },
+  {
+    "dataset_id": "aad5bcb1-aa3e-406c-90ee-97610752bb1f",
+    "topic_name": "Physics: Spectroscopy"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "54d5286a-0368-4387-ae46-ea0decdeaa3d",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "840ae0eb-77f8-4580-9088-bf85aa387de0",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "d6022a28-f101-4f93-b08c-3b6da8122438",
+    "topic_name": "Drug Pricing and Payment"
+  },
+  {
+    "dataset_id": "d6022a28-f101-4f93-b08c-3b6da8122438",
+    "topic_name": "National Average Drug Acquisition Cost"
+  },
+  {
+    "dataset_id": "9592c6e9-19b7-4403-8470-024f3ae63445",
+    "topic_name": "Community"
+  },
+  {
+    "dataset_id": "9592c6e9-19b7-4403-8470-024f3ae63445",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "6f025a0e-bde0-4956-bfd7-3a6300413a40",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "d0bd7614-fef9-4423-95ca-84b4ee5e82ee",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "feb8e280-d1c5-4e17-a16a-68f117242cd5",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "1bd56dfe-8650-4958-a0d1-63a5d02996df",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "33ead6ef-054f-4f43-a437-64649def0535",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "1b9f52bc-0989-41a2-846b-c97d79753c6a",
+    "topic_name": "Parks & Recreation"
+  },
+  {
+    "dataset_id": "d2843bd5-95db-4a38-801e-95da6b8f76c3",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "589e2a54-d667-4230-8f0f-90afc635fb16",
+    "topic_name": "Elections, Politics"
+  },
+  {
+    "dataset_id": "0b6d8a82-c0f3-4bd9-83e0-1cb49a1a8dda",
+    "topic_name": "Youth Risk Behaviors"
+  },
+  {
+    "dataset_id": "643711f7-b454-4bf1-95e8-b78dbcf176db",
+    "topic_name": "Nutrition"
+  },
+  {
+    "dataset_id": "643711f7-b454-4bf1-95e8-b78dbcf176db",
+    "topic_name": "Physical Activity"
+  },
+  {
+    "dataset_id": "643711f7-b454-4bf1-95e8-b78dbcf176db",
+    "topic_name": "and Obesity"
+  },
+  {
+    "dataset_id": "79e1aa4b-e616-4792-9166-f40f5b4437b5",
+    "topic_name": "Business and Economy"
+  },
+  {
+    "dataset_id": "8dbe7801-48a6-4bfd-8c5b-8c218553088b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "903f6dd4-7cb2-4d18-b3c3-be21c6a11112",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a6dfc31c-3d24-4ac6-ac2c-2ad9382f712b",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "38ca5b0d-5219-4014-9591-690ca29a7392",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "38ca5b0d-5219-4014-9591-690ca29a7392",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "38ca5b0d-5219-4014-9591-690ca29a7392",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "bee569b9-d1bd-4f83-bd16-259142995249",
+    "topic_name": "Business and Economy"
+  },
+  {
+    "dataset_id": "5168ae4a-3a65-49e5-927e-da45d57cbf06",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "97804317-4c4c-420a-ad5e-8a09d8a4a67b",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "e7459937-fc5b-45a2-ad4d-4486f42567bb",
+    "topic_name": "Aerospace"
+  },
+  {
+    "dataset_id": "9a59129b-848d-41d9-921a-dd8f1ed5b3cf",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c6a67bf9-3347-4d5c-b24c-c238cdb9dbca",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "c6a67bf9-3347-4d5c-b24c-c238cdb9dbca",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "ca47cb1c-bd56-4be8-8646-08055da3d61e",
+    "topic_name": "Natural Resources"
+  },
+  {
+    "dataset_id": "775fdf40-86c9-453d-9aab-828b8d7ac991",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "07d938f5-1b7e-4a42-b13a-2b7e0fa2abc4",
+    "topic_name": "Information Management"
+  },
+  {
+    "dataset_id": "8363e288-7d6d-4940-a0f3-1985b8771388",
+    "topic_name": "Manufacturing:Manufacturing systems design and analysis"
+  },
+  {
+    "dataset_id": "8363e288-7d6d-4940-a0f3-1985b8771388",
+    "topic_name": "Manufacturing:Supply chain"
+  },
+  {
+    "dataset_id": "8363e288-7d6d-4940-a0f3-1985b8771388",
+    "topic_name": "Manufacturing:Lean manufacturing"
+  },
+  {
+    "dataset_id": "8363e288-7d6d-4940-a0f3-1985b8771388",
+    "topic_name": "Manufacturing:Sustainable manufacturing"
+  },
+  {
+    "dataset_id": "82b3fbcb-5c8d-4f24-a9ff-d41657e5223a",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "2230a9ce-c7a0-4c07-b22c-4e1140e65a10",
+    "topic_name": "Nutrition"
+  },
+  {
+    "dataset_id": "2230a9ce-c7a0-4c07-b22c-4e1140e65a10",
+    "topic_name": "Physical Activity"
+  },
+  {
+    "dataset_id": "2230a9ce-c7a0-4c07-b22c-4e1140e65a10",
+    "topic_name": "and Obesity"
+  },
+  {
+    "dataset_id": "df9fd25e-e5ae-44ed-85eb-73fca5422148",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c43f933a-3aa4-4cb7-911f-c530f530fa51",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "16521237-bf0d-4401-8e0d-13e86d524a70",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "2027b35b-c9f2-4ae7-9b27-0cb88f37ecfe",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "21fe60bd-8949-4d5a-9bc6-5ddacbe0931a",
+    "topic_name": "Health:Clinical diagnostics"
+  },
+  {
+    "dataset_id": "21fe60bd-8949-4d5a-9bc6-5ddacbe0931a",
+    "topic_name": "Advanced Communications:Wireless (RF)"
+  },
+  {
+    "dataset_id": "1c906e26-aa8e-439d-b59f-2b7585780097",
+    "topic_name": "Housing & Development"
+  },
+  {
+    "dataset_id": "e0eb2c17-8933-4bd1-85fc-27d295cb819d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "185e3ac2-e51b-481e-b5a1-637342cf8f2c",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "235b646e-a18a-4f67-8f41-0e1c882e12b1",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "5db8cda4-10e1-427a-9794-7fa05867d410",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6c9a46d4-cce9-4948-995d-3eef7f0680b5",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "bb4e6967-3a51-4e25-9a7f-f56310ef1593",
+    "topic_name": "Maritime and Waterways"
+  },
+  {
+    "dataset_id": "07e68611-6454-4738-8376-8ab35b3260d9",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "1427cad0-ad31-4026-ab28-7508770497b7",
+    "topic_name": "Property & Assessments"
+  },
+  {
+    "dataset_id": "1fd17e9a-6e52-4529-b0cf-cfea29e35d6a",
+    "topic_name": "NCHS"
+  },
+  {
+    "dataset_id": "d5806b80-5fc4-4a48-80eb-6371ff74cf3b",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "e6ec5eb9-5045-4600-897a-3ed76fa461e0",
+    "topic_name": "Oral Health"
+  },
+  {
+    "dataset_id": "9e85b73a-871f-4ed4-ad32-e845f143d0bc",
+    "topic_name": "Materials:Materials characterization"
+  },
+  {
+    "dataset_id": "9e85b73a-871f-4ed4-ad32-e845f143d0bc",
+    "topic_name": "Materials:Metals"
+  },
+  {
+    "dataset_id": "55953ef2-681d-4015-ba27-a9be7f84f7da",
+    "topic_name": "Business"
+  },
+  {
+    "dataset_id": "03155fac-fefb-4ad8-b198-dba6aa9c254d",
+    "topic_name": "Section 9. Federal Government Finances and Employment"
+  },
+  {
+    "dataset_id": "654fe4c2-7c41-425f-8461-9681a35765a5",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "54079ee0-7629-465b-8fd8-d139b255eecc",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "52074bb7-054b-43c0-963b-1511003b4412",
+    "topic_name": "Finance/Tax/Property"
+  },
+  {
+    "dataset_id": "46b21434-f81c-4f4c-b658-4a841e048938",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "958c8093-e40d-4113-b1af-6ac48de5f2d9",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "3f53ad5c-06e6-4fa4-a156-99658ee683b6",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "d2113bf2-7328-4e01-b60b-71f44a14dee7",
+    "topic_name": "Economic Development"
+  },
+  {
+    "dataset_id": "6a1feac3-390d-40bd-a7b1-126fea84be78",
+    "topic_name": "Consumer"
+  },
+  {
+    "dataset_id": "56788471-d4e1-439f-ae25-fe1023e17502",
+    "topic_name": "Assisted Reproductive Technology (ART)"
+  },
+  {
+    "dataset_id": "e52e0003-47a1-49fe-a070-e756db3ee9e0",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "1aa9f67e-42bf-4379-b2e9-200312793db4",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "43f8bea6-8cd0-4895-86e1-b1f2d8108d5d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "04892d24-0fc4-464b-aaf0-62086cf92890",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "39d4d6fc-110f-49c2-82f7-92375ec4bde6",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "d796eb58-9900-485b-be23-993a685dc3bf",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "92e29de7-3959-4167-adae-ab418e535328",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "b4a6ddfa-1305-4b85-b6a7-9a527b620c72",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "9d33b6fd-8f5c-43d8-927e-f3c2f5a92eeb",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "657ae28e-5ab3-46d6-a373-18647ae908d1",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "e28e290d-90db-4872-a271-9ac46ec692c0",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "eae08567-8fee-437d-a25f-78fff561a4e4",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "25806cd3-0abf-43d7-a3af-6d1b6a993f9a",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "53a8e4e9-9efa-4f8c-abd8-03f4c629513b",
+    "topic_name": "ACF"
+  },
+  {
+    "dataset_id": "b1887dbe-e5d5-48ec-a9f9-1752be167b3c",
+    "topic_name": "NDH"
+  },
+  {
+    "dataset_id": "b1887dbe-e5d5-48ec-a9f9-1752be167b3c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ef255187-45fd-4450-be8f-dc24f262378c",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "d6e630f6-f28c-4fda-8539-d5080e0ad3ba",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "bf873041-d92a-444b-ae55-0e7ebf020723",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "4020b366-1398-4da3-9efe-14d36ae59536",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "d2d65d29-3134-4489-8162-70fc65799357",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "2be5739d-423e-48dd-9254-5367d19539aa",
+    "topic_name": "Social Services"
+  },
+  {
+    "dataset_id": "584f4bfb-b869-4248-8092-954b0422df55",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "725d6640-4b78-4769-9ab0-e7efaa714a4d",
+    "topic_name": "Laboratory Surveillance"
+  },
+  {
+    "dataset_id": "4e5388c0-bc96-4bc7-8a4d-c0cc685ae4b7",
+    "topic_name": "Trade Shifts"
+  },
+  {
+    "dataset_id": "e141e14b-5a0c-418a-acf0-04f3d14f8ce3",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "1a18506f-5b9d-401c-99f2-ebf95d77ff34",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "a541afc4-bff8-4db0-ab57-11a2bd33cfa7",
+    "topic_name": "National Service"
+  },
+  {
+    "dataset_id": "f6c8385f-ec69-419a-9684-6cf81a23fc27",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9508196b-8440-4dbc-9f0a-c0374a671d2b",
+    "topic_name": "Water"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "a7c630cf-eaad-4578-99ba-fbb7c2873caa",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "864bd161-823a-4a1d-9fd9-94e01ab8f698",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "f7f88730-d4b7-448e-8ac4-8b77035aeae0",
+    "topic_name": "Vision & Eye Health"
+  },
+  {
+    "dataset_id": "6e72da34-3d74-40b0-b06c-c8bb725be800",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "e0f2df3a-db54-4e8f-97da-19d514baf8c5",
+    "topic_name": "Space Science"
+  },
+  {
+    "dataset_id": "4fa6c814-37b5-4411-a9ed-3e3755ab4cfe",
+    "topic_name": "Civic Vitality & Governance"
+  },
+  {
+    "dataset_id": "ae89c7b4-17e5-4d12-92ea-812e45ea6dbf",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "1772fe32-a951-4d37-bd89-fe698df9aa64",
+    "topic_name": "Public Transit"
+  },
+  {
+    "dataset_id": "bf7256fc-e54c-412d-93a6-b3bb254aa968",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "f054aa1b-ade2-41a1-b52e-d9f26ebe0812",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "caad30fc-76fd-4b49-a20c-efb97f58201d",
+    "topic_name": "Tabular Dataset"
+  },
+  {
+    "dataset_id": "97dc5c14-7389-4188-a749-6dfc0836837d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "190af84f-cd88-4dbe-b4c3-e7d648142903",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "991aa448-1b8d-4ede-bd40-2e1488022471",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "85c49026-504f-427b-a973-212c8f753cc8",
+    "topic_name": "Youth Risk Behaviors"
+  },
+  {
+    "dataset_id": "65f63cf9-3244-4c25-821f-f9fcb44ca1be",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "241e1d79-dd18-4f40-b1ce-7924fdb90146",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "be7f30de-21f1-4f07-93ea-87c5a2bc8aa9",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "82642454-f5be-43c3-a18a-6e4b260876b8",
+    "topic_name": "Tabular Dataset"
+  },
+  {
+    "dataset_id": "dcfdee74-8770-417f-942f-110355cbfb74",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "39a2f2c5-1239-4271-a5cc-f086dc1aaafc",
+    "topic_name": "Administration & Finance"
+  },
+  {
+    "dataset_id": "be253280-b316-4f82-a7cd-b90604679b3d",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "6d8e3f33-8fa1-48d6-a25e-0b5c4df02d30",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4fe64e5c-56b5-4dc0-b74c-6bf9bc8fe717",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "2f5acc86-6407-416e-9609-e8078aa0d173",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "1511e396-4ae2-49ed-ad41-a02ca140f62e",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "e199e009-2547-4fc0-9393-ab4cbf6ec597",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "25e4ec19-5a88-4f95-841c-9490f521c268",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "45f43c3b-921f-4172-8981-4be30cb9ba96",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "149e8441-c03d-4386-b59b-8b343c52d2a1",
+    "topic_name": "Student Aid"
+  },
+  {
+    "dataset_id": "149e8441-c03d-4386-b59b-8b343c52d2a1",
+    "topic_name": "Colleges/Universities"
+  },
+  {
+    "dataset_id": "edf8a51e-788c-4caf-be6c-08fce03319c3",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "c1d38e1d-f813-40f7-a990-f257680584e9",
+    "topic_name": "GEO-MEX"
+  },
+  {
+    "dataset_id": "c1d38e1d-f813-40f7-a990-f257680584e9",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "09464433-b870-48b9-a8f5-8d5796414b63",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5e3f2f7a-0e19-4178-813a-5d4fbcff5a14",
+    "topic_name": "CMS"
+  },
+  {
+    "dataset_id": "0da12770-f446-46db-89a4-8bc0a68a08c5",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "6d0ae4c9-e558-47ef-91d7-c716ea6a6afe",
+    "topic_name": "energy"
+  },
+  {
+    "dataset_id": "40a7a7c5-99ae-480a-a6ab-ac2997212b1a",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "d5fbf4d6-5eea-4c59-8bda-4ea32044d5c4",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "037ccc23-ce00-4c78-a2d0-98edfb9da26d",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "29668ebe-e36c-4b7f-be26-516f04c6dd63",
+    "topic_name": "Community"
+  },
+  {
+    "dataset_id": "29668ebe-e36c-4b7f-be26-516f04c6dd63",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "db42e863-0e9d-4893-9bf4-7b8b8e0f9e50",
+    "topic_name": "Aviation"
+  },
+  {
+    "dataset_id": "fb27af15-1983-4c9e-ba39-8653453eb3b1",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "e7cfe346-939b-40ea-a859-9a98b3d8e4f2",
+    "topic_name": "Housing & Development"
+  },
+  {
+    "dataset_id": "b8a96182-bcee-4a80-bd7b-25f3a0833313",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "6fd5038d-5826-4c85-9646-081ac47ef988",
+    "topic_name": "Earth Science"
+  },
+  {
+    "dataset_id": "6f7bc425-d890-4000-a2d4-bf3f9cf58e61",
+    "topic_name": "National Average Drug Acquisition Cost"
+  },
+  {
+    "dataset_id": "6f7bc425-d890-4000-a2d4-bf3f9cf58e61",
+    "topic_name": "Drug Pricing and Payment"
+  },
+  {
+    "dataset_id": "666cf398-f965-4ad3-8291-b0415844e770",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "2c497036-558d-42dc-8dca-c501b95c8036",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "269574a9-138b-48b1-99b8-032e7e9c463d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "f12b911a-e928-43ce-9e3d-0a1806a53025",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "b103a93b-7e62-479c-b0d6-c2ddd0bcbd63",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "3e9539dc-c371-4318-aa16-636650a4b55a",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "ab329a72-4ce1-4b39-957b-9e0044d93d6e",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "6b0d266f-0b48-4b61-84d1-48332b3cba08",
+    "topic_name": "City Management and Ethics"
+  },
+  {
+    "dataset_id": "fb09b7d3-88b0-4b5e-abf2-b5cf717bb630",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "817ec391-486a-402d-b398-56e59cd3f072",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "8d06388a-ed78-4d10-9a8f-ba1c7635417b",
+    "topic_name": "Manufacturing:Additive manufacturing"
+  },
+  {
+    "dataset_id": "8d06388a-ed78-4d10-9a8f-ba1c7635417b",
+    "topic_name": "Materials:Metals"
+  },
+  {
+    "dataset_id": "8d06388a-ed78-4d10-9a8f-ba1c7635417b",
+    "topic_name": "Mathematics and Statistics:Image and signal processing"
+  },
+  {
+    "dataset_id": "357aec7f-086b-4c5d-9221-06c1e693b11a",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "6cde7f1a-46c3-4dcc-905a-43820922000a",
+    "topic_name": "Basic Statistics"
+  },
+  {
+    "dataset_id": "6cde7f1a-46c3-4dcc-905a-43820922000a",
+    "topic_name": "Use"
+  },
+  {
+    "dataset_id": "6cde7f1a-46c3-4dcc-905a-43820922000a",
+    "topic_name": "and Operational Data"
+  },
+  {
+    "dataset_id": "9c1784b2-7634-4071-afdf-d686643bbb3e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ccbe9c59-b01b-4288-ab46-a13e34b8f3f0",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "ccbe9c59-b01b-4288-ab46-a13e34b8f3f0",
+    "topic_name": "Chemistry:Chemical engineering and processing"
+  },
+  {
+    "dataset_id": "ccbe9c59-b01b-4288-ab46-a13e34b8f3f0",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "ccbe9c59-b01b-4288-ab46-a13e34b8f3f0",
+    "topic_name": "Chemistry:Thermochemical properties"
+  },
+  {
+    "dataset_id": "ecceb8af-562b-4085-b779-e374b92f1995",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "9e8de1de-f341-4820-9005-d72c84896592",
+    "topic_name": "Youth Risk Behaviors"
+  },
+  {
+    "dataset_id": "cfdf0816-8c8c-4b63-8c43-5423b5f09dc4",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "bdca426f-4162-45aa-b79e-abda7645996a",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "9de6732a-ed8a-4e31-91cf-7b8721061966",
+    "topic_name": "Recreation"
+  },
+  {
+    "dataset_id": "a9d6143d-7435-43a9-a9b9-3e414a28c11a",
+    "topic_name": "COVID-19"
+  },
+  {
+    "dataset_id": "a9d6143d-7435-43a9-a9b9-3e414a28c11a",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "ceffa023-e2f3-4c42-b33f-e19d0facbbdf",
+    "topic_name": "Astrophysics"
+  },
+  {
+    "dataset_id": "33497287-12ed-4f38-a023-aea7d52bcd0e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "3501277b-21c6-40fa-a684-cb09ff6c3282",
+    "topic_name": "National"
+  },
+  {
+    "dataset_id": "27e61bf9-0493-4bcc-b80f-43a1efda9393",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "6a880341-3c8e-489c-99d3-34bf7c391201",
+    "topic_name": "State"
+  },
+  {
+    "dataset_id": "093b061f-2264-4170-a7d5-e833150effac",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "08c64bf5-238a-4233-8b57-9f09b4f97295",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "48b42dd3-c34a-4e39-825b-7c0092b424c7",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5d3f16e9-980b-4370-b355-57cd0a9fe357",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "e5a757e5-563c-410b-935d-69b2f196b854",
+    "topic_name": "Tax and Revenue"
+  },
+  {
+    "dataset_id": "6fb26529-2309-4e59-9513-fdc14024c85c",
+    "topic_name": "Data-BrokerDealers"
+  },
+  {
+    "dataset_id": "a39a3f5d-dd67-4b53-9cba-11c955524b2f",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "7b1e063a-f71e-47cb-979a-6dab519d64be",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "e8eb0f47-8c36-42ca-b2eb-dba05f176dd6",
+    "topic_name": "Heart Disease & Stroke Prevention"
+  },
+  {
+    "dataset_id": "59529cf8-05a3-41e7-9715-baf6c725f36a",
+    "topic_name": "business"
+  },
+  {
+    "dataset_id": "47e5b835-a628-432f-a91c-f34367e1f171",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "51386776-e802-404e-99be-e853fc8e8c3d",
+    "topic_name": "SAMHSA"
+  },
+  {
+    "dataset_id": "353c1fc4-d9d5-489a-b26a-9126f462072e",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "74313355-1a95-40b4-8988-09f735aa8ee3",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "32170bce-50f1-47df-ba59-7e824ea590e6",
+    "topic_name": "State"
+  },
+  {
+    "dataset_id": "917783d0-1d27-417b-8b5d-8f8e032f6ddd",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "310c97aa-be93-44f9-a8e5-2f429af4f635",
+    "topic_name": "Management/Operations"
+  },
+  {
+    "dataset_id": "ab63e915-69cd-459e-a1e4-9e055bfa13bb",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "adbca4db-5a88-43f8-92b5-ca4490682725",
+    "topic_name": "Literature"
+  },
+  {
+    "dataset_id": "459b0d0d-02da-44e3-a338-d3551ab34fc3",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "66a2af80-cffc-4b6b-ac42-76a5f9e8667d",
+    "topic_name": "Housing, Land Use, and Blight"
+  },
+  {
+    "dataset_id": "1423c7d8-c0f0-4506-8ce2-19bdb1f93d2d",
+    "topic_name": "Mathematics and Statistics:Uncertainty quantification"
+  },
+  {
+    "dataset_id": "1423c7d8-c0f0-4506-8ce2-19bdb1f93d2d",
+    "topic_name": "Mathematics and Statistics:Experiment design"
+  },
+  {
+    "dataset_id": "1423c7d8-c0f0-4506-8ce2-19bdb1f93d2d",
+    "topic_name": "Mathematics and Statistics:Statistical analysis"
+  },
+  {
+    "dataset_id": "a28aab5e-8a20-46c5-abf8-bf0b701c6e7f",
+    "topic_name": "education"
+  },
+  {
+    "dataset_id": "1a2ded68-95c1-4560-8c8b-0ea355d5b14c",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "1a2ded68-95c1-4560-8c8b-0ea355d5b14c",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "ce345397-2fa8-439c-98a8-980cce64c437",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "English Language Learners"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "Student Demographics"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "Suspension/Discipline"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "Safety/Bullying"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "Teachers and Administrators"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "STEM"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "Special Education"
+  },
+  {
+    "dataset_id": "7d25d56f-71ec-4706-b1be-40f869cc17ca",
+    "topic_name": "K-12"
+  },
+  {
+    "dataset_id": "8b77c4f3-ab83-42bb-aa58-0734d94efa23",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "80f065de-635e-4df0-984c-1fe5432d6e22",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4495d099-0301-49e5-acbd-d92f610ad161",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "dd907afd-db66-4626-afce-39a99037fc6d",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "35dc625f-9d3d-47a7-86f0-bf0547ce1f0d",
+    "topic_name": "CMS"
+  },
+  {
+    "dataset_id": "7454ebc2-128c-4394-b061-d9422cbe7a30",
+    "topic_name": "Section 10. National Security and Veterans Affairs"
+  },
+  {
+    "dataset_id": "fb0fb76b-30d1-4595-b8bb-051f37586f77",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "903f4a4a-0402-4ff8-b8bd-f1d6ad856d0c",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "303cd2d7-bf92-4c14-9194-6c26fa7edad9",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "teachers-and-administrators"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "k-12"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "student-demographics"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "english-language-learners"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "suspension-discipline"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "stem"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "safety-bullying"
+  },
+  {
+    "dataset_id": "37d83910-79d5-49f5-807a-074ab3792765",
+    "topic_name": "special-education"
+  },
+  {
+    "dataset_id": "e41cbdc2-a5da-40ac-9b6f-acc86daf5946",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "32e158b8-19dc-4228-9bdf-8b1f89838380",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "35bad40a-a9db-4002-bc95-ef82e338d8df",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "b2d011d9-4fdf-4091-8014-e36e0f4b501e",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "bebb4679-81ca-45cd-a879-67abf91f3397",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "654914c8-8695-4059-99ba-d29a3c8ad667",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "9fab87a4-be97-471e-a3ca-facf5aaba92d",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "8f148d2a-dcd3-4742-b033-7e0edb630863",
+    "topic_name": "Taxes & Tax Credits"
+  },
+  {
+    "dataset_id": "31e05aa0-8840-4f50-8442-24218e7e9602",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5f885da7-711d-40b2-b0eb-4ddae8f25f1d",
+    "topic_name": "Atomic / molecular / quantum"
+  },
+  {
+    "dataset_id": "5f885da7-711d-40b2-b0eb-4ddae8f25f1d",
+    "topic_name": "Standards:Reference data"
+  },
+  {
+    "dataset_id": "5f885da7-711d-40b2-b0eb-4ddae8f25f1d",
+    "topic_name": "Physics:Radiation"
+  },
+  {
+    "dataset_id": "2a5d3f03-1831-411e-a0ad-de0d7f1c3cc2",
+    "topic_name": "Regulation"
+  },
+  {
+    "dataset_id": "efb9000c-0833-4f8a-bc0f-7e91fecd0c7d",
+    "topic_name": "Roadways and Bridges"
+  },
+  {
+    "dataset_id": "160be59e-8ae5-4f98-92de-04f40f4e386b",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "87bb0d79-908f-4a84-b0ec-dd46bc20b815",
+    "topic_name": "Automobiles"
+  },
+  {
+    "dataset_id": "4fe94988-6a36-4584-9044-84315eb7a89b",
+    "topic_name": "Data Package"
+  },
+  {
+    "dataset_id": "ae60526c-af98-43af-9c11-a39e975dc7fc",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "96d2dd67-5728-4989-8e0e-2ec415240e0a",
+    "topic_name": "Chemicals and Drugs"
+  },
+  {
+    "dataset_id": "2d68ce15-5e57-4809-8629-990ecb12396a",
+    "topic_name": "Voting & Elections"
+  },
+  {
+    "dataset_id": "462e424b-658a-4b6d-82cb-7f4c0677e43c",
+    "topic_name": "NNDSS"
+  },
+  {
+    "dataset_id": "cd23ebc6-b0fb-4c3b-9d5b-aa4cadbd2908",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "a8389fd8-24c3-4889-9d8c-a3086ebeae5a",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c5f30b88-90ec-4801-bc80-a4524cb95a67",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4bc97304-f5de-466a-8885-22f2d7bebc55",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "520d2709-09a9-4003-989d-17e36fe9d5c5",
+    "topic_name": "CDDC"
+  },
+  {
+    "dataset_id": "520d2709-09a9-4003-989d-17e36fe9d5c5",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "5f0e6499-ec27-4a1a-ad8b-b419cc844fd5",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "df2a04cd-6023-44c2-a0d8-7ca8ba186605",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "3ea4ccfc-b415-4a36-b525-928562987ca1",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "ed1a1968-987f-4167-a392-d03213642006",
+    "topic_name": "Chemistry:Chemical thermodynamics and chemical properties"
+  },
+  {
+    "dataset_id": "a88a8716-4f6c-4445-964a-09acf7fb3e23",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "1d27c3ea-11ea-467c-8b77-c82ac0adb2f1",
+    "topic_name": "Materials:Metals"
+  },
+  {
+    "dataset_id": "4f44be13-dbb8-4c1c-9063-7c63611e31f4",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "11e311ec-af45-4049-89cf-a50acde9d943",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "5fc89be3-0760-45e4-ab03-e57905c08bb3",
+    "topic_name": "Uncategorized"
+  },
+  {
+    "dataset_id": "b32c3408-928e-43e0-ae0a-c6ed4489dbce",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "09e87a7c-22b2-4314-9a7a-ebf1fbc7f8c6",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "f66bf721-3cd4-4814-a003-c77b539f630a",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "46fe2a06-cdac-4214-98ba-2b07d0da3f11",
+    "topic_name": "500 Cities & Places"
+  },
+  {
+    "dataset_id": "2f402371-c5d0-4f8b-b21e-63f82c55cc5c",
+    "topic_name": "Health & Human Services"
+  },
+  {
+    "dataset_id": "2498f8d3-81ec-4e62-926a-d2ce4ab27fd7",
+    "topic_name": "FDA"
+  },
+  {
+    "dataset_id": "502dc438-0b65-4c1c-876a-02e5e78d7b22",
+    "topic_name": "Community & Economic Development"
+  },
+  {
+    "dataset_id": "d90f57d1-73e9-4884-9250-7e36ff848c0a",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "fa2b6e98-69ca-4116-b840-4bc120ff9681",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "a1b73141-0dfa-4669-96bd-638f70ed5325",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "756aeb3f-c58d-4985-af0c-a5eb1068e65b",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "d08dc637-82c0-424d-9ad8-9730e9dfff95",
+    "topic_name": "Forensics:Digital and multimedia evidence"
+  },
+  {
+    "dataset_id": "d08dc637-82c0-424d-9ad8-9730e9dfff95",
+    "topic_name": "Information Technology:Identity management"
+  },
+  {
+    "dataset_id": "8581c845-b99b-47d9-862b-74e46d42049a",
+    "topic_name": "Recreation"
+  },
+  {
+    "dataset_id": "8474677e-8f7d-4ff5-bed2-dac9753bb8b4",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "4b335daf-c15b-4a92-802b-74ecf33d463d",
+    "topic_name": "Labor"
+  },
+  {
+    "dataset_id": "eabb716b-fd51-4ea3-b0b6-d50c01f2ad60",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "b90098d6-b8c0-416f-9732-a710104a606c",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "7891f7cf-2da8-42ec-a782-b9050dfc281f",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "8d5ecb71-4b87-4a32-927b-2cc7d4b62940",
+    "topic_name": "Raw Data"
+  },
+  {
+    "dataset_id": "3abe6859-c766-4313-9747-4acab2ebb70a",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "f3b1a536-04dd-44e6-8291-30dc0d65f918",
+    "topic_name": "Space Science"
+  },
+  {
+    "dataset_id": "5c00bf08-5d32-4673-a3d4-63674b3464e6",
+    "topic_name": "Government & Finance"
+  },
+  {
+    "dataset_id": "dfb4285b-a2aa-4e18-b613-34292577f4d6",
+    "topic_name": "Utilities & Telecommunications"
+  },
+  {
+    "dataset_id": "6b4705a7-2048-4d2f-8e74-cfbaa5894767",
+    "topic_name": "City Government"
+  },
+  {
+    "dataset_id": "08b6c9aa-b352-4773-8e14-aee718b82c19",
+    "topic_name": "Tabular Dataset"
+  },
+  {
+    "dataset_id": "db14a492-7b66-4529-8e9a-bf028a2db5c7",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "66316338-f50e-418f-8120-ae45ea8532f2",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "66316338-f50e-418f-8120-ae45ea8532f2",
+    "topic_name": "Quality"
+  },
+  {
+    "dataset_id": "66316338-f50e-418f-8120-ae45ea8532f2",
+    "topic_name": "State"
+  },
+  {
+    "dataset_id": "eac4947b-1700-4037-ab17-80c30f97a47a",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "21719cd8-40f8-40c1-bd37-bc9fdef629c2",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "e5bcf959-6e88-4d29-b3ba-a2178a58e810",
+    "topic_name": "NIH"
+  },
+  {
+    "dataset_id": "26348aff-a58b-4f11-b159-84151f0978e7",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "5b634793-70f3-4a67-b585-0a1c7479e585",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "e046c966-f19a-4d3d-aadb-ac5d1a90ff3d",
+    "topic_name": "Consumer Protection"
+  },
+  {
+    "dataset_id": "44962058-7e94-4a45-83a9-22ede602803a",
+    "topic_name": "Data-Other"
+  },
+  {
+    "dataset_id": "98d8fbea-a5b8-4e09-bf15-0ed8ac32a151",
+    "topic_name": "Maternal & Child Health"
+  },
+  {
+    "dataset_id": "9ac8c0e6-25d4-449d-8fd2-d39379c4e0ca",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "dc29696e-36f9-4715-bcba-d8dd6d3f0e4d",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "c78f3ba6-04af-4ecd-bd87-4fdfc6a97344",
+    "topic_name": "National Center for Health Statistics"
+  },
+  {
+    "dataset_id": "806f8ba9-4703-45b4-b5da-d67ae273992d",
+    "topic_name": "Health and Human Services"
+  },
+  {
+    "dataset_id": "4ae7a6fe-6ac9-4c3f-a2fd-a0a608b6115f",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "01c316cf-cad3-472a-8d62-05803aaa7b3f",
+    "topic_name": "Government"
+  },
+  {
+    "dataset_id": "d2f130a5-18ca-4cc9-be09-11b1ccc5b8e0",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "9806a940-23cf-4d55-a2cb-e9c19eed1c40",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "55ec5670-e3da-4469-9a95-825878a382a5",
+    "topic_name": "Economy and Demographics"
+  },
+  {
+    "dataset_id": "b6beaf82-0cc2-4fc2-b5a8-676ed4fdbd6e",
+    "topic_name": "Buildings"
+  },
+  {
+    "dataset_id": "e0a79020-2cad-47a0-af87-297a9ab1f579",
+    "topic_name": "Education"
+  },
+  {
+    "dataset_id": "9095c911-4fa5-4849-b4d7-1013cbad98b1",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "ee87487a-d133-468b-930c-b573bec6b84e",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "fc506460-99b9-4943-bbf6-1a0de482b96f",
+    "topic_name": "Energy & Environment"
+  },
+  {
+    "dataset_id": "7b8cdeb0-64d3-4f31-aca0-45edf86afdba",
+    "topic_name": "health"
+  },
+  {
+    "dataset_id": "ff1ff5be-f421-49e8-bc39-24e69b67bd39",
+    "topic_name": "Public Health Surveillance"
+  },
+  {
+    "dataset_id": "1026c8be-e672-4e5e-a497-da2744b4d6fd",
+    "topic_name": "Research and Statistics"
+  },
+  {
+    "dataset_id": "22848e31-5fbe-45bc-89bd-a4e611e7e437",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "95756b24-2242-4200-b109-0efe800188f3",
+    "topic_name": "Water"
+  },
+  {
+    "dataset_id": "62409128-c828-4bf1-9974-33e663155678",
+    "topic_name": "CDDC"
+  },
+  {
+    "dataset_id": "62409128-c828-4bf1-9974-33e663155678",
+    "topic_name": "geospatial"
+  },
+  {
+    "dataset_id": "a1c7559a-7f64-4008-98a2-b04d8a540c8e",
+    "topic_name": "Medicare"
+  },
+  {
+    "dataset_id": "fcf2e5d0-f8f0-4501-b806-148c4d5b7816",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "121f9438-c65b-4ec1-a356-758d438e11eb",
+    "topic_name": "Environment"
+  },
+  {
+    "dataset_id": "2e75de09-4045-41c2-9fc8-217498bb9eaf",
+    "topic_name": "Transportation"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "uspto"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "patent"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "grant"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "application"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "pre-grant"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "pgpub"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "trademark"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "json"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "csv"
+  },
+  {
+    "dataset_id": "c8860f92-33bf-4df7-a653-ee3ecd2eb3a5",
+    "topic_name": "api"
+  },
+  {
+    "dataset_id": "dcbb47cb-9455-4d01-bcba-227672cc0104",
+    "topic_name": "Housing & Development"
+  },
+  {
+    "dataset_id": "eab7f805-7318-480f-9ff3-55d48e70ed03",
+    "topic_name": "Health"
+  },
+  {
+    "dataset_id": "3a13af16-503e-40aa-a1d1-1d755fe74e04",
+    "topic_name": "Public Safety"
+  },
+  {
+    "dataset_id": "aa2cefdc-cf31-49ea-8c70-bd09bd0e1953",
+    "topic_name": "Human Resources"
+  }
+]

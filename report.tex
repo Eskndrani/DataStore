@@ -1,0 +1,206 @@
+% =============================================================
+% Data.gov Dataset Database – Project Report
+% CSCE 2501 – Fundamentals of Database Systems
+% Student: Mahmoud Alaskndrani (900241828)
+% =============================================================
+\documentclass[12pt,a4paper]{article}
+
+% ── Packages ──────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{array}
+
+% ── Listings style for SQL ────────────────────────────────────
+\lstdefinestyle{sql}{
+  language=SQL,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{green!60!black}\itshape,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  backgroundcolor=\color{gray!5},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  tabsize=2,
+  captionpos=b,
+  morekeywords={ENGINE,InnoDB,ENUM,VARCHAR,TEXT,DATETIME,IF,EXISTS,
+                DATABASE,USE,CONSTRAINT,REFERENCES,CASCADE,INDEX,
+                UNIQUE,KEY,SET,NULL,AUTO_INCREMENT}
+}
+
+% ── Title ─────────────────────────────────────────────────────
+\title{%
+  \textbf{Data.gov Dataset Database}\\[0.8em]
+  \large CSCE 2501 -- Fundamentals of Database Systems\\
+  Spring 2026%
+}
+\author{Mahmoud Alaskndrani \\ 900241828}
+\date{}
+
+% =============================================================
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+% =============================================================
+\section{Entity-Relationship Diagram}
+% =============================================================
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{erd.png}
+  \label{fig:erd}
+\end{figure}
+
+% ── 1.1  Entities ─────────────────────────────────────────────
+\subsection{Entities}
+
+\begin{itemize}
+  \item \textbf{ORGANIZATION} -- A US federal agency / publishing body on
+        data.gov.  PK: \texttt{name} (slug).
+  \item \textbf{CONTACT} -- A contact person assigned to an organization
+        who may maintain one or more datasets.  PK: \texttt{email}.
+  \item \textbf{DATASET} -- A dataset (package) published on data.gov.
+        PK: \texttt{name} (slug).
+  \item \textbf{RESOURCE} -- A downloadable file or API endpoint identified
+        globally by its URL.  PK: \texttt{url}.
+  \item \textbf{APP\_USER} -- A registered application user.
+        PK: \texttt{email}.\enspace \texttt{age} is a
+        \emph{derived attribute} computed from \texttt{birthdate}.
+  \item \textbf{TOPIC} -- A topic / theme that datasets can belong to.
+        PK: \texttt{name} (e.g.\ ``Transportation'', ``Health'').
+  \item \textbf{PROJECT} -- A weak entity representing a user's project.
+        Identified through APP\_USER via the \emph{creates} identifying
+        relationship.  Partial key: \texttt{name}.
+\end{itemize}
+
+% ── 1.2  Relationships ────────────────────────────────────────
+\subsection{Relationships}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}lccl@{}}
+\toprule
+\textbf{Relationship} & \textbf{Entity 1} & \textbf{Cardinality} & \textbf{Entity 2} \\
+\midrule
+publishes   & ORGANIZATION & 1 : N & DATASET \\
+assigned\_to  & CONTACT      & N : 1 & ORGANIZATION \\
+maintains   & CONTACT      & 1 : N & DATASET \\
+has         & DATASET      & M : N & RESOURCE \\
+categorized\_by & DATASET & M : N & TOPIC \\
+uses        & PROJECT      & M : N & DATASET \\
+creates     & APP\_USER   & 1 : N & PROJECT \\
+\bottomrule
+\end{tabular}
+\caption{Relationships and their cardinalities}
+\label{tab:rels}
+\end{table}
+
+% ── 1.3  Multivalued Attributes ───────────────────────────────
+\subsection{Multivalued Attributes}
+\begin{itemize}
+  \item \textbf{tag} (of DATASET) -- Free-text tags from CKAN.
+\end{itemize}
+
+% ── 1.4  Derived Attribute ────────────────────────────────────
+\subsection{Derived Attribute}
+\begin{itemize}
+  \item \textbf{age} (of APP\_USER) -- Computed from \texttt{birthdate}:\\
+        \texttt{TIMESTAMPDIFF(YEAR, birthdate, CURDATE())}
+\end{itemize}
+
+% =============================================================
+\newpage
+\section{Relational Model}
+% =============================================================
+
+All primary keys are \textbf{natural} -- no synthetic auto-increment IDs.
+\underline{Underlined} attributes form the primary key;
+\textit{italicised} attributes denote foreign keys.
+
+\bigskip
+\noindent\textbf{URL collision convention for RESOURCE metadata}
+(same URL appearing across multiple datasets):
+keep one \textsc{resource} row per \texttt{url};
+first non-null value wins for text metadata;
+earliest non-null for \texttt{created} datetime.
+
+\begin{enumerate}
+  \item \textbf{ORGANIZATION}(\underline{name}, title, description,
+        org\_type, image\_url, created)
+
+  \item \textbf{CONTACT}(\underline{email}, name, \textit{org\_name})\\
+        org\_name $\rightarrow$ ORGANIZATION.name
+
+  \item \textbf{DATASET}(\underline{name}, title, description,
+        access\_level, license\_id, license\_title, metadata\_created,
+        metadata\_modified, identifier, publisher\_name, landing\_page,
+        modified, issued, accrual\_periodicity, temporal,
+        bureau\_code, program\_code,
+        \textit{org\_name}, \textit{maintainer\_email})\\
+        org\_name $\rightarrow$ ORGANIZATION.name\\
+        maintainer\_email $\rightarrow$ CONTACT.email
+
+  \item \textbf{RESOURCE}(\underline{url}, name, description, format,
+        mimetype, created)
+
+  \item \textbf{DATASET\_RESOURCE}(%
+        \underline{\textit{dataset\_name}},
+        \underline{\textit{url}}) -- M:N bridge\\
+        dataset\_name $\rightarrow$ DATASET.name\\
+        url $\rightarrow$ RESOURCE.url
+
+  \item \textbf{DATASET\_TAG}(%
+        \underline{\textit{dataset\_name}},
+        \underline{tag\_name}) -- multivalued attribute\\
+        dataset\_name $\rightarrow$ DATASET.name
+
+  \item \textbf{TOPIC}(\underline{name}, description)
+
+  \item \textbf{DATASET\_TOPIC}(%
+        \underline{\textit{dataset\_name}},
+        \underline{\textit{topic\_name}}) -- M:N bridge\\
+        dataset\_name $\rightarrow$ DATASET.name\\
+        topic\_name $\rightarrow$ TOPIC.name
+
+  \item \textbf{APP\_USER}(\underline{email}, username, gender,
+        birthdate, country)\\
+        age = derived from birthdate
+
+  \item \textbf{PROJECT}(%
+        \underline{\textit{email}},
+        \underline{name},
+        type) -- weak entity\\
+        email $\rightarrow$ APP\_USER.email
+
+  \item \textbf{PROJECT\_DATASET}(%
+        \underline{\textit{email}},
+        \underline{\textit{project\_name}},
+        \underline{\textit{dataset\_name}}) -- M:N ``uses''\\
+        (email, project\_name) $\rightarrow$ PROJECT.(email, name)\\
+        dataset\_name $\rightarrow$ DATASET.name
+\end{enumerate}
+
+% =============================================================
+\newpage
+\section{Database Schema (MySQL DDL)}
+% =============================================================
+
+The complete DDL is stored in \texttt{schema.sql} and reproduced below.
+
+\lstinputlisting[style=sql, caption={schema.sql -- MySQL DDL for datagov\_db}]{schema.sql}
+
+\end{document}

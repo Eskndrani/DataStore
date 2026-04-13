@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: datastore-backend
+    env: node
+    plan: free
+    buildCommand: cd milestone\ 3/backend && npm install
+    startCommand: cd milestone\ 3/backend && npm start
+    health_check_path: /health
+    envVars:
+      - key: DB_HOST
+        value: datastoredb-datastorev1.h.aivencloud.com
+      - key: DB_PORT
+        value: 17687
+      - key: DB_USER
+        value: avnadmin
+      - key: DB_PASSWORD
+        value: YOUR_AIVEN_DB_PASSWORD_HERE
+      - key: DB_NAME
+        value: datagov_db
+      - key: PORT
+        value: 5000
+      - key: CORS_ORIGIN
+        value: ${FRONTEND_URL}
+
+  - type: static_site
+    name: datastore-frontend
+    buildCommand: cd milestone\ 3/frontend && npm install && npm run build
+    staticPublishPath: milestone\ 3/frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        value: ${BACKEND_URL}

@@ -1,0 +1,2898 @@
+{
+  "bb10fdb9-d96f-4284-9a5f-9ed269d9dbcb": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:36:32.009064",
+    "description": "",
+    "display_name": "Federal Communications Commission",
+    "id": "bb10fdb9-d96f-4284-9a5f-9ed269d9dbcb",
+    "image_display_url": "https://transition.fcc.gov/files/logos/fcc-logo_teal-on-white.jpg",
+    "image_url": "https://transition.fcc.gov/files/logos/fcc-logo_teal-on-white.jpg",
+    "is_organization": true,
+    "name": "fcc-gov",
+    "num_followers": 0,
+    "package_count": 54,
+    "state": "active",
+    "title": "Federal Communications Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "bb10fdb9-d96f-4284-9a5f-9ed269d9dbcb",
+        "id": "82a7dba5-4023-4292-bd27-2ff81d2287e0",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "bb10fdb9-d96f-4284-9a5f-9ed269d9dbcb",
+        "id": "745d78b4-5fae-41c4-905c-9e83423f18f8",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "f2d0ab92-6e70-41ac-b5fd-305d70fbb37f": {
+    "approval_status": "approved",
+    "created": "2024-04-25T10:57:11.924623",
+    "description": "Engage with the District of Columbia through government open data.",
+    "display_name": "District of Columbia",
+    "id": "f2d0ab92-6e70-41ac-b5fd-305d70fbb37f",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/dc.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/dc.png",
+    "is_organization": true,
+    "name": "district-of-columbia",
+    "num_followers": 0,
+    "package_count": 1820,
+    "state": "active",
+    "title": "District of Columbia",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "f2d0ab92-6e70-41ac-b5fd-305d70fbb37f",
+        "id": "45aea187-febf-402c-aee5-446114a4a387",
+        "key": "email_list",
+        "state": "active",
+        "value": "matthew.sokol@dc.gov\r\nmatthew.crossett@dc.gov"
+      }
+    ]
+  },
+  "2d7e3c15-e0cb-4857-b4d5-40ed6e6d7954": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:28:21.271792",
+    "description": "General Services Administration Agency.",
+    "display_name": "General Services Administration",
+    "id": "2d7e3c15-e0cb-4857-b4d5-40ed6e6d7954",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/gsa.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/gsa.png",
+    "is_organization": true,
+    "name": "gsa-gov",
+    "num_followers": 0,
+    "package_count": 170,
+    "state": "active",
+    "title": "General Services Administration",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "2d7e3c15-e0cb-4857-b4d5-40ed6e6d7954",
+        "id": "3e8a6587-173d-4ad9-b835-46b1f591ab6a",
+        "key": "email_list",
+        "state": "active",
+        "value": "cindya.smith@gsa.gov\r\nmorgan.redden@gsa.gov\r\ntimothy.lowden@gsa.gov"
+      },
+      {
+        "group_id": "2d7e3c15-e0cb-4857-b4d5-40ed6e6d7954",
+        "id": "640955a3-8aa7-4f7b-bfb8-7e2e13785b43",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "eca91a93-a8a2-48b9-a949-5003b40b9012": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:11.369153",
+    "description": "",
+    "display_name": "Office of Personnel Management",
+    "id": "eca91a93-a8a2-48b9-a949-5003b40b9012",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/opm.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/opm.png",
+    "is_organization": true,
+    "name": "opm-gov",
+    "num_followers": 0,
+    "package_count": 134,
+    "state": "active",
+    "title": "Office of Personnel Management",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "eca91a93-a8a2-48b9-a949-5003b40b9012",
+        "id": "7ee65532-ec23-4f8b-9e9c-e6d3a69b46a7",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "eca91a93-a8a2-48b9-a949-5003b40b9012",
+        "id": "8d6f65b4-9545-4bdb-928c-2f0a31cc8fb2",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "73f20c4f-0d83-4935-95a5-034c18927361": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:31:28.190440",
+    "description": "",
+    "display_name": "Export-Import Bank of the US",
+    "id": "73f20c4f-0d83-4935-95a5-034c18927361",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Seal_of_the_United_States_Export-Import_Bank.svg/721px-Seal_of_the_United_States_Export-Import_Bank.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Seal_of_the_United_States_Export-Import_Bank.svg/721px-Seal_of_the_United_States_Export-Import_Bank.svg.png",
+    "is_organization": true,
+    "name": "exim-gov",
+    "num_followers": 0,
+    "package_count": 1,
+    "state": "active",
+    "title": "Export-Import Bank of the US",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "73f20c4f-0d83-4935-95a5-034c18927361",
+        "id": "0e80f542-05f0-4071-9d5d-af39b797e859",
+        "key": "email_list",
+        "state": "active",
+        "value": "Ravi.Chid@exim.gov\r\nLauren.Kirsch@exim.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "73f20c4f-0d83-4935-95a5-034c18927361",
+        "id": "efd7185d-2624-4892-a709-7d03f9ce4f94",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "d737f173-fa1c-4f41-a363-6e2d5a8e7256": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:26:47.348075",
+    "description": "",
+    "display_name": "King County, Washington",
+    "id": "d737f173-fa1c-4f41-a363-6e2d5a8e7256",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "king-county-washington",
+    "num_followers": 0,
+    "package_count": 320,
+    "state": "active",
+    "title": "King County, Washington",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "d737f173-fa1c-4f41-a363-6e2d5a8e7256",
+        "id": "c38a5363-014d-4e35-ae03-720202639d0a",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "d737f173-fa1c-4f41-a363-6e2d5a8e7256",
+        "id": "62bf3ce0-7202-46c1-bea0-912af236752e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      }
+    ]
+  },
+  "c549d5ce-2b93-4397-ab76-aa2b31d9983a": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:13:01.158937",
+    "description": "",
+    "display_name": "Department of Transportation",
+    "id": "c549d5ce-2b93-4397-ab76-aa2b31d9983a",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/US_DOT_Triskelion.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/US_DOT_Triskelion.png",
+    "is_organization": true,
+    "name": "dot-gov",
+    "num_followers": 0,
+    "package_count": 998,
+    "state": "active",
+    "title": "Department of Transportation",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "c549d5ce-2b93-4397-ab76-aa2b31d9983a",
+        "id": "5bbd22ea-8b57-4cb8-8436-856f0d69c87a",
+        "key": "email_list",
+        "state": "active",
+        "value": "daniel.morgan@dot.gov\r\ncrystal.carter@gsa.gov\r\niftach.pearlman@dot.gov\r\nsteve.lewis@dot.gov\r\ndominic.menegus@dot.gov"
+      },
+      {
+        "group_id": "c549d5ce-2b93-4397-ab76-aa2b31d9983a",
+        "id": "f76fe99f-2ae0-45f6-9468-fe362aebf5b0",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "af9851d3-20d0-4121-8a23-8e2753efdc99": {
+    "approval_status": "approved",
+    "created": "2020-11-10T02:49:28.083803",
+    "description": "The Arkansas Geographic Information Office coordinates statewide geographic data and hosts a portal and catalog for discovery. ",
+    "display_name": "State of Arkansas",
+    "id": "af9851d3-20d0-4121-8a23-8e2753efdc99",
+    "image_display_url": "http://www.50states.com/flag/image/nunst005.gif",
+    "image_url": "http://www.50states.com/flag/image/nunst005.gif",
+    "is_organization": true,
+    "name": "arkansas-gov",
+    "num_followers": 0,
+    "package_count": 85,
+    "state": "active",
+    "title": "State of Arkansas",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "af9851d3-20d0-4121-8a23-8e2753efdc99",
+        "id": "d0505803-0599-429c-941b-0714a375c762",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov, Matthew.Delong@arkansas.gov"
+      },
+      {
+        "group_id": "af9851d3-20d0-4121-8a23-8e2753efdc99",
+        "id": "73cb31b2-2526-4753-8c58-b261eef3053a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "13e5b106-8f82-4b16-a11e-2f48f1f24238": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:34:38.629097",
+    "description": "",
+    "display_name": "Securities and Exchange Commission",
+    "id": "13e5b106-8f82-4b16-a11e-2f48f1f24238",
+    "image_display_url": "https://www.sec.gov/files/sec-logo.png",
+    "image_url": "https://www.sec.gov/files/sec-logo.png",
+    "is_organization": true,
+    "name": "sec-gov",
+    "num_followers": 0,
+    "package_count": 42,
+    "state": "active",
+    "title": "Securities and Exchange Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "13e5b106-8f82-4b16-a11e-2f48f1f24238",
+        "id": "e28e9343-fefd-4fbb-a1d0-3931b7d4d2e5",
+        "key": "email_list",
+        "state": "active",
+        "value": "youngz@sec.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "13e5b106-8f82-4b16-a11e-2f48f1f24238",
+        "id": "371b122c-4cf5-4b3c-9857-a091c489ed8e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "4455a74e-f5bd-4a7e-941e-9fe5a72eb882": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:36:06.901521",
+    "description": "",
+    "display_name": "Department of Homeland Security",
+    "id": "4455a74e-f5bd-4a7e-941e-9fe5a72eb882",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/dhs.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/dhs.png",
+    "is_organization": true,
+    "name": "dhs-gov",
+    "num_followers": 0,
+    "package_count": 1093,
+    "state": "active",
+    "title": "Department of Homeland Security",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "4455a74e-f5bd-4a7e-941e-9fe5a72eb882",
+        "id": "5852d963-80c1-423d-a708-e8b808d2ba34",
+        "key": "email_list",
+        "state": "active",
+        "value": "datainventoryprogram_hq@hq.dhs.gov\r\nmobius@hq.dhs.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "4455a74e-f5bd-4a7e-941e-9fe5a72eb882",
+        "id": "563a5c52-77f6-46f5-9468-a519afb0d987",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "4b9a2b4d-f9e1-4898-aa2c-32d13e44b5a1": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:09:03.691605",
+    "description": "",
+    "display_name": "City of Tempe",
+    "id": "4b9a2b4d-f9e1-4898-aa2c-32d13e44b5a1",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Logo_of_Tempe%2C_Arizona.svg/1280px-Logo_of_Tempe%2C_Arizona.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Logo_of_Tempe%2C_Arizona.svg/1280px-Logo_of_Tempe%2C_Arizona.svg.png",
+    "is_organization": true,
+    "name": "city-of-tempe",
+    "num_followers": 0,
+    "package_count": 604,
+    "state": "active",
+    "title": "City of Tempe",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "4b9a2b4d-f9e1-4898-aa2c-32d13e44b5a1",
+        "id": "7ad49f2f-f504-4c9f-b33d-7c9e59a2ace0",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nseth_lewis@tempe.gov\r\nwilliam_mancini@tempe.gov\r\nRandle_Kuehner@tempe.gov"
+      },
+      {
+        "group_id": "4b9a2b4d-f9e1-4898-aa2c-32d13e44b5a1",
+        "id": "c52da01b-548e-4ec0-83f3-b43b3a8eff4e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "4b9a2b4d-f9e1-4898-aa2c-32d13e44b5a1",
+        "id": "29f4b62a-8916-4e33-89da-4a2d4d52b340",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://gis.tempe.gov/ordinances/open-data-terms-of-use.pdf"
+      }
+    ]
+  },
+  "ea1a6413-9d41-4350-b935-2c25e0256bcf": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:32:05.325781",
+    "description": "",
+    "display_name": "US International Trade Commission",
+    "id": "ea1a6413-9d41-4350-b935-2c25e0256bcf",
+    "image_display_url": "https://www.usitc.gov/sites/all/themes/usitc_uswds/logo.png",
+    "image_url": "https://www.usitc.gov/sites/all/themes/usitc_uswds/logo.png",
+    "is_organization": true,
+    "name": "usitc-gov",
+    "num_followers": 0,
+    "package_count": 102,
+    "state": "active",
+    "title": "US International Trade Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "ea1a6413-9d41-4350-b935-2c25e0256bcf",
+        "id": "7a4326fe-2c6b-463a-9b31-12fc404fcd9c",
+        "key": "email_list",
+        "state": "active",
+        "value": "Cameron.Richardson@usitc.gov\r\nJoel.Moeller@usitc.gov\r\nLaura.Thayn@usitc.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "ea1a6413-9d41-4350-b935-2c25e0256bcf",
+        "id": "2438fd67-6e1d-40a0-8d85-db4edba37573",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "5f4f1195-e770-4a2a-8f75-195cd98860ce": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:36:13.098184",
+    "description": "",
+    "display_name": "National Oceanic and Atmospheric Administration, Department of Commerce",
+    "id": "5f4f1195-e770-4a2a-8f75-195cd98860ce",
+    "image_display_url": "https://fortress.wa.gov/dfw/score/score/images/noaa_logo.png",
+    "image_url": "https://fortress.wa.gov/dfw/score/score/images/noaa_logo.png",
+    "is_organization": true,
+    "name": "noaa-gov",
+    "num_followers": 0,
+    "package_count": 94548,
+    "state": "active",
+    "title": "National Oceanic and Atmospheric Administration, Department of Commerce",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "5f4f1195-e770-4a2a-8f75-195cd98860ce",
+        "id": "ea560fa8-340a-4c9f-88d9-275a3739d63d",
+        "key": "email_list",
+        "state": "active",
+        "value": "noaa.data.catalog@noaa.gov\r\ncrystal.carter@gsa.gov\r\nbrianna.key@noaa.gov\r\n"
+      },
+      {
+        "group_id": "5f4f1195-e770-4a2a-8f75-195cd98860ce",
+        "id": "3ff90dfd-a7d7-4950-b214-4160a52678c0",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "82b85475-f85d-404a-b95b-89d1a42e9f6b": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:42.298896",
+    "description": "Our mission is to protect human health and the environment. ",
+    "display_name": "U.S. Environmental Protection Agency",
+    "id": "82b85475-f85d-404a-b95b-89d1a42e9f6b",
+    "image_display_url": "https://edg.epa.gov/EPALogo.svg",
+    "image_url": "https://edg.epa.gov/EPALogo.svg",
+    "is_organization": true,
+    "name": "epa-gov",
+    "num_followers": 0,
+    "package_count": 7079,
+    "state": "active",
+    "title": "U.S. Environmental Protection Agency",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "82b85475-f85d-404a-b95b-89d1a42e9f6b",
+        "id": "befba134-6fd8-4d72-a9ef-702f1bb20896",
+        "key": "email_list",
+        "state": "active",
+        "value": "edg@epa.gov"
+      },
+      {
+        "group_id": "82b85475-f85d-404a-b95b-89d1a42e9f6b",
+        "id": "ac6f8d65-93a7-498e-abde-01048ea9dd6a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "11e6e64e-9478-4c25-b0cc-3ab685f0e0e5": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:29:57.821295",
+    "description": "",
+    "display_name": "National Science Foundation",
+    "id": "11e6e64e-9478-4c25-b0cc-3ab685f0e0e5",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/nsf.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/nsf.png",
+    "is_organization": true,
+    "name": "nsf-gov",
+    "num_followers": 0,
+    "package_count": 63,
+    "state": "active",
+    "title": "National Science Foundation",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "11e6e64e-9478-4c25-b0cc-3ab685f0e0e5",
+        "id": "e118c0f6-536f-4d64-bb63-5e30248c6bec",
+        "key": "email_list",
+        "state": "active",
+        "value": "plabazze@associates.nsf.gov\r\njesmille@associates.nsf.gov\r\ntjulian@nsf.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "11e6e64e-9478-4c25-b0cc-3ab685f0e0e5",
+        "id": "6aaf50bc-3a3d-46a9-b103-2a3b7f1b0ef4",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "1c6d5c51-b881-484c-8f00-1ebd9fbbe527": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:07:04.037035",
+    "description": "",
+    "display_name": "City of Ferndale, Michigan",
+    "id": "1c6d5c51-b881-484c-8f00-1ebd9fbbe527",
+    "image_display_url": "https://s3.us-east-2.amazonaws.com/ferndalemi-public/logo-Ferndale.svg",
+    "image_url": "https://s3.us-east-2.amazonaws.com/ferndalemi-public/logo-Ferndale.svg",
+    "is_organization": true,
+    "name": "city-of-ferndale-michigan",
+    "num_followers": 0,
+    "package_count": 286,
+    "state": "active",
+    "title": "City of Ferndale, Michigan",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "1c6d5c51-b881-484c-8f00-1ebd9fbbe527",
+        "id": "61cb85fd-e742-4e97-8712-3c1bb9838093",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "1c6d5c51-b881-484c-8f00-1ebd9fbbe527",
+        "id": "617397cb-5fb9-4947-b055-973cda785ecf",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "1c6d5c51-b881-484c-8f00-1ebd9fbbe527",
+        "id": "e2925d34-ffe3-4846-94b7-2442e75cfaf2",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "http://data.ferndalemi.gov/pages/terms-of-service"
+      }
+    ]
+  },
+  "df1ed85f-b5a6-4825-96cd-8f53555b5a5a": {
+    "approval_status": "approved",
+    "created": "2021-03-09T13:58:01.144355",
+    "description": "Created by the U.S. Congress in 1970, the National Credit Union Administration is an independent federal agency that insures deposits at federally insured credit unions, protects the members who own credit unions, and charters and regulates federal credit unions.",
+    "display_name": "National Credit Union Administration NCUA",
+    "id": "df1ed85f-b5a6-4825-96cd-8f53555b5a5a",
+    "image_display_url": "https://www.ncua.gov/files/graphics/ncua_seal_blue_web.gif",
+    "image_url": "https://www.ncua.gov/files/graphics/ncua_seal_blue_web.gif",
+    "is_organization": true,
+    "name": "national-credit-union-administration",
+    "num_followers": 0,
+    "package_count": 23,
+    "state": "active",
+    "title": "National Credit Union Administration NCUA",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "df1ed85f-b5a6-4825-96cd-8f53555b5a5a",
+        "id": "717a8ec5-cd8f-4360-a596-0d2ee090a195",
+        "key": "email_list",
+        "state": "active",
+        "value": "kehatt@ncua.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "df1ed85f-b5a6-4825-96cd-8f53555b5a5a",
+        "id": "7dbecef9-7c08-4fa5-b4f4-9da5e45cd5ec",
+        "key": "federal",
+        "state": "active",
+        "value": "true"
+      },
+      {
+        "group_id": "df1ed85f-b5a6-4825-96cd-8f53555b5a5a",
+        "id": "38e06bfd-bc9d-4c0e-99a5-7591e7ed5341",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "857030e3-3534-4a6d-b926-c729dfb79147": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:44:38.554928",
+    "description": "",
+    "display_name": "Election Assistance Commission",
+    "id": "857030e3-3534-4a6d-b926-c729dfb79147",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/eac.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/eac.png",
+    "is_organization": true,
+    "name": "eac-gov",
+    "num_followers": 0,
+    "package_count": 9,
+    "state": "active",
+    "title": "Election Assistance Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "857030e3-3534-4a6d-b926-c729dfb79147",
+        "id": "8dc1fea7-6338-4280-b674-745c34625db0",
+        "key": "email_list",
+        "state": "active",
+        "value": "rsweeney@eac.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "857030e3-3534-4a6d-b926-c729dfb79147",
+        "id": "ca793a94-b7d6-4412-97b0-455456c834c4",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "143529f7-2eef-4a07-b227-93ac9e84fad8": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:40.499004",
+    "description": "The Department of the Interior (DOI) conserves and manages the Nation’s natural resources and cultural heritage for the benefit and enjoyment of the American people, provides scientific and other information about natural resources and natural hazards to address societal challenges and create opportunities for the American people, and honors the Nation’s trust responsibilities or special commitments to American Indians, Alaska Natives, and affiliated island communities to help them prosper.\r\n\r\nSee more at https://www.doi.gov/",
+    "display_name": "Department of the Interior",
+    "id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+    "is_organization": true,
+    "name": "doi-gov",
+    "num_followers": 0,
+    "package_count": 44259,
+    "state": "active",
+    "title": "Department of the Interior",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+        "id": "d39359fb-ae79-435a-81e8-14e5276c3976",
+        "key": "email_list",
+        "state": "active",
+        "value": "feedback_from_data_gov@ios.doi.gov\r\ncmacdermaid@xentity.com\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+        "id": "4a897105-2197-48c6-906a-3b8eb1e9dfae",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "1149ee63-2fff-494e-82e5-9aace9d3b3bf": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:26:23.896065",
+    "description": "",
+    "display_name": "City of New York",
+    "id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Seal_of_New_York.svg/175px-Seal_of_New_York.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Seal_of_New_York.svg/175px-Seal_of_New_York.svg.png",
+    "is_organization": true,
+    "name": "city-of-new-york",
+    "num_followers": 0,
+    "package_count": 2643,
+    "state": "active",
+    "title": "City of New York",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+        "id": "7903a0d9-b116-48f1-9af2-a5a69f6a4507",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nnycopendata@cityhall.nyc.gov"
+      },
+      {
+        "group_id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+        "id": "db5cb768-7686-4a16-804b-1e143fc57672",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "1149ee63-2fff-494e-82e5-9aace9d3b3bf",
+        "id": "912ed8f4-7803-4f7e-aabe-b55779741913",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "http://www1.nyc.gov/home/terms-of-use.page"
+      }
+    ]
+  },
+  "a5a06e49-a446-476f-af16-32fc93c4f18f": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:40.660679",
+    "description": "",
+    "display_name": "City of Philadelphia",
+    "id": "a5a06e49-a446-476f-af16-32fc93c4f18f",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/opendataphilly-black-med.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/opendataphilly-black-med.png",
+    "is_organization": true,
+    "name": "city-of-philadelphia",
+    "num_followers": 0,
+    "package_count": 384,
+    "state": "active",
+    "title": "City of Philadelphia",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "a5a06e49-a446-476f-af16-32fc93c4f18f",
+        "id": "df0c9ef5-5152-481f-b788-abfaba1d4e32",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "a5a06e49-a446-476f-af16-32fc93c4f18f",
+        "id": "de153679-574c-4725-83ec-e46e106f3876",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "441a7317-0631-4d27-b8bb-dcfaa6be5915": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:24.824317",
+    "description": "",
+    "display_name": "Department of State",
+    "id": "441a7317-0631-4d27-b8bb-dcfaa6be5915",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/state.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/state.png",
+    "is_organization": true,
+    "name": "state-gov",
+    "num_followers": 0,
+    "package_count": 381,
+    "state": "active",
+    "title": "Department of State",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "441a7317-0631-4d27-b8bb-dcfaa6be5915",
+        "id": "01b1fd4d-f854-4efe-beb0-8e36742960ff",
+        "key": "email_list",
+        "state": "active",
+        "value": "RamakrishnanR@state.gov\r\ncrystal.carter@gsa.gov\r\nGertinTJ@state.gov\r\nDoornbosER@state.gov"
+      },
+      {
+        "group_id": "441a7317-0631-4d27-b8bb-dcfaa6be5915",
+        "id": "f564071d-ec87-4461-b807-52ed1719a302",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "d0ddb350-dd27-46fd-9e81-234374bf0607": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:30.593903",
+    "description": "Consumer Financial Protection Bureau ",
+    "display_name": "Consumer Financial Protection Bureau",
+    "id": "d0ddb350-dd27-46fd-9e81-234374bf0607",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/cfpb.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/cfpb.png",
+    "is_organization": true,
+    "name": "cfpb-gov",
+    "num_followers": 0,
+    "package_count": 11,
+    "state": "active",
+    "title": "Consumer Financial Protection Bureau",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "d0ddb350-dd27-46fd-9e81-234374bf0607",
+        "id": "50e613dc-b1b3-4042-a689-a14570091f0a",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nSuzan.Muslu@cfpb.gov"
+      },
+      {
+        "group_id": "d0ddb350-dd27-46fd-9e81-234374bf0607",
+        "id": "0525987c-b18e-4961-8505-a5905e8287c7",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "a706cca3-8032-4bcb-89c8-6f2d14fa1137": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:26:35.656387",
+    "description": "",
+    "display_name": "City of Seattle",
+    "id": "a706cca3-8032-4bcb-89c8-6f2d14fa1137",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/seattlewa.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/seattlewa.png",
+    "is_organization": true,
+    "name": "city-of-seattle",
+    "num_followers": 0,
+    "package_count": 713,
+    "state": "active",
+    "title": "City of Seattle",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "a706cca3-8032-4bcb-89c8-6f2d14fa1137",
+        "id": "91bf2f49-e678-4e41-8245-aa244f5ee632",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "a706cca3-8032-4bcb-89c8-6f2d14fa1137",
+        "id": "824d1108-e497-46ab-905b-95cd90c3c408",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "7ba1dcf3-0855-491e-bd62-1625f38972b9": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:12:15.807741",
+    "description": "",
+    "display_name": "City of Chicago",
+    "id": "7ba1dcf3-0855-491e-bd62-1625f38972b9",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_of_Chicago%2C_Illinois.svg/1920px-Logo_of_Chicago%2C_Illinois.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Logo_of_Chicago%2C_Illinois.svg/1920px-Logo_of_Chicago%2C_Illinois.svg.png",
+    "is_organization": true,
+    "name": "city-of-chicago",
+    "num_followers": 0,
+    "package_count": 1085,
+    "state": "active",
+    "title": "City of Chicago",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7ba1dcf3-0855-491e-bd62-1625f38972b9",
+        "id": "97a67517-b8b0-448b-8860-18c49fe6af8e",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "7ba1dcf3-0855-491e-bd62-1625f38972b9",
+        "id": "a350fa9b-cab6-4e9e-a517-1ba2c60f34a0",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "c42112c2-c371-4434-a65a-5e383ac19edd": {
+    "approval_status": "approved",
+    "created": "2021-03-15T19:59:37.190045",
+    "description": "",
+    "display_name": "Board of Governors of the Federal Reserve System",
+    "id": "c42112c2-c371-4434-a65a-5e383ac19edd",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/bog.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/bog.png",
+    "is_organization": true,
+    "name": "board-of-governors-of-the-federal-reserve-system",
+    "num_followers": 0,
+    "package_count": 167,
+    "state": "active",
+    "title": "Board of Governors of the Federal Reserve System",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "c42112c2-c371-4434-a65a-5e383ac19edd",
+        "id": "5df6b408-facf-4b86-9649-bf2d7fe23470",
+        "key": "email_list",
+        "state": "active",
+        "value": "nancie.n.cavanaugh@frb.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "c42112c2-c371-4434-a65a-5e383ac19edd",
+        "id": "42758945-e47a-4752-b0a6-99024053e55e",
+        "key": "federal",
+        "state": "active",
+        "value": "true"
+      },
+      {
+        "group_id": "c42112c2-c371-4434-a65a-5e383ac19edd",
+        "id": "96c3a198-64d8-4e18-b236-4da6c7be280e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "a65bf892-ca10-45e5-88f7-9cbaa4bdbfca": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:08:40.405413",
+    "description": "",
+    "display_name": "Army Corps of Engineers, Department of the Army, Department of Defense",
+    "id": "a65bf892-ca10-45e5-88f7-9cbaa4bdbfca",
+    "image_display_url": "https://www.usace.army.mil/Portals/2/usace_logo.png",
+    "image_url": "https://www.usace.army.mil/Portals/2/usace_logo.png",
+    "is_organization": true,
+    "name": "usace-army-mil",
+    "num_followers": 0,
+    "package_count": 3,
+    "state": "active",
+    "title": "Army Corps of Engineers, Department of the Army, Department of Defense",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "a65bf892-ca10-45e5-88f7-9cbaa4bdbfca",
+        "id": "08000426-21b4-430e-be93-98c303d4a5b0",
+        "key": "email_list",
+        "state": "active",
+        "value": "Zachary.E.Travis@usace.army.mil\r\nJoel.D.Schlagel@erdc.dren.mil\r\nlaurenr@imagemattersllc.com\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "a65bf892-ca10-45e5-88f7-9cbaa4bdbfca",
+        "id": "d09592f4-4f1e-4e4e-aec9-d4565241be15",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "b98a6f3b-552a-4826-931e-4594420f4596": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:11.114879",
+    "description": "",
+    "display_name": "State of Maryland",
+    "id": "b98a6f3b-552a-4826-931e-4594420f4596",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/datamaryland_logo_lower_400px_noback.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/datamaryland_logo_lower_400px_noback.png",
+    "is_organization": true,
+    "name": "state-of-maryland",
+    "num_followers": 0,
+    "package_count": 2440,
+    "state": "active",
+    "title": "State of Maryland",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "b98a6f3b-552a-4826-931e-4594420f4596",
+        "id": "52845d9c-d695-4029-a834-78023c897665",
+        "key": "email_list",
+        "state": "active",
+        "value": "hyon.kim@gsa.gov\r\npatrick.mcloughlin@maryland.gov\r\njb.churchill@maryland.gov"
+      },
+      {
+        "group_id": "b98a6f3b-552a-4826-931e-4594420f4596",
+        "id": "7c2df584-ec54-4e90-bcd0-8f8d895db895",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "77ade652-dece-4e18-b71b-b5e9be8c86c2": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:08:12.295433",
+    "description": "",
+    "display_name": "Federal Geographic Data Committee",
+    "id": "77ade652-dece-4e18-b71b-b5e9be8c86c2",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US-FederalGeographicDataCommittee-Logo.svg/220px-US-FederalGeographicDataCommittee-Logo.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/US-FederalGeographicDataCommittee-Logo.svg/220px-US-FederalGeographicDataCommittee-Logo.svg.png",
+    "is_organization": true,
+    "name": "fgdc-gov",
+    "num_followers": 0,
+    "package_count": 47,
+    "state": "active",
+    "title": "Federal Geographic Data Committee",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "77ade652-dece-4e18-b71b-b5e9be8c86c2",
+        "id": "963a60f7-a02a-4265-af27-1655f0276fd0",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\n\r\njames.c.brown@gsa.gov\r\nLynda@geomaxim.com "
+      },
+      {
+        "group_id": "77ade652-dece-4e18-b71b-b5e9be8c86c2",
+        "id": "a320bdb0-622b-4b32-b09d-699faa467ca2",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "ae56c24b-46d3-4688-965e-94bdc208164f": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:12:32.792144",
+    "description": "State of California",
+    "display_name": "State of California",
+    "id": "ae56c24b-46d3-4688-965e-94bdc208164f",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Seal_of_California.svg/250px-Seal_of_California.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Seal_of_California.svg/250px-Seal_of_California.svg.png",
+    "is_organization": true,
+    "name": "ca-gov",
+    "num_followers": 0,
+    "package_count": 4253,
+    "state": "active",
+    "title": "State of California",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "ae56c24b-46d3-4688-965e-94bdc208164f",
+        "id": "fda3cf00-c4a4-437e-ae9c-2d92c22fbc85",
+        "key": "email_list",
+        "state": "active",
+        "value": "opendata@state.ca.gov"
+      },
+      {
+        "group_id": "ae56c24b-46d3-4688-965e-94bdc208164f",
+        "id": "7f004ce5-c263-4a52-8a9d-19770075a57c",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "6a3f935c-da6f-47f6-a386-1c76afd0b1e0": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:13:06.898778",
+    "description": "The Earth Data Analysis Center (EDAC) at the University of New Mexico is an Applied Research Center that specializes in geospatial data development, management, analysis and applications. Through partnerships with collaborators in public health, emergency management and planning, resource management, transportation, water resources and many other domains, EDAC enables the integration of geospatial data, knowledge and technologies into solutions across these topic areas. For more information about EDAC please visit our [website](http://edac.unm.edu \"EDAC web page link\")",
+    "display_name": "Earth Data Analysis Center, University of New Mexico",
+    "id": "6a3f935c-da6f-47f6-a386-1c76afd0b1e0",
+    "image_display_url": "https://edac.unm.edu/wordpress/wp-content/uploads/2012/07/EDAC-Banner.jpg",
+    "image_url": "https://edac.unm.edu/wordpress/wp-content/uploads/2012/07/EDAC-Banner.jpg",
+    "is_organization": true,
+    "name": "edac-unm-edu",
+    "num_followers": 0,
+    "package_count": 5459,
+    "state": "active",
+    "title": "Earth Data Analysis Center, University of New Mexico",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "6a3f935c-da6f-47f6-a386-1c76afd0b1e0",
+        "id": "b68f8658-b64e-4231-bb25-53bc05e2c645",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "6a3f935c-da6f-47f6-a386-1c76afd0b1e0",
+        "id": "7c8cd253-a430-479a-8f80-3e1bf61a4960",
+        "key": "organization_type",
+        "state": "active",
+        "value": "University"
+      }
+    ]
+  },
+  "0af4eecd-141b-41b3-9367-a5a51ce44b90": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:28.767509",
+    "description": "",
+    "display_name": "State of Oregon",
+    "id": "0af4eecd-141b-41b3-9367-a5a51ce44b90",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/Oregon-State-Seal-Navy-Gold.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/Oregon-State-Seal-Navy-Gold.png",
+    "is_organization": true,
+    "name": "state-of-oregon",
+    "num_followers": 0,
+    "package_count": 851,
+    "state": "active",
+    "title": "State of Oregon",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "0af4eecd-141b-41b3-9367-a5a51ce44b90",
+        "id": "c1b95e6e-a724-4f38-947d-5386f95a0538",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "0af4eecd-141b-41b3-9367-a5a51ce44b90",
+        "id": "fcc964c4-ab93-4a90-aefc-c3cc2b0f9e23",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "c0e9f307-e44b-4de2-bb46-e8045d0990db": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:44:04.450020",
+    "description": "",
+    "display_name": "State of Connecticut",
+    "id": "c0e9f307-e44b-4de2-bb46-e8045d0990db",
+    "image_display_url": "https://stateofhealth.ct.gov/Images/OpenDataPortalIcon.png",
+    "image_url": "https://stateofhealth.ct.gov/Images/OpenDataPortalIcon.png",
+    "is_organization": true,
+    "name": "state-of-connecticut",
+    "num_followers": 0,
+    "package_count": 1090,
+    "state": "active",
+    "title": "State of Connecticut",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "c0e9f307-e44b-4de2-bb46-e8045d0990db",
+        "id": "30cb7c66-b3f3-4ef9-8fcf-a012ca206f2c",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nPauline.zaldonis@ct.gov"
+      },
+      {
+        "group_id": "c0e9f307-e44b-4de2-bb46-e8045d0990db",
+        "id": "70828a18-deb6-4b97-806a-22c7a4598592",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "97ae80aa-2507-4920-808f-99a45dc5ef27": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:34.614013",
+    "description": "",
+    "display_name": "Department of Justice",
+    "id": "97ae80aa-2507-4920-808f-99a45dc5ef27",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/justice.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/justice.png",
+    "is_organization": true,
+    "name": "doj-gov",
+    "num_followers": 0,
+    "package_count": 1400,
+    "state": "active",
+    "title": "Department of Justice",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "97ae80aa-2507-4920-808f-99a45dc5ef27",
+        "id": "968dc84d-2eb3-46e6-9ce9-f602240f7ea6",
+        "key": "email_list",
+        "state": "active",
+        "value": "Monique.Bourque@usdoj.gov\r\nRichard.A.VonBostel@usdoj.gov\r\nDave.Denis@usdoj.gov\r\nJared.K.Houghton@usdoj.gov\r\nThomas.Costigan@usdoj.gov\r\nFrancis.G.Lewis@usdoj.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "97ae80aa-2507-4920-808f-99a45dc5ef27",
+        "id": "b5c8dde9-1c55-4ad3-840f-4e14d9283db1",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "bf7b21fa-7288-4f2c-8a3f-b83903fbbe38": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:53:06.257819",
+    "description": "Arlington County, Virginia open data.",
+    "display_name": "Arlington County, VA",
+    "id": "bf7b21fa-7288-4f2c-8a3f-b83903fbbe38",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_of_Arlington_County%2C_Virginia.png/1280px-Logo_of_Arlington_County%2C_Virginia.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Logo_of_Arlington_County%2C_Virginia.png/1280px-Logo_of_Arlington_County%2C_Virginia.png",
+    "is_organization": true,
+    "name": "arlington-county",
+    "num_followers": 0,
+    "package_count": 182,
+    "state": "active",
+    "title": "Arlington County, VA",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "bf7b21fa-7288-4f2c-8a3f-b83903fbbe38",
+        "id": "02ec01f4-63ad-4f07-9ce9-c0d7b1ea01b8",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "bf7b21fa-7288-4f2c-8a3f-b83903fbbe38",
+        "id": "1afce2cc-34ef-476e-a5da-0af618ab8857",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      },
+      {
+        "group_id": "bf7b21fa-7288-4f2c-8a3f-b83903fbbe38",
+        "id": "88e445d7-e729-43b1-a854-cf6297d6cb02",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://topics.arlingtonva.us/open-government-resources/terms/"
+      }
+    ]
+  },
+  "aa795a1b-5fbb-46d1-b9f2-8b86e1e48bef": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:36:33.094497",
+    "description": "",
+    "display_name": "City of Los Angeles",
+    "id": "aa795a1b-5fbb-46d1-b9f2-8b86e1e48bef",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "city-of-los-angeles",
+    "num_followers": 0,
+    "package_count": 365,
+    "state": "active",
+    "title": "City of Los Angeles",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "aa795a1b-5fbb-46d1-b9f2-8b86e1e48bef",
+        "id": "6b30ae66-d45e-4a3b-a5cb-0e5b590ac6c7",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\neva.pereira@lacity.org"
+      },
+      {
+        "group_id": "aa795a1b-5fbb-46d1-b9f2-8b86e1e48bef",
+        "id": "c2f688b4-9676-4637-a277-dc7f2826a209",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "bf49a9d8-a23d-41a7-af79-53d21d5c0c6e": {
+    "approval_status": "approved",
+    "created": "2020-11-10T20:17:48.045066",
+    "description": "",
+    "display_name": "Networking and Information Technology Research and Development, Executive Office of the President",
+    "id": "bf49a9d8-a23d-41a7-af79-53d21d5c0c6e",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/nitrd.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/nitrd.png",
+    "is_organization": true,
+    "name": "nitrd-gov",
+    "num_followers": 0,
+    "package_count": 140,
+    "state": "active",
+    "title": "Networking and Information Technology Research and Development, Executive Office of the President",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "bf49a9d8-a23d-41a7-af79-53d21d5c0c6e",
+        "id": "244a3d06-701b-4ed6-917f-0c74de4e5ec5",
+        "key": "email_list",
+        "state": "active",
+        "value": "baranyuk@nitrd.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "bf49a9d8-a23d-41a7-af79-53d21d5c0c6e",
+        "id": "876a1ea3-2dae-458e-8a59-e8fa17f3b073",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "d70f1e1b-8a88-4bb2-bca5-29b26408a2ce": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:22.956541",
+    "description": "",
+    "display_name": "State of Oklahoma",
+    "id": "d70f1e1b-8a88-4bb2-bca5-29b26408a2ce",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "state-of-oklahoma",
+    "num_followers": 0,
+    "package_count": 341,
+    "state": "active",
+    "title": "State of Oklahoma",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "d70f1e1b-8a88-4bb2-bca5-29b26408a2ce",
+        "id": "b529f543-ca61-4069-88ce-1fb555be3e57",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "d70f1e1b-8a88-4bb2-bca5-29b26408a2ce",
+        "id": "c8bf06c9-f141-4fe1-8bce-2891d3054304",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "8998d957-b339-4d1c-959e-bd04cb4c3316": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:26:59.167102",
+    "description": "",
+    "display_name": "Cook County of Illinois",
+    "id": "8998d957-b339-4d1c-959e-bd04cb4c3316",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "cook-county-of-illinois",
+    "num_followers": 0,
+    "package_count": 516,
+    "state": "active",
+    "title": "Cook County of Illinois",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "8998d957-b339-4d1c-959e-bd04cb4c3316",
+        "id": "ee4d241a-8968-4de4-a41a-0b6b7176a4b1",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nOpen.Data@cookcountyil.gov"
+      },
+      {
+        "group_id": "8998d957-b339-4d1c-959e-bd04cb4c3316",
+        "id": "c66adf4d-d411-4256-b7e4-6e79dc8c6b34",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      }
+    ]
+  },
+  "2e1fe2d8-884b-4fb8-acf9-9534db888d4b": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:56:42.367147",
+    "description": "The Library of Congress is the world’s largest library, offering access to the creative record of the United States and extensive materials from around the world both on site and online.",
+    "display_name": "Library of Congress",
+    "id": "2e1fe2d8-884b-4fb8-acf9-9534db888d4b",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/loc.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/loc.png",
+    "is_organization": true,
+    "name": "library-of-congress",
+    "num_followers": 0,
+    "package_count": 9,
+    "state": "active",
+    "title": "Library of Congress",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "2e1fe2d8-884b-4fb8-acf9-9534db888d4b",
+        "id": "ccc62861-2ddd-4c00-b476-af099a961237",
+        "key": "email_list",
+        "state": "active",
+        "value": "dscott@loc.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "2e1fe2d8-884b-4fb8-acf9-9534db888d4b",
+        "id": "7698fb85-b101-4ba8-944a-9370ea824f79",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "4af4b741-65f5-4ac6-950d-75e1abc1a7df": {
+    "approval_status": "approved",
+    "created": "2022-05-16T23:49:00.340032",
+    "description": "**The Bureau of Labor Statistics** (BLS) of the U.S. Department of Labor is the principal federal agency responsible for measuring labor market activity, working conditions, and price changes in the economy. Its mission is to collect, analyze, and disseminate essential economic information to support public and private decision making. As an independent statistical agency, BLS serves its diverse user communities by providing products and services that are accurate, objective, relevant, timely, and accessible.",
+    "display_name": "U.S. Department of Labor Bureau of Labor Statistics",
+    "id": "4af4b741-65f5-4ac6-950d-75e1abc1a7df",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bureau_of_Labor_Statistics_logo.svg/200px-Bureau_of_Labor_Statistics_logo.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bureau_of_Labor_Statistics_logo.svg/200px-Bureau_of_Labor_Statistics_logo.svg.png",
+    "is_organization": true,
+    "name": "u-s-department-of-labor-bureau-of-labor-statistics",
+    "num_followers": 0,
+    "package_count": 31,
+    "state": "active",
+    "title": "U.S. Department of Labor Bureau of Labor Statistics",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "4af4b741-65f5-4ac6-950d-75e1abc1a7df",
+        "id": "b966c6e9-353d-4048-a9b6-3e2648646762",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "4af4b741-65f5-4ac6-950d-75e1abc1a7df",
+        "id": "73554ac7-ad22-41ea-9e57-c85683ddda76",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "bccbad82-abc4-4712-bd29-3e194e7a8042": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:34.605650",
+    "description": "Washington Technology Solutions (WaTech) provides the state of Washington Open Data Program for all state agencies to publish public data at https://data.wa.gov. Washington state agencies, library systems, school districts, and small local government entities publish more than 2,500 datasets, visualizations, and data stories that people access nearly three million times per month. Data topics include campaign contributions, public health, licensed professionals, environment, social services, vehicle licensing and registration, public safety, and more.",
+    "display_name": "State of Washington",
+    "id": "bccbad82-abc4-4712-bd29-3e194e7a8042",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/wa-opendata.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/wa-opendata.png",
+    "is_organization": true,
+    "name": "state-of-washington",
+    "num_followers": 0,
+    "package_count": 1449,
+    "state": "active",
+    "title": "State of Washington",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "bccbad82-abc4-4712-bd29-3e194e7a8042",
+        "id": "173cc056-921a-41a9-a9ab-edae9f7d658d",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\ncathi.greenwood@watech.wa.gov\r\nkathleen.sullivan@sos.wa.gov"
+      },
+      {
+        "group_id": "bccbad82-abc4-4712-bd29-3e194e7a8042",
+        "id": "bec49cf2-a5eb-4b9c-9a00-5e629c0cb460",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "09b5b314-7b67-4f75-adec-6bc19144a97f": {
+    "approval_status": "approved",
+    "created": "2025-09-03T20:39:20.933775",
+    "description": "The United States Government Publishing Office (GPO) produces and distributes information products and services for all three branches of the Federal Government, including U.S. passports for the Department of State as well as the official publications of Congress, the White House, and other Federal agencies in digital and print formats. GPO also provides for permanent public access to Federal Government information at no charge through the Federal Depository Library Program (FDLP) and GovInfo.",
+    "display_name": "Government Publishing Office (GPO)",
+    "id": "09b5b314-7b67-4f75-adec-6bc19144a97f",
+    "image_display_url": "https://www.gpo.gov/images/default-source/mediakitdownloads/large-logo-only_5415.jpg",
+    "image_url": "https://www.gpo.gov/images/default-source/mediakitdownloads/large-logo-only_5415.jpg",
+    "is_organization": true,
+    "name": "government-publishing-office",
+    "num_followers": 0,
+    "package_count": 11,
+    "state": "active",
+    "title": "Government Publishing Office (GPO)",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "09b5b314-7b67-4f75-adec-6bc19144a97f",
+        "id": "a904db45-9e29-40e8-94c1-4ed8606ddaf1",
+        "key": "email_list",
+        "state": "active",
+        "value": "skharfen@gpo.gov\r\nwnesbit@gpo.gov\r\nbwebb@gpo.gov\r\nfgao@gpo.gov"
+      },
+      {
+        "group_id": "09b5b314-7b67-4f75-adec-6bc19144a97f",
+        "id": "488d14b6-4d5f-4f00-8888-951c908e5c62",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "a496eda4-863a-4acb-9f2f-c652ba66ca40": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:53:27.404186",
+    "description": "",
+    "display_name": "Town of Cary, North Carolina",
+    "id": "a496eda4-863a-4acb-9f2f-c652ba66ca40",
+    "image_display_url": "https://data.townofcary.org/assets/theme_image/townofcarybanner.png",
+    "image_url": "https://data.townofcary.org/assets/theme_image/townofcarybanner.png",
+    "is_organization": true,
+    "name": "town-of-cary-north-carolina",
+    "num_followers": 0,
+    "package_count": 64,
+    "state": "active",
+    "title": "Town of Cary, North Carolina",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "a496eda4-863a-4acb-9f2f-c652ba66ca40",
+        "id": "0766a2cb-3998-4ed2-a28e-e5920cbaf26b",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "a496eda4-863a-4acb-9f2f-c652ba66ca40",
+        "id": "0239b6dd-bfda-40e7-861f-36a30d7f6e4a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "a496eda4-863a-4acb-9f2f-c652ba66ca40",
+        "id": "465c81c0-b1db-49cd-bf50-69151c541961",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://data.townofcary.org/terms/terms-of-use/"
+      }
+    ]
+  },
+  "1a128ac1-72ce-4027-b46d-a73862031b04": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:28:01.200083",
+    "description": "",
+    "display_name": "Department of Veterans Affairs",
+    "id": "1a128ac1-72ce-4027-b46d-a73862031b04",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/va.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/va.png",
+    "is_organization": true,
+    "name": "va-gov",
+    "num_followers": 0,
+    "package_count": 1182,
+    "state": "active",
+    "title": "Department of Veterans Affairs",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "1a128ac1-72ce-4027-b46d-a73862031b04",
+        "id": "1281c0b0-5444-4446-a7b4-3de46babc435",
+        "key": "email_list",
+        "state": "active",
+        "value": "OITOPENDATA@va.gov\r\ncrystal.carter@gsa.gov\r\nDarreisha.Bates@tylertech.com"
+      },
+      {
+        "group_id": "1a128ac1-72ce-4027-b46d-a73862031b04",
+        "id": "e930ad53-9023-499d-bfa0-648d62641e3f",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "fb3131aa-ef06-4a00-ad84-67d93a71d7e3": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:08:17.917195",
+    "description": "The Census Bureau's mission is to serve as the leading source of quality data about the nation's people and economy. We honor privacy, protect confidentiality, share our expertise globally, and conduct our work openly. We are guided on this mission by scientific objectivity, our strong and capable workforce, our devotion to research-based innovation, and our abiding commitment to our customers.",
+    "display_name": "U.S. Census Bureau, Department of Commerce",
+    "id": "fb3131aa-ef06-4a00-ad84-67d93a71d7e3",
+    "image_display_url": "http://www.census.gov/main/img/home/CensusLogo-white.png",
+    "image_url": "http://www.census.gov/main/img/home/CensusLogo-white.png",
+    "is_organization": true,
+    "name": "census-gov",
+    "num_followers": 0,
+    "package_count": 144572,
+    "state": "active",
+    "title": "U.S. Census Bureau, Department of Commerce",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "fb3131aa-ef06-4a00-ad84-67d93a71d7e3",
+        "id": "34ca7e81-3d47-48f1-b53e-49f1938c871f",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\ngeo.geography@census.gov\r\njulie.raye.dixon@census.gov"
+      },
+      {
+        "group_id": "fb3131aa-ef06-4a00-ad84-67d93a71d7e3",
+        "id": "6aef7bab-af78-4d27-abb4-c05686e2181d",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "ddcdcaea-2e39-4b3d-8a85-6d8de2b243b9": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:32:48.957051",
+    "description": "",
+    "display_name": "National Transportation Safety Board",
+    "id": "ddcdcaea-2e39-4b3d-8a85-6d8de2b243b9",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seal_of_the_United_States_National_Transportation_Safety_Board.svg/1200px-Seal_of_the_United_States_National_Transportation_Safety_Board.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seal_of_the_United_States_National_Transportation_Safety_Board.svg/1200px-Seal_of_the_United_States_National_Transportation_Safety_Board.svg.png",
+    "is_organization": true,
+    "name": "ntsb-gov",
+    "num_followers": 0,
+    "package_count": 1,
+    "state": "active",
+    "title": "National Transportation Safety Board",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "ddcdcaea-2e39-4b3d-8a85-6d8de2b243b9",
+        "id": "9e7c225e-074e-4a39-9b52-83c6eea0e7e3",
+        "key": "email_list",
+        "state": "active",
+        "value": "rahiq.syed@ntsb.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "ddcdcaea-2e39-4b3d-8a85-6d8de2b243b9",
+        "id": "26fac333-c456-448d-9a18-387a01999a6c",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "8dc070a3-41fa-4e78-8680-a0b98d678fb5": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:59.803668",
+    "description": "",
+    "display_name": "Federal Housing Finance Agency",
+    "id": "8dc070a3-41fa-4e78-8680-a0b98d678fb5",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/fhfa.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/fhfa.png",
+    "is_organization": true,
+    "name": "fhfa-gov",
+    "num_followers": 0,
+    "package_count": 39,
+    "state": "active",
+    "title": "Federal Housing Finance Agency",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "8dc070a3-41fa-4e78-8680-a0b98d678fb5",
+        "id": "2751d5e7-5355-4bda-b26b-3492f114bd1e",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nRashida.Dorsey@fhfa.gov\r\nJaspreet.Hunjan@fhfa.gov"
+      },
+      {
+        "group_id": "8dc070a3-41fa-4e78-8680-a0b98d678fb5",
+        "id": "374c1362-3c54-456c-9f84-56b631bdd6a5",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "ad042a79-d405-4cad-92dc-8c5a70028758": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:31:21.601173",
+    "description": "City of Baton Rouge/Parish of East Baton Rouge Consolidated Government",
+    "display_name": "City of Baton Rouge",
+    "id": "ad042a79-d405-4cad-92dc-8c5a70028758",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Wordmark_of_Baton_Rouge.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Wordmark_of_Baton_Rouge.png",
+    "is_organization": true,
+    "name": "city-of-baton-rouge",
+    "num_followers": 0,
+    "package_count": 249,
+    "state": "active",
+    "title": "City of Baton Rouge",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "ad042a79-d405-4cad-92dc-8c5a70028758",
+        "id": "7d07a90b-7cf6-4b26-b4a6-f1141d98da18",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "ad042a79-d405-4cad-92dc-8c5a70028758",
+        "id": "00826b73-e93d-45f8-9177-5abc3fb1dad7",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "ad042a79-d405-4cad-92dc-8c5a70028758",
+        "id": "ac803050-a2b9-425f-a338-3b9ebc5d14e0",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://data.brla.gov/terms-of-service"
+      }
+    ]
+  },
+  "1b4994eb-7f70-4453-8c75-99bf94b2d42c": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:44:10.786243",
+    "description": "",
+    "display_name": "City of Hartford",
+    "id": "1b4994eb-7f70-4453-8c75-99bf94b2d42c",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "city-of-hartford",
+    "num_followers": 0,
+    "package_count": 104,
+    "state": "active",
+    "title": "City of Hartford",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "1b4994eb-7f70-4453-8c75-99bf94b2d42c",
+        "id": "c1fe58ff-657a-4ed9-ad31-fcc84e715213",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "1b4994eb-7f70-4453-8c75-99bf94b2d42c",
+        "id": "6abbfd5d-aae4-443b-b25e-e9307e8b2712",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "2c2fc21f-21d0-4450-af01-cf8c69b44156": {
+    "approval_status": "approved",
+    "created": "2020-11-10T14:14:03.176362",
+    "description": "",
+    "display_name": "U.S. Department of Health & Human Services",
+    "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+    "image_display_url": "https://www.hhs.gov/sites/default/files/web/images/seal_blue_gold_hi_res.jpg",
+    "image_url": "https://www.hhs.gov/sites/default/files/web/images/seal_blue_gold_hi_res.jpg",
+    "is_organization": true,
+    "name": "hhs-gov",
+    "num_followers": 0,
+    "package_count": 19614,
+    "state": "active",
+    "title": "U.S. Department of Health & Human Services",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+        "id": "077f4f9a-b807-40b7-984f-38ed3c3cc8e6",
+        "key": "email_list",
+        "state": "active",
+        "value": "Krycia.Cowling@hhs.gov\r\nhealthdata@hhs.gov\r\nKelsey.Holden@tylertech.com\r\nDarreisha.Bates@tylertech.com\r\nqkn6@cdc.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+        "id": "dbcac434-aa2c-4f90-b5ad-4704f3c28c9d",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "ed01ec43-dcbc-4772-8e20-4c90b457a7a7": {
+    "approval_status": "approved",
+    "created": "2020-11-05T23:06:37.490925",
+    "description": "The State of Alaska contributes several collections of digital geospatial data and services for government and public use. The Dept of Geological and Geophysical Surveys and the Dept of Natural Resources publish data to data.gov. The University of Alaska also operates the AlaskaMapped and GINA repositories of data.",
+    "display_name": "State of Alaska",
+    "id": "ed01ec43-dcbc-4772-8e20-4c90b457a7a7",
+    "image_display_url": "https://dggs.alaska.gov/template/img/dggs-seal.png",
+    "image_url": "https://dggs.alaska.gov/template/img/dggs-seal.png",
+    "is_organization": true,
+    "name": "state-of-alaska",
+    "num_followers": 0,
+    "package_count": 1030,
+    "state": "active",
+    "title": "State of Alaska",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "ed01ec43-dcbc-4772-8e20-4c90b457a7a7",
+        "id": "55338589-40b0-470a-b0d1-73592d395f89",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\ndnr.gispub@alaska.gov"
+      },
+      {
+        "group_id": "ed01ec43-dcbc-4772-8e20-4c90b457a7a7",
+        "id": "1a82cea5-0098-490d-b14f-644a984f63e5",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "7ae8518f-b54f-439a-b63f-fe137bc6faf2": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:36.345329",
+    "description": "",
+    "display_name": "Social Security Administration",
+    "id": "7ae8518f-b54f-439a-b63f-fe137bc6faf2",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/ssa.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/ssa.png",
+    "is_organization": true,
+    "name": "ssa-gov",
+    "num_followers": 0,
+    "package_count": 1102,
+    "state": "active",
+    "title": "Social Security Administration",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7ae8518f-b54f-439a-b63f-fe137bc6faf2",
+        "id": "254f79aa-41b2-4021-b773-c614d4463e42",
+        "key": "email_list",
+        "state": "active",
+        "value": "open.data@ssa.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "7ae8518f-b54f-439a-b63f-fe137bc6faf2",
+        "id": "0a30991b-66c4-485f-8df3-2abd8beb98df",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "7550a5ee-be88-43e1-8dd7-14a5f120ab37": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:52:37.697459",
+    "description": "",
+    "display_name": "City of Bloomington",
+    "id": "7550a5ee-be88-43e1-8dd7-14a5f120ab37",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/en/7/74/CityofBloomingtonSeal.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/7/74/CityofBloomingtonSeal.png",
+    "is_organization": true,
+    "name": "city-of-bloomington",
+    "num_followers": 0,
+    "package_count": 254,
+    "state": "active",
+    "title": "City of Bloomington",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7550a5ee-be88-43e1-8dd7-14a5f120ab37",
+        "id": "30d684fb-1aaf-4a55-928d-6ae5a582b751",
+        "key": "email_list",
+        "state": "active",
+        "value": "inghamn@bloomington.in.gov"
+      },
+      {
+        "group_id": "7550a5ee-be88-43e1-8dd7-14a5f120ab37",
+        "id": "e10bf8cd-58e5-4273-8c41-90a20d7df8ff",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "7550a5ee-be88-43e1-8dd7-14a5f120ab37",
+        "id": "0039385f-24ca-4877-8cd2-194c58b6f192",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://data.bloomington.in.gov/about"
+      }
+    ]
+  },
+  "f4ca4614-8901-409b-8553-2e994ad10023": {
+    "approval_status": "approved",
+    "created": "2020-11-10T19:45:32.103132",
+    "description": "NASA's vision: To reach for new heights and reveal the unknown so that what we do and learn will benefit all humankind.\r\n\r\nTo do that, thousands of people have been working around the world -- and off of it -- for 50 years, trying to answer some basic questions. What's out there in space? How do we get there? What will we find? What can we learn there, or learn just by trying to get there, that will make life better here on Earth?\r\n\r\nNASA conducts its work in four principal organizations, called mission directorates:\r\n \r\nAeronautics: works to solve the challenges that still exist in our nation's air transportation system: air traffic congestion, safety and environmental impacts.\r\n\r\nHuman Exploration and Operations: focuses on International Space Station operations, development of commercial spaceflight opportunities and human exploration beyond low Earth orbit.\r\n\r\nScience: explores the Earth, solar system and universe beyond; charts the best route of discovery; and reaps the benefits of Earth and space exploration for society.\r\n\r\nSpace Technology: rapidly develops, demonstrates, and infuses revolutionary, high-payoff technologies, expanding the boundaries of the aerospace enterprise.\r\n\r\nIn the early 21st century, NASA's reach spans the universe. The Mars rover Curiosity is still exploring Mars to see if it might once have had environments suitable for life. Cassini is in orbit around Saturn, as Juno makes its way to Jupiter. The restored Hubble Space Telescope continues to explore the deepest reaches of the cosmos as NASA developes the James Webb Space Telescope.\r\n\r\nCloser to home, the latest crew of the International Space Station is extending the permanent human presence in space. With commercial partners such as SpaceX, NASA is helping to foster the development of private-sector aerospace.\r\n\r\nEarth science satellites are sending back unprecedented data on Earth's oceans, climate and other features. NASA's aeronautics team is working with other government organizations, universities, and industry to fundamentally improve the air transportation experience and retain our nation's leadership in global aviation.",
+    "display_name": "National Aeronautics and Space Administration",
+    "id": "f4ca4614-8901-409b-8553-2e994ad10023",
+    "image_display_url": "http://polargateways2008.gsfc.nasa.gov/images/LOGO_2in/NASA_2.jpg",
+    "image_url": "http://polargateways2008.gsfc.nasa.gov/images/LOGO_2in/NASA_2.jpg",
+    "is_organization": true,
+    "name": "nasa-gov",
+    "num_followers": 0,
+    "package_count": 27039,
+    "state": "active",
+    "title": "National Aeronautics and Space Administration",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "f4ca4614-8901-409b-8553-2e994ad10023",
+        "id": "f2684e62-71f6-4787-82d8-42ac29ec3e25",
+        "key": "email_list",
+        "state": "active",
+        "value": "evan.t.yates@nasa.gov\r\njason.duley@nasa.gov\r\nkaylin.m.bugbee@nasa.gov\r\ndarith.s.yim@nasa.gov\r\njeffery.j.rubio@nasa.gov\r\nhelga.schmidt@nasa.gov\r\njoshua.j.naisbitt@nasa.gov\r\nkaitlyn.e.adams@nasa.gov\r\ndaniel.c.rendon@nasa.gov\r\natul.badwal@nasa.gov\r\nheather.l.rainey@nasa.gov\r\nnidhi.wahi@nasa.gov"
+      },
+      {
+        "group_id": "f4ca4614-8901-409b-8553-2e994ad10023",
+        "id": "13b3b35d-c547-484c-93e9-26be0615961d",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "0cf9eb54-7e63-49cf-a0ad-a10da0b17f45": {
+    "approval_status": "approved",
+    "created": "2023-11-13T19:59:59.814981",
+    "description": "AmeriCorps is the federal agency for national service and volunteerism. AmeriCorps provides opportunities for Americans of all backgrounds to serve their country, address the nation’s most pressing challenges, and improve lives and communities.",
+    "display_name": "AmeriCorps",
+    "id": "0cf9eb54-7e63-49cf-a0ad-a10da0b17f45",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/americorps.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/americorps.png",
+    "is_organization": true,
+    "name": "americorps-gov",
+    "num_followers": 0,
+    "package_count": 50,
+    "state": "active",
+    "title": "AmeriCorps",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "0cf9eb54-7e63-49cf-a0ad-a10da0b17f45",
+        "id": "9e45fa7c-8f03-4a74-b341-e4e870b09e3c",
+        "key": "email_list",
+        "state": "active",
+        "value": "AGibbons@americorps.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "0cf9eb54-7e63-49cf-a0ad-a10da0b17f45",
+        "id": "23086323-0094-41d5-a530-8e50657f4382",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "7f3c6c7a-ef5f-4ee0-87ce-a0300ba767d5": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:12:03.949444",
+    "description": "",
+    "display_name": "City of San Francisco",
+    "id": "7f3c6c7a-ef5f-4ee0-87ce-a0300ba767d5",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Seal_of_San_Francisco.svg/1024px-Seal_of_San_Francisco.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Seal_of_San_Francisco.svg/1024px-Seal_of_San_Francisco.svg.png",
+    "is_organization": true,
+    "name": "city-of-san-francisco",
+    "num_followers": 0,
+    "package_count": 647,
+    "state": "active",
+    "title": "City of San Francisco",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7f3c6c7a-ef5f-4ee0-87ce-a0300ba767d5",
+        "id": "dcb4316f-39d6-4ac4-9e37-4035aa45e20d",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "7f3c6c7a-ef5f-4ee0-87ce-a0300ba767d5",
+        "id": "4e863e37-7a2f-484e-b604-0a4e38e8121a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      }
+    ]
+  },
+  "352b4532-793d-4075-a03f-05b778a3c43a": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:17.167852",
+    "description": "",
+    "display_name": "Department of Agriculture",
+    "id": "352b4532-793d-4075-a03f-05b778a3c43a",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Logo_of_the_United_States_Department_of_Agriculture.svg/1920px-Logo_of_the_United_States_Department_of_Agriculture.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Logo_of_the_United_States_Department_of_Agriculture.svg/1920px-Logo_of_the_United_States_Department_of_Agriculture.svg.png",
+    "is_organization": true,
+    "name": "usda-gov",
+    "num_followers": 0,
+    "package_count": 2929,
+    "state": "active",
+    "title": "Department of Agriculture",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "352b4532-793d-4075-a03f-05b778a3c43a",
+        "id": "45a283c8-39c9-4de5-938a-21464f4fb3e3",
+        "key": "email_list",
+        "state": "active",
+        "value": "Christopher.Alvares@usda.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "352b4532-793d-4075-a03f-05b778a3c43a",
+        "id": "8bdbbb71-db63-4e7f-a9b4-63b3bb8ed610",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "9a9b5c49-8106-430b-b214-4f2e9089ca0e": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:44:54.119626",
+    "description": "",
+    "display_name": "Nuclear Regulatory Commission",
+    "id": "9a9b5c49-8106-430b-b214-4f2e9089ca0e",
+    "image_display_url": "http://www.nrc.gov/admin/img/logo-nrc-banner.jpg",
+    "image_url": "http://www.nrc.gov/admin/img/logo-nrc-banner.jpg",
+    "is_organization": true,
+    "name": "nrc-gov",
+    "num_followers": 0,
+    "package_count": 206,
+    "state": "active",
+    "title": "Nuclear Regulatory Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "9a9b5c49-8106-430b-b214-4f2e9089ca0e",
+        "id": "8edeeb6c-0d03-4856-b466-51a4e859b6d0",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov\r\nmaksim.dolinsky@nrc.gov"
+      },
+      {
+        "group_id": "9a9b5c49-8106-430b-b214-4f2e9089ca0e",
+        "id": "fc843eed-eb0f-4c1f-af34-2016f603a61c",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "1f2ebc13-fc03-4bcd-b2c0-dad0bb510b65": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:28.814722",
+    "description": "",
+    "display_name": "Department of Energy",
+    "id": "1f2ebc13-fc03-4bcd-b2c0-dad0bb510b65",
+    "image_display_url": "http://energy.gov/sites/prod/files/styles/imagelink/public/DoE-Logo.jpeg",
+    "image_url": "http://energy.gov/sites/prod/files/styles/imagelink/public/DoE-Logo.jpeg",
+    "is_organization": true,
+    "name": "doe-gov",
+    "num_followers": 0,
+    "package_count": 3977,
+    "state": "active",
+    "title": "Department of Energy",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "1f2ebc13-fc03-4bcd-b2c0-dad0bb510b65",
+        "id": "410dd203-1a5e-4472-bf04-0865ce28fca3",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nkeshav.iyengar@hq.doe.gov\r\nmichelle.miles@hq.doe.gov"
+      },
+      {
+        "group_id": "1f2ebc13-fc03-4bcd-b2c0-dad0bb510b65",
+        "id": "1ea409e7-0460-4915-922c-d300402039d8",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "6cd4f2ba-1583-469c-a6f0-95ba585aeb7e": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:46.550608",
+    "description": "",
+    "display_name": "Department of Labor",
+    "id": "6cd4f2ba-1583-469c-a6f0-95ba585aeb7e",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/labor.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/labor.png",
+    "is_organization": true,
+    "name": "dol-gov",
+    "num_followers": 0,
+    "package_count": 460,
+    "state": "active",
+    "title": "Department of Labor",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "6cd4f2ba-1583-469c-a6f0-95ba585aeb7e",
+        "id": "02872e5b-464f-4629-958c-d82eaa25c692",
+        "key": "email_list",
+        "state": "active",
+        "value": "Yao.Sue-li@dol.gov\r\nZhao.Renee.Y@dol.gov\r\nPearce.Lynn@dol.gov\r\nFayer.Stella.D@dol.gov \r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "6cd4f2ba-1583-469c-a6f0-95ba585aeb7e",
+        "id": "174a2ea3-b2a7-4234-8759-3546c6275cf3",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "842b8561-cf24-49cf-b901-66c6932a392b": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:30:09.713590",
+    "description": "",
+    "display_name": "Small Business Administration",
+    "id": "842b8561-cf24-49cf-b901-66c6932a392b",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/sba.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/sba.png",
+    "is_organization": true,
+    "name": "sba-gov",
+    "num_followers": 0,
+    "package_count": 57,
+    "state": "active",
+    "title": "Small Business Administration",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "842b8561-cf24-49cf-b901-66c6932a392b",
+        "id": "7cbde375-a1b6-4200-9bd0-de80ac454522",
+        "key": "email_list",
+        "state": "active",
+        "value": "Sanjay.Gupta@sba.gov\r\nOrlando.Rivera-Hernandez@sba.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "842b8561-cf24-49cf-b901-66c6932a392b",
+        "id": "41470a7a-1e22-4a2b-aca8-a1dce24eb86b",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "23fadd55-de9c-44e6-8cea-b328f5eccf22": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:26:53.259571",
+    "description": "",
+    "display_name": "Montgomery County of Maryland",
+    "id": "23fadd55-de9c-44e6-8cea-b328f5eccf22",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "montgomery-county-of-maryland",
+    "num_followers": 0,
+    "package_count": 460,
+    "state": "active",
+    "title": "Montgomery County of Maryland",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "23fadd55-de9c-44e6-8cea-b328f5eccf22",
+        "id": "17e13dd4-9da4-4682-82d8-7795f4c6841c",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "23fadd55-de9c-44e6-8cea-b328f5eccf22",
+        "id": "cc72b237-7d39-4a55-9b79-bcb80819e0ec",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      }
+    ]
+  },
+  "7f8ee588-32a3-4b6c-b435-d6603c91dbcc": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:05.597250",
+    "description": "The Department of Housing and Urban Development (HUD) provides comprehensive data on U.S. housing and urban communities with a commitment to transparency. Our mission is to create strong, inclusive, sustainable communities and quality affordable homes for all. Powered by a capable workforce, innovative research, and respect for consumer rights, we strive to bolster the economy and improve quality of life. We stand against discrimination and aim to transform our operations for greater efficiency. Open data is a critical tool in our mission, fostering accountability and enabling informed decision-making.",
+    "display_name": "Department of Housing and Urban Development",
+    "id": "7f8ee588-32a3-4b6c-b435-d6603c91dbcc",
+    "image_display_url": "http://www.foia.gov/images/logo-hud.jpg",
+    "image_url": "http://www.foia.gov/images/logo-hud.jpg",
+    "is_organization": true,
+    "name": "hud-gov",
+    "num_followers": 0,
+    "package_count": 220,
+    "state": "active",
+    "title": "Department of Housing and Urban Development",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7f8ee588-32a3-4b6c-b435-d6603c91dbcc",
+        "id": "7330c906-bc51-49c9-9de8-d2e354d42228",
+        "key": "email_list",
+        "state": "active",
+        "value": "John.C.Huggins@hud.gov\r\nBrandon.W.Fischer@hud.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "7f8ee588-32a3-4b6c-b435-d6603c91dbcc",
+        "id": "484cd338-9e53-47e1-9aa4-3d55ded4e110",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "2cca5b33-6bfa-496a-895f-3301690bbc2c": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:06:35.112297",
+    "description": "",
+    "display_name": "City of Providence",
+    "id": "2cca5b33-6bfa-496a-895f-3301690bbc2c",
+    "image_display_url": "https://data.providenceri.gov/api/assets/0D737DBB-91A0-4151-BF06-C34EEA7BE5D3?OpenDataHeader.jpg",
+    "image_url": "https://data.providenceri.gov/api/assets/0D737DBB-91A0-4151-BF06-C34EEA7BE5D3?OpenDataHeader.jpg",
+    "is_organization": true,
+    "name": "city-of-providence",
+    "num_followers": 0,
+    "package_count": 210,
+    "state": "active",
+    "title": "City of Providence",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "2cca5b33-6bfa-496a-895f-3301690bbc2c",
+        "id": "87c462c7-df1f-48a6-bd4b-76a42f1105c6",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "2cca5b33-6bfa-496a-895f-3301690bbc2c",
+        "id": "421b8c78-3c0f-41c1-9844-cc21f6f0bba6",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "2cca5b33-6bfa-496a-895f-3301690bbc2c",
+        "id": "dbd9ef88-0e89-4bb2-a5b7-9131a0012567",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://opendatacommons.org/licenses/pddl/1.0/"
+      }
+    ]
+  },
+  "870e0331-c577-42b4-bf32-6b5e239651a3": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:27:17.017641",
+    "description": "",
+    "display_name": "State of Missouri",
+    "id": "870e0331-c577-42b4-bf32-6b5e239651a3",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "state-of-missouri",
+    "num_followers": 0,
+    "package_count": 170,
+    "state": "active",
+    "title": "State of Missouri",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "870e0331-c577-42b4-bf32-6b5e239651a3",
+        "id": "5cc056b2-609b-4912-bdeb-0f9e5093e109",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "870e0331-c577-42b4-bf32-6b5e239651a3",
+        "id": "b1f6bc15-9cc5-4b10-8e2c-b04ee1d2696c",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "5e4d7221-af33-40f5-bbed-78ae1dd8721e": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:34:31.142125",
+    "description": "",
+    "display_name": "Federal Deposit Insurance Corporation",
+    "id": "5e4d7221-af33-40f5-bbed-78ae1dd8721e",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/US-FDIC-Logo.svg/150px-US-FDIC-Logo.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/US-FDIC-Logo.svg/150px-US-FDIC-Logo.svg.png",
+    "is_organization": true,
+    "name": "fdic-gov",
+    "num_followers": 0,
+    "package_count": 17,
+    "state": "active",
+    "title": "Federal Deposit Insurance Corporation",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "5e4d7221-af33-40f5-bbed-78ae1dd8721e",
+        "id": "78223a60-3909-4008-a158-a7083a13bec2",
+        "key": "email_list",
+        "state": "active",
+        "value": "dmentall@fdic.gov\r\nmmontoya@fdic.gov"
+      },
+      {
+        "group_id": "5e4d7221-af33-40f5-bbed-78ae1dd8721e",
+        "id": "fe871a54-b989-45a3-9fbe-f7e33b302781",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "a543287f-0731-4645-b100-a29f4f39be97": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:19.035566",
+    "description": "",
+    "display_name": "Department of the Treasury",
+    "id": "a543287f-0731-4645-b100-a29f4f39be97",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Seal_of_the_United_States_Department_of_the_Treasury.svg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Seal_of_the_United_States_Department_of_the_Treasury.svg",
+    "is_organization": true,
+    "name": "treasury-gov",
+    "num_followers": 0,
+    "package_count": 233,
+    "state": "active",
+    "title": "Department of the Treasury",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "a543287f-0731-4645-b100-a29f4f39be97",
+        "id": "9989c786-fb30-42a4-b303-93c52e4f15bb",
+        "key": "email_list",
+        "state": "active",
+        "value": "nhien.be@treasury.gov\r\nrajeev.mishra@treasury.gov\r\nTao.Lu@treasury.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "a543287f-0731-4645-b100-a29f4f39be97",
+        "id": "4d56c19e-2328-4955-b208-58b729057a80",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "b404edc2-c117-4d3e-99f7-3c29cc8cb50c": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:40:00.972688",
+    "description": "Louisville Metro Government in collaboration with our GIS partner LOJIC (Louisville-Jefferson County Information Consortium) publishes hundreds of datasets including budget items, crime reports, restaurant health ratings, employee salaries, building permits, car collisions, fire runs, and 311 service calls. This information is used by journalists, researchers, non-profits, and residents to help you understand what is happening across all levels of your city and neighborhood.\r\n\r\nhttps://data.louisvilleky.gov/\r\nhttps://louisvilleky.gov/\r\nhttps://www.lojic.org/",
+    "display_name": "Louisville Metro Government",
+    "id": "b404edc2-c117-4d3e-99f7-3c29cc8cb50c",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/louisvilleky.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/louisvilleky.png",
+    "is_organization": true,
+    "name": "louisville-metro-government",
+    "num_followers": 0,
+    "package_count": 546,
+    "state": "active",
+    "title": "Louisville Metro Government",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "b404edc2-c117-4d3e-99f7-3c29cc8cb50c",
+        "id": "70f289cb-4cbb-45cb-aebb-46376929fa53",
+        "key": "email_list",
+        "state": "active",
+        "value": "Matthew.Gotth-Olsen@louisvilleky.gov"
+      },
+      {
+        "group_id": "b404edc2-c117-4d3e-99f7-3c29cc8cb50c",
+        "id": "2942c2a8-7bab-4b67-86ae-7dfa9766ba84",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "b404edc2-c117-4d3e-99f7-3c29cc8cb50c",
+        "id": "ce7f5d34-0889-4c3d-a103-db5a4701e003",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "http://data.louisvilleky.gov/disclaimer"
+      }
+    ]
+  },
+  "8571f574-7d3d-48f3-8cc7-af44048076a1": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:57:50.764929",
+    "description": "",
+    "display_name": "City of New Orleans",
+    "id": "8571f574-7d3d-48f3-8cc7-af44048076a1",
+    "image_display_url": "https://nola.gov/nola/media/NEXT/Assets/new-orleans-city-fdl-logo.png",
+    "image_url": "https://nola.gov/nola/media/NEXT/Assets/new-orleans-city-fdl-logo.png",
+    "is_organization": true,
+    "name": "city-of-new-orleans",
+    "num_followers": 0,
+    "package_count": 209,
+    "state": "active",
+    "title": "City of New Orleans",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "8571f574-7d3d-48f3-8cc7-af44048076a1",
+        "id": "bc0a39cd-f8da-4a2a-bf50-1b34add2eeb2",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "8571f574-7d3d-48f3-8cc7-af44048076a1",
+        "id": "45ebe8df-0c8b-4696-8302-d2f95b277791",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "8571f574-7d3d-48f3-8cc7-af44048076a1",
+        "id": "a91454fd-583f-459f-8b60-c2988a5a1351",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "http://www.nola.gov/site/"
+      }
+    ]
+  },
+  "217e855b-cd64-4ebc-958b-abbbb0f57ac2": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:11:46.307254",
+    "description": "",
+    "display_name": "Department of Education",
+    "id": "217e855b-cd64-4ebc-958b-abbbb0f57ac2",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/ed.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/ed.png",
+    "is_organization": true,
+    "name": "ed-gov",
+    "num_followers": 0,
+    "package_count": 859,
+    "state": "active",
+    "title": "Department of Education",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "217e855b-cd64-4ebc-958b-abbbb0f57ac2",
+        "id": "1b3ac95c-3047-442e-90fa-30668f14d3f7",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov\r\nldusard@anlar.com\r\nlindsay.dusard@ed.gov"
+      },
+      {
+        "group_id": "217e855b-cd64-4ebc-958b-abbbb0f57ac2",
+        "id": "902ae6c5-c80e-42cd-bd2f-c24081eeb083",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "72120912-c8d1-4dc3-aca8-d8b06fd72a1a": {
+    "approval_status": "approved",
+    "created": "2022-11-28T17:38:17.420211",
+    "description": "The mission of the Commodity Futures Trading Commission is to promote the integrity,\r\nresilience, and vibrancy of the U.S. derivatives markets through sound regulation.",
+    "display_name": "Commodity Futures Trading Commission",
+    "id": "72120912-c8d1-4dc3-aca8-d8b06fd72a1a",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/master/cftc.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/master/cftc.png",
+    "is_organization": true,
+    "name": "commodity-futures-trading-commission",
+    "num_followers": 0,
+    "package_count": 7,
+    "state": "active",
+    "title": "Commodity Futures Trading Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "72120912-c8d1-4dc3-aca8-d8b06fd72a1a",
+        "id": "b6d58f11-606c-4ab2-af48-b1ae0a6ee092",
+        "key": "email_list",
+        "state": "active",
+        "value": "TGarland@cftc.gov\r\nkmarshall@cftc.gov"
+      },
+      {
+        "group_id": "72120912-c8d1-4dc3-aca8-d8b06fd72a1a",
+        "id": "00489d69-ae36-49de-bd64-d3b279693a9e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "0349e8bf-a476-4e31-b97e-cbcab1dec4cb": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:42:42.653068",
+    "description": "The Office of Management and Budget (OMB) serves the President of the United States in overseeing the implementation of his vision across the Executive Branch. Specifically, OMB’s mission is to assist the President in meeting his policy, budget, management and regulatory objectives and to fulfill the agency’s statutory responsibilities.",
+    "display_name": "Office of Management and Budget",
+    "id": "0349e8bf-a476-4e31-b97e-cbcab1dec4cb",
+    "image_display_url": "https://www.whitehouse.gov/wp-content/uploads/2017/08/eop-omb.png",
+    "image_url": "https://www.whitehouse.gov/wp-content/uploads/2017/08/eop-omb.png",
+    "is_organization": true,
+    "name": "office-of-management-and-budget",
+    "num_followers": 0,
+    "package_count": 3,
+    "state": "active",
+    "title": "Office of Management and Budget",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "0349e8bf-a476-4e31-b97e-cbcab1dec4cb",
+        "id": "dc9d5dea-0f6e-48dd-b204-53110ed8f9df",
+        "key": "email_list",
+        "state": "active",
+        "value": "Patrick.Evans@omb.eop.gov"
+      },
+      {
+        "group_id": "0349e8bf-a476-4e31-b97e-cbcab1dec4cb",
+        "id": "645c9919-c2f3-4079-8368-29da3a83ea38",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "aec664c9-c7c5-42f2-bd5c-f881d608ba8a": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:27:24.132323",
+    "description": "Established in 1889, the International Boundary and Water Commission (IBWC) has responsibility for applying the boundary and water treaties between the United States and Mexico and settling differences that may arise in their application.  The IBWC is an international body composed of the United States Section and the Mexican Section, each headed by an Engineer-Commissioner appointed by his/her respective president.  Each section is administered independently of the other.  The United States Section of the International Boundary and Water Commission (USIBWC) is a federal government agency and is headquartered in El Paso, Texas.  The IBWC operates under the foreign policy guidance of the Department of State.  The Mexican Section is under the administrative supervision of the Mexican Ministry of Foreign Affairs and is headquartered in Ciudad Juarez, Chihuahua, Mexico.\r\n\r\nThe mission of the IBWC is to apply the rights and obligations that the Governments of the United States and Mexico assume under boundary and water treaties, and to do so in way that benefits the social and economic welfare of people on both sides of the boundary and improves relations between the two countries.\r\n\r\nAs provided for in treaties and agreements, those rights and obligations include: distribution between the two countries of the waters of the Rio Grande and the Colorado River; regulation and conservation of the waters of the Rio Grande by joint construction, operation and maintenance of international reservoirs; regulation of the Colorado River waters allocated to Mexico; protection of lands along the river from floods by levee and floodway projects; solution of border sanitation and other border water quality problems; preservation of the Rio Grande and Colorado River as the international boundary; and demarcation of the land boundary.\r\n\r\nIn addition to cooperative projects undertaken to implement existing treaties and international agreements, the U.S. and Mexican Commissioners also make recommendations to their respective Governments for resolution of new or anticipated boundary or water problems.  Early detection and evaluation of the problem, and the development of measures for resolution are part of the mission of the IBWC.",
+    "display_name": "International Boundary & Water Commission",
+    "id": "aec664c9-c7c5-42f2-bd5c-f881d608ba8a",
+    "image_display_url": "https://www.ibwc.gov/wp-content/uploads/2022/09/Logo-Transparent.png",
+    "image_url": "https://www.ibwc.gov/wp-content/uploads/2022/09/Logo-Transparent.png",
+    "is_organization": true,
+    "name": "ibwc-gov",
+    "num_followers": 0,
+    "package_count": 80,
+    "state": "active",
+    "title": "International Boundary & Water Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "aec664c9-c7c5-42f2-bd5c-f881d608ba8a",
+        "id": "c2d8f149-f902-46d7-9344-e121b4567daa",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "aec664c9-c7c5-42f2-bd5c-f881d608ba8a",
+        "id": "470d4507-0f6c-45bd-baa1-8ce4c9cc913e",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "4d976f1e-ccb5-4dbe-aa98-9d2931fbd215": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:30:03.840463",
+    "description": "",
+    "display_name": "Department of Defense",
+    "id": "4d976f1e-ccb5-4dbe-aa98-9d2931fbd215",
+    "image_display_url": "http://www.foia.gov/images/logo-dod.jpg",
+    "image_url": "http://www.foia.gov/images/logo-dod.jpg",
+    "is_organization": true,
+    "name": "dod-gov",
+    "num_followers": 0,
+    "package_count": 175,
+    "state": "active",
+    "title": "Department of Defense",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "4d976f1e-ccb5-4dbe-aa98-9d2931fbd215",
+        "id": "4a162a2b-37cc-4a83-aecb-ddbbaf6c7b0c",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "4d976f1e-ccb5-4dbe-aa98-9d2931fbd215",
+        "id": "77fd9b12-cbbf-47b8-81a3-956b7570e551",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "e846364e-cb2f-4a9a-bcee-1f4f570d10e3": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:36:24.261236",
+    "description": "Allegheny County (Pennsylvania) and the City of Pittsburgh both publish their data through the Western Pennsylvania Regional Data Center. The Western Pennsylvania Regional Data Center supports key community initiatives by making public information easier to find and use. The Data Center maintains Allegheny County and the City of Pittsburgh’s open data portal, and provides a number of services to data publishers and users. The Data Center also hosts datasets from these and other public sector agencies, academic institutions, and non-profit organizations. The Data Center is managed by the University of Pittsburgh’s Center for Social and Urban Research, and is a partnership of the University, Allegheny County and the City of Pittsburgh.",
+    "display_name": "Allegheny County / City of Pittsburgh / Western PA Regional Data Center",
+    "id": "e846364e-cb2f-4a9a-bcee-1f4f570d10e3",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Seal_of_Pennsylvania.svg/1200px-Seal_of_Pennsylvania.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Seal_of_Pennsylvania.svg/1200px-Seal_of_Pennsylvania.svg.png",
+    "is_organization": true,
+    "name": "allegheny-county-city-of-pittsburgh-western-pa-regional-data-center",
+    "num_followers": 0,
+    "package_count": 328,
+    "state": "active",
+    "title": "Allegheny County / City of Pittsburgh / Western PA Regional Data Center",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "e846364e-cb2f-4a9a-bcee-1f4f570d10e3",
+        "id": "6a564522-ab9c-48dd-84e2-f1da9955a33b",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov\r\nhyon.kim@gsa.gov"
+      },
+      {
+        "group_id": "e846364e-cb2f-4a9a-bcee-1f4f570d10e3",
+        "id": "095f6c30-1196-4807-937c-5d7113108ae1",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      },
+      {
+        "group_id": "e846364e-cb2f-4a9a-bcee-1f4f570d10e3",
+        "id": "94aa4a3f-47ae-4e36-b4cf-a744ad1242a7",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "http://www.wprdc.org/terms-of-use/"
+      }
+    ]
+  },
+  "dde3fc99-e074-41cf-a843-14aa9c777889": {
+    "approval_status": "approved",
+    "created": "2020-11-10T20:14:29.747011",
+    "description": "",
+    "display_name": "State of New York",
+    "id": "dde3fc99-e074-41cf-a843-14aa9c777889",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "state-of-new-york",
+    "num_followers": 0,
+    "package_count": 1128,
+    "state": "active",
+    "title": "State of New York",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "dde3fc99-e074-41cf-a843-14aa9c777889",
+        "id": "9c1c5d56-c71b-4f76-a230-def9c50e67e4",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "dde3fc99-e074-41cf-a843-14aa9c777889",
+        "id": "c04a70f1-2eb4-4f64-918c-b8b1a3c4a66a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      }
+    ]
+  },
+  "7cff86d0-0d45-4944-a4ba-4511805793bc": {
+    "approval_status": "approved",
+    "created": "2020-11-10T22:37:09.655827",
+    "description": "",
+    "display_name": "Lake County, Illinois",
+    "id": "7cff86d0-0d45-4944-a4ba-4511805793bc",
+    "image_display_url": "https://maps.lakecountyil.gov/output/logo/countyseal.png",
+    "image_url": "https://maps.lakecountyil.gov/output/logo/countyseal.png",
+    "is_organization": true,
+    "name": "lake-county-illinois",
+    "num_followers": 0,
+    "package_count": 1449,
+    "state": "active",
+    "title": "Lake County, Illinois",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "7cff86d0-0d45-4944-a4ba-4511805793bc",
+        "id": "3168b5e4-49b6-4d83-8f6c-d1198a8a176c",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\nhyon.kim@gsa.gov"
+      },
+      {
+        "group_id": "7cff86d0-0d45-4944-a4ba-4511805793bc",
+        "id": "fa2b1c2d-e4a5-4169-930f-7dc07dfb28a8",
+        "key": "organization_type",
+        "state": "active",
+        "value": "County Government"
+      }
+    ]
+  },
+  "16980d1c-5e8f-4188-b962-42446f2d3f63": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:45:07.074194",
+    "description": "",
+    "display_name": "Department of Commerce",
+    "id": "16980d1c-5e8f-4188-b962-42446f2d3f63",
+    "image_display_url": "http://www.vos.noaa.gov/MWL/aug_10/Images/doc_logo_xparent.png",
+    "image_url": "http://www.vos.noaa.gov/MWL/aug_10/Images/doc_logo_xparent.png",
+    "is_organization": true,
+    "name": "doc-gov",
+    "num_followers": 0,
+    "package_count": 1962,
+    "state": "active",
+    "title": "Department of Commerce",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "16980d1c-5e8f-4188-b962-42446f2d3f63",
+        "id": "1f951551-79a2-48bb-90ea-8c53c98ad95b",
+        "key": "email_list",
+        "state": "active",
+        "value": "websolutions@doc.gov\r\nkelsey.holden@tylertech.com\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "16980d1c-5e8f-4188-b962-42446f2d3f63",
+        "id": "56fa10e8-4b8b-4280-8bf3-ddd4672d0845",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "e2a695cc-a695-472a-ad5e-26e1ad4dacb1": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:13:15.627784",
+    "description": "The purpose of Chapel Hill Open Data is to increase transparency and facilitate access to information. A Chapel Hill Public Library service.",
+    "display_name": "Town of Chapel Hill, North Carolina",
+    "id": "e2a695cc-a695-472a-ad5e-26e1ad4dacb1",
+    "image_display_url": "https://s3.amazonaws.com/bsp-ocsit-prod-east-appdata/datagov/wordpress/2017/11/CH_Town_SEAL_color.png",
+    "image_url": "https://s3.amazonaws.com/bsp-ocsit-prod-east-appdata/datagov/wordpress/2017/11/CH_Town_SEAL_color.png",
+    "is_organization": true,
+    "name": "town-of-chapel-hill-north-carolina",
+    "num_followers": 0,
+    "package_count": 36,
+    "state": "active",
+    "title": "Town of Chapel Hill, North Carolina",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "e2a695cc-a695-472a-ad5e-26e1ad4dacb1",
+        "id": "84ea7677-27d1-48fd-9578-e2263df098f7",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "e2a695cc-a695-472a-ad5e-26e1ad4dacb1",
+        "id": "1a982cc6-e7dd-4d80-a2d0-1c752c5749da",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "e2a695cc-a695-472a-ad5e-26e1ad4dacb1",
+        "id": "6d21f318-d8e1-426b-8894-ada3b0296050",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://www.chapelhillopendata.org/terms/terms-of-use/"
+      }
+    ]
+  },
+  "8148853c-d386-4705-a1c4-41c3212f78e4": {
+    "approval_status": "approved",
+    "created": "2020-11-10T16:43:51.809457",
+    "description": "",
+    "display_name": "National Archives and Records Administration",
+    "id": "8148853c-d386-4705-a1c4-41c3212f78e4",
+    "image_display_url": "http://www.archives.gov/global-images/logo.gif",
+    "image_url": "http://www.archives.gov/global-images/logo.gif",
+    "is_organization": true,
+    "name": "nara-gov",
+    "num_followers": 0,
+    "package_count": 50,
+    "state": "active",
+    "title": "National Archives and Records Administration",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "8148853c-d386-4705-a1c4-41c3212f78e4",
+        "id": "2e0f6239-ac80-49df-8a5a-6aa59ac444b2",
+        "key": "email_list",
+        "state": "active",
+        "value": "Jay.nannapaneni@nara.gov\r\nmelvin.riley@nara.gov\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "8148853c-d386-4705-a1c4-41c3212f78e4",
+        "id": "b1ba01ef-497c-48a2-98ba-163cf7af162d",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "2efac508-2a39-46d4-8d0c-e034d17e928f": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:33:36.590556",
+    "description": "State of Iowa ",
+    "display_name": "State of Iowa",
+    "id": "2efac508-2a39-46d4-8d0c-e034d17e928f",
+    "image_display_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/state_IA.png",
+    "image_url": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/state_IA.png",
+    "is_organization": true,
+    "name": "state-of-iowa",
+    "num_followers": 0,
+    "package_count": 672,
+    "state": "active",
+    "title": "State of Iowa",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "2efac508-2a39-46d4-8d0c-e034d17e928f",
+        "id": "9005e05c-c630-40ad-a52f-56aba2ddfbba",
+        "key": "email_list",
+        "state": "active",
+        "value": "hyon.kim@gsa.gov\r\ncrystal.carter@gsa.gov\r\nscott.vanderhart@iowa.gov"
+      },
+      {
+        "group_id": "2efac508-2a39-46d4-8d0c-e034d17e928f",
+        "id": "b013b4bf-c0ae-4898-aeff-38f9bc6fad70",
+        "key": "organization_type",
+        "state": "active",
+        "value": "State Government"
+      },
+      {
+        "group_id": "2efac508-2a39-46d4-8d0c-e034d17e928f",
+        "id": "4d741c5a-c1b1-4659-b169-f278888c0c4f",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://data.iowa.gov/policies"
+      }
+    ]
+  },
+  "76081985-fac4-4ce8-8e1d-43c5cd268ec5": {
+    "approval_status": "approved",
+    "created": "2020-11-10T15:10:53.891335",
+    "description": "",
+    "display_name": "Institute of Museum and Library Services",
+    "id": "76081985-fac4-4ce8-8e1d-43c5cd268ec5",
+    "image_display_url": "https://www.imls.gov/sites/default/files/imls_logo_2c.gif",
+    "image_url": "https://www.imls.gov/sites/default/files/imls_logo_2c.gif",
+    "is_organization": true,
+    "name": "imls-gov",
+    "num_followers": 0,
+    "package_count": 58,
+    "state": "active",
+    "title": "Institute of Museum and Library Services",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "76081985-fac4-4ce8-8e1d-43c5cd268ec5",
+        "id": "af68e265-a1dd-483a-84fc-db15279f04b3",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "76081985-fac4-4ce8-8e1d-43c5cd268ec5",
+        "id": "85ded2a4-99b9-435f-8c91-3d48707d0f04",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "f8b1a6b3-a9bd-4f01-96ef-154082643353": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:33:56.939302",
+    "description": "City of Austin (Texas) ",
+    "display_name": "City of Austin",
+    "id": "f8b1a6b3-a9bd-4f01-96ef-154082643353",
+    "image_display_url": "https://data.austintexas.gov/api/views/nctn-6aaq/files/581f3962-a92b-4ec0-97c1-0d8729d95c8f",
+    "image_url": "https://data.austintexas.gov/api/views/nctn-6aaq/files/581f3962-a92b-4ec0-97c1-0d8729d95c8f",
+    "is_organization": true,
+    "name": "city-of-austin",
+    "num_followers": 0,
+    "package_count": 2593,
+    "state": "active",
+    "title": "City of Austin",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "f8b1a6b3-a9bd-4f01-96ef-154082643353",
+        "id": "b2dddeb8-6155-4e9e-a976-b18ed4cafc6e",
+        "key": "email_list",
+        "state": "active",
+        "value": "Charles.PurmaIII@austintexas.gov\r\nopendata@austintexas.gov"
+      },
+      {
+        "group_id": "f8b1a6b3-a9bd-4f01-96ef-154082643353",
+        "id": "450f0393-f023-455f-81f6-951dd009f661",
+        "key": "organization_type",
+        "state": "active",
+        "value": "City Government"
+      },
+      {
+        "group_id": "f8b1a6b3-a9bd-4f01-96ef-154082643353",
+        "id": "a5e567a6-384f-4380-9df3-00ccfabee8ac",
+        "key": "terms_of_use",
+        "state": "active",
+        "value": "https://data.austintexas.gov/stories/s/ranj-cccq"
+      }
+    ]
+  },
+  "9cd95192-4220-45cd-8d96-f720d58643bd": {
+    "approval_status": "approved",
+    "created": "2020-11-10T17:34:26.402691",
+    "description": "",
+    "display_name": "US Consumer Product Safety Commission",
+    "id": "9cd95192-4220-45cd-8d96-f720d58643bd",
+    "image_display_url": "http://www.recalls.gov/cpsc.jpg",
+    "image_url": "http://www.recalls.gov/cpsc.jpg",
+    "is_organization": true,
+    "name": "cpsc-gov",
+    "num_followers": 0,
+    "package_count": 8,
+    "state": "active",
+    "title": "US Consumer Product Safety Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "9cd95192-4220-45cd-8d96-f720d58643bd",
+        "id": "23035d93-f5b1-40b0-a8dd-538283805cd1",
+        "key": "email_list",
+        "state": "active",
+        "value": "crystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "9cd95192-4220-45cd-8d96-f720d58643bd",
+        "id": "caa39abf-a112-4d03-ac7c-6389157e14ea",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "59164fef-8fab-42ea-98e9-4af51413bbe8": {
+    "approval_status": "approved",
+    "created": "2020-11-10T18:30:27.494009",
+    "description": "",
+    "display_name": "Federal Election Commission",
+    "id": "59164fef-8fab-42ea-98e9-4af51413bbe8",
+    "image_display_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Seal_of_the_United_States_Federal_Election_Commission.svg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Seal_of_the_United_States_Federal_Election_Commission.svg",
+    "is_organization": true,
+    "name": "fec-gov",
+    "num_followers": 0,
+    "package_count": 1,
+    "state": "active",
+    "title": "Federal Election Commission",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "59164fef-8fab-42ea-98e9-4af51413bbe8",
+        "id": "ed3fde58-282e-4685-bbc9-328a132dc583",
+        "key": "email_list",
+        "state": "active",
+        "value": "\r\ncrystal.carter@gsa.gov"
+      },
+      {
+        "group_id": "59164fef-8fab-42ea-98e9-4af51413bbe8",
+        "id": "19d717d5-1c44-4bfa-a06c-d632c5889876",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  },
+  "176f2a2d-ca9b-41f2-8df3-d93096ebdb85": {
+    "approval_status": "approved",
+    "created": "2021-02-20T00:40:21.649226",
+    "description": "The National Institute of Standards and Technology promotes U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve our quality of life. ",
+    "display_name": "National Institute of Standards and Technology",
+    "id": "176f2a2d-ca9b-41f2-8df3-d93096ebdb85",
+    "image_display_url": "",
+    "image_url": "",
+    "is_organization": true,
+    "name": "national-institute-of-standards-and-technology",
+    "num_followers": 0,
+    "package_count": 1222,
+    "state": "active",
+    "title": "National Institute of Standards and Technology",
+    "type": "organization",
+    "extras": [
+      {
+        "group_id": "176f2a2d-ca9b-41f2-8df3-d93096ebdb85",
+        "id": "ceda9e64-d2d3-429e-a823-5d914f31e2f9",
+        "key": "email_list",
+        "state": "active",
+        "value": "open-data@nist.gov\r\niso-data@nist.gov\r\nrobert.commarota@nist.gov\r\ncrystal.carter@gsa.gov\r\n"
+      },
+      {
+        "group_id": "176f2a2d-ca9b-41f2-8df3-d93096ebdb85",
+        "id": "a82e1c8d-9a2f-4192-be1e-a3a8d0323f28",
+        "key": "federal",
+        "state": "active",
+        "value": "true"
+      },
+      {
+        "group_id": "176f2a2d-ca9b-41f2-8df3-d93096ebdb85",
+        "id": "aff7ff0f-dfc2-4c3a-95ea-7266234ccf5a",
+        "key": "organization_type",
+        "state": "active",
+        "value": "Federal Government"
+      }
+    ]
+  }
+}
