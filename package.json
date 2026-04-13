@@ -1,0 +1,9 @@
+{
+  "name": "datastore-monorepo-root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Root package manifest to ensure Railway/Nixpacks detects Node in monorepo builds.",
+  "engines": {
+    "node": ">=20"
+  }
+}
