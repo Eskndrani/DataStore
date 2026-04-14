@@ -507,6 +507,7 @@ export default function Dashboard() {
   const [activeTab, setActiveTab] = useState('datasets');
   const [meta, setMeta] = useState(defaultMeta);
   const [overview, setOverview] = useState(defaultOverview);
+  const [topTags, setTopTags] = useState({});
   const [datasets, setDatasets] = useState([]);
   const [organizations, setOrganizations] = useState([]);
   const [projects, setProjects] = useState([]);
@@ -683,6 +684,7 @@ export default function Dashboard() {
         usageByProjectType: usageDistributionResponse.data,
         topTagsByProjectType: topTagsResponse.data,
       });
+      setTopTags(topTagsResponse.data || {});
     } catch (error) {
       showMessage('error', error.message);
     } finally {
@@ -1250,6 +1252,31 @@ export default function Dashboard() {
                   ]}
                 />
               </div>
+            </section>
+
+            <section className="panel panel-wide">
+              <div className="panel-header">
+                <h3>Top 10 Tags by Project Type</h3>
+              </div>
+              {Object.keys(topTags || {}).length ? (
+                <div className="stacked-tables">
+                  {Object.entries(topTags).map(([projectType, tags]) => (
+                    <section key={projectType}>
+                      <h4 className="table-subtitle">{labelize(projectType)}</h4>
+                      <DataTable
+                        rows={Array.isArray(tags) ? tags : []}
+                        columns={[
+                          { key: 'tag_name', label: 'Tag Name' },
+                          { key: 'tag_count', label: 'Usage Count', render: (row) => formatNumber(row.tag_count) },
+                        ]}
+                        emptyMessage="No tag records for this project type."
+                      />
+                    </section>
+                  ))}
+                </div>
+              ) : (
+                <div className="empty-state">No top tag analytics available.</div>
+              )}
             </section>
           </div>
         </section>

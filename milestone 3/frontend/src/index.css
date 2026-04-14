@@ -517,6 +517,13 @@ tbody tr:hover td {
   gap: 10px;
 }
 
+.table-subtitle {
+  margin: 0 0 8px;
+  color: #cfe2ff;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
 .modal-overlay {
   position: fixed;
   inset: 0;
