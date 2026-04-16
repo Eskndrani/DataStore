@@ -44,7 +44,13 @@ app.use(cors({
 }));
 app.use(express.json({ limit: '1mb' }));
 
-let schemaInfo = null;
+const META = {
+  schemaMode: 'project',
+  supportsAge: true,
+  supportsUsageDate: false,
+  genderOptions: [],
+  projectTypeOptions: ALLOWED_PROJECT_TYPES,
+};
 
 function normalizeText(value) {
   if (value === undefined || value === null) {
@@ -80,11 +86,11 @@ function buildOrEqualsClause(columnSql, values, params) {
   }
 
   const clause = values
-    .map(() => `LOWER(TRIM(${columnSql})) = LOWER(TRIM(?))`)
+    .map(() => 'LOWER(TRIM(' + columnSql + ')) = LOWER(TRIM(?))')
     .join(' OR ');
 
   params.push(...values);
-  return `(${clause})`;
+  return '(' + clause + ')';
 }
 
 function parseBirthdate(age, birthdate) {
@@ -103,145 +109,6 @@ function parseBirthdate(age, birthdate) {
   return date.toISOString().slice(0, 10);
 }
 
-function parseEnumValues(columnType) {
-  if (!columnType || !columnType.toLowerCase().startsWith('enum(')) {
-    return [];
-  }
-
-  const match = columnType.match(/^enum\((.*)\)$/i);
-  if (!match) {
-    return [];
-  }
-
-  return match[1]
-    .split(',')
-    .map((value) => value.trim().replace(/^'/, '').replace(/'$/, '').replace(/\\'/g, "'"));
-}
-
-async function inspectSchema() {
-  const [tableRows] = await pool.query(
-    'SELECT table_name FROM information_schema.tables WHERE table_schema = DATABASE()'
-  );
-
-  const tableSet = new Set(tableRows.map((row) => row.table_name));
-  const columnMap = {};
-  const knownTables = [
-    'organization',
-    'dataset',
-    'resource',
-    'dataset_tag',
-    'dataset_topic',
-    'dataset_resource',
-    'app_user',
-    'project',
-    'project_dataset',
-    'dataset_usage',
-  ];
-
-  for (const tableName of knownTables) {
-    if (!tableSet.has(tableName)) {
-      continue;
-    }
-
-    const [columnRows] = await pool.query(
-      'SELECT column_name, column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = ? ORDER BY ordinal_position',
-      [tableName]
-    );
-
-    columnMap[tableName] = columnRows.reduce((accumulator, row) => {
-      accumulator[row.column_name] = row.column_type;
-      return accumulator;
-    }, {});
-  }
-
-  return {
-    tableSet,
-    columnMap,
-    hasTable(tableName) {
-      return tableSet.has(tableName);
-    },
-    hasColumn(tableName, columnName) {
-      return Boolean(columnMap[tableName] && columnMap[tableName][columnName]);
-    },
-    enumValues(tableName, columnName) {
-      return parseEnumValues(columnMap[tableName] && columnMap[tableName][columnName]);
-    },
-    schemaMode: tableSet.has('dataset_usage') ? 'dataset_usage' : 'project',
-    supportsAge: Boolean(columnMap.app_user && columnMap.app_user.age),
-    supportsUsageDate: Boolean(columnMap.dataset_usage && columnMap.dataset_usage.usage_date),
-  };
-}
-
-function datasetOrgJoinCondition() {
-  if (schemaInfo.hasColumn('dataset', 'org_id')) {
-    return 'd.org_id = o.org_id';
-  }
-
-  return 'd.org_name = o.name';
-}
-
-function datasetTagJoinCondition(datasetAlias = 'd', tagAlias = 'dt') {
-  if (schemaInfo.hasColumn('dataset_tag', 'dataset_id')) {
-    return `${tagAlias}.dataset_id = ${datasetAlias}.dataset_id`;
-  }
-
-  return `${tagAlias}.dataset_name = ${datasetAlias}.name`;
-}
-
-function resourceJoinCondition(datasetAlias = 'd', resourceAlias = 'r', linkAlias = 'dr') {
-  if (schemaInfo.hasColumn('resource', 'dataset_id')) {
-    return `${resourceAlias}.dataset_id = ${datasetAlias}.dataset_id`;
-  }
-
-  return `${linkAlias}.dataset_name = ${datasetAlias}.name`;
-}
-
-function usageDatasetJoinCondition(usageAlias = 'u', datasetAlias = 'd') {
-  if (schemaInfo.schemaMode === 'dataset_usage') {
-    return `${usageAlias}.dataset_id = ${datasetAlias}.dataset_id`;
-  }
-
-  return `${usageAlias}.dataset_name = ${datasetAlias}.name`;
-}
-
-function usageProjectJoinCondition(projectAlias = 'p', usageAlias = 'u') {
-  return `${projectAlias}.email = ${usageAlias}.email AND ${projectAlias}.project_name = ${usageAlias}.project_name`;
-}
-
-function projectTypeColumn() {
-  return schemaInfo.schemaMode === 'dataset_usage' ? 'u.project_category' : 'p.project_type';
-}
-
-function usageEmailColumn() {
-  return schemaInfo.schemaMode === 'dataset_usage' ? 'u.email' : 'p.email';
-}
-
-function usageDateColumn() {
-  return schemaInfo.schemaMode === 'dataset_usage' ? 'u.usage_date' : 'NULL';
-}
-
-function usageDatasetColumn() {
-  return schemaInfo.schemaMode === 'dataset_usage' ? 'u.dataset_id' : 'u.dataset_name';
-}
-
-function usageTableName() {
-  return schemaInfo.schemaMode === 'dataset_usage' ? 'dataset_usage' : 'project_dataset';
-}
-
-function usageProjectInsertSql() {
-  return schemaInfo.schemaMode === 'dataset_usage'
-    ? null
-    : 'INSERT INTO project (email, project_name, project_type) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE project_type = VALUES(project_type)';
-}
-
-function usageInsertSql() {
-  if (schemaInfo.schemaMode === 'dataset_usage') {
-    const datasetColumn = schemaInfo.hasColumn('dataset_usage', 'dataset_id') ? 'dataset_id' : 'dataset_name';
-    return `INSERT INTO dataset_usage (email, ${datasetColumn}, project_name, project_category, usage_date) VALUES (?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE project_category = VALUES(project_category), usage_date = VALUES(usage_date)`;
-  }
-
-  return 'INSERT INTO project_dataset (email, project_name, dataset_name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE dataset_name = VALUES(dataset_name)';
-}
 
 async function withTransaction(work) {
   const connection = await pool.getConnection();
@@ -279,16 +146,7 @@ app.get('/health', (req, res) => {
 app.get('/api/meta', (req, res) => {
   res.json({
     success: true,
-    data: {
-      schemaMode: schemaInfo.schemaMode,
-      supportsAge: schemaInfo.supportsAge,
-      supportsUsageDate: schemaInfo.supportsUsageDate,
-      genderOptions: schemaInfo.enumValues('app_user', 'gender'),
-      projectTypeOptions: schemaInfo.enumValues(
-        schemaInfo.schemaMode === 'dataset_usage' ? 'dataset_usage' : 'project',
-        schemaInfo.schemaMode === 'dataset_usage' ? 'project_category' : 'project_type'
-      ),
-    },
+    data: META,
   });
 });
 
@@ -318,8 +176,8 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
       EXISTS (
         SELECT 1
         FROM dataset_tag dt
-        WHERE ${datasetTagJoinCondition('d', 'dt')}
-          AND ${tagClause}
+        WHERE dt.dataset_name = d.name
+          AND ` + tagClause + `
       )
     `);
     params.push(...tagParams);
@@ -328,86 +186,55 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
   if (formats.length) {
     const formatParams = [];
     const formatClause = buildOrEqualsClause('r.format', formats, formatParams);
-    if (schemaInfo.hasColumn('resource', 'dataset_id')) {
-      whereClauses.push(`
-        EXISTS (
-          SELECT 1
-          FROM resource r
-          WHERE r.dataset_id = d.dataset_id
-            AND ${formatClause}
-        )
-      `);
-    } else {
-      whereClauses.push(`
-        EXISTS (
-          SELECT 1
-          FROM dataset_resource dr
-          JOIN resource r ON r.url = dr.url
-          WHERE dr.dataset_name = d.name
-            AND ${formatClause}
-        )
-      `);
-    }
+    whereClauses.push(`
+      EXISTS (
+        SELECT 1
+        FROM dataset_resource dr
+        JOIN resource r ON r.url = dr.url
+        WHERE dr.dataset_name = d.name
+          AND ` + formatClause + `
+      )
+    `);
     params.push(...formatParams);
   }
 
-  let datasetDescriptionColumn = 'NULL';
-  if (schemaInfo.hasColumn('dataset', 'notes')) {
-    datasetDescriptionColumn = 'd.notes';
-  } else if (schemaInfo.hasColumn('dataset', 'description')) {
-    datasetDescriptionColumn = 'd.description';
-  }
-
-  const datasetIdColumn = schemaInfo.hasColumn('dataset', 'dataset_id') ? 'd.dataset_id' : 'NULL';
-
-  const primaryFormatSql = schemaInfo.hasColumn('resource', 'dataset_id')
-    ? `(
-      SELECT MIN(rf.format)
-      FROM resource rf
-      WHERE rf.dataset_id = d.dataset_id
-        AND rf.format IS NOT NULL
-        AND TRIM(rf.format) <> ''
-    )`
-    : `(
-      SELECT MIN(rf.format)
-      FROM dataset_resource drf
-      JOIN resource rf ON rf.url = drf.url
-      WHERE drf.dataset_name = d.name
-        AND rf.format IS NOT NULL
-        AND TRIM(rf.format) <> ''
-    )`;
-
-  const whereClause = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
+  const whereClause = whereClauses.length ? 'WHERE ' + whereClauses.join(' AND ') : '';
 
   const countSql = `
     SELECT COUNT(*) AS total
     FROM dataset d
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-    ${whereClause}
-  `;
+    LEFT JOIN organization o ON d.org_name = o.name
+  ` + whereClause;
 
   const sql = `
     SELECT
-      ${datasetIdColumn} AS dataset_id,
+      NULL AS dataset_id,
       d.name AS dataset_name,
       d.title AS dataset_title,
-      ${datasetDescriptionColumn} AS dataset_description,
+      d.description AS dataset_description,
       d.access_level,
       d.license_title,
-      ${primaryFormatSql} AS primary_format,
+      (
+        SELECT MIN(rf.format)
+        FROM dataset_resource drf
+        JOIN resource rf ON rf.url = drf.url
+        WHERE drf.dataset_name = d.name
+          AND rf.format IS NOT NULL
+          AND TRIM(rf.format) != ''
+      ) AS primary_format,
       o.name AS organization_name,
       o.title AS organization_title,
       o.org_type
     FROM dataset d
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-    ${whereClause}
+    LEFT JOIN organization o ON d.org_name = o.name
+  ` + whereClause + `
     ORDER BY d.title ASC
-    LIMIT ${limit} OFFSET ${offset}
+    LIMIT ? OFFSET ?
   `;
 
   const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
-    pool.execute(sql, params),
+    pool.execute(sql, [...params, limit, offset]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
@@ -420,31 +247,23 @@ app.get('/api/datasets/filter-options', asyncHandler(async (req, res) => {
   const organizationTypeSql = `
     SELECT DISTINCT o.org_type AS value
     FROM organization o
-    WHERE o.org_type IS NOT NULL AND TRIM(o.org_type) <> ''
+    WHERE o.org_type IS NOT NULL AND TRIM(o.org_type) != ''
     ORDER BY o.org_type ASC
   `;
 
   const tagsSql = `
     SELECT DISTINCT dt.tag_name AS value
     FROM dataset_tag dt
-    WHERE dt.tag_name IS NOT NULL AND TRIM(dt.tag_name) <> ''
+    WHERE dt.tag_name IS NOT NULL AND TRIM(dt.tag_name) != ''
     ORDER BY dt.tag_name ASC
-    LIMIT 300
   `;
 
-  const formatsSql = schemaInfo.hasColumn('resource', 'dataset_id')
-    ? `
-      SELECT DISTINCT r.format AS value
-      FROM resource r
-      WHERE r.format IS NOT NULL AND TRIM(r.format) <> ''
-      ORDER BY r.format ASC
-    `
-    : `
-      SELECT DISTINCT r.format AS value
-      FROM resource r
-      WHERE r.format IS NOT NULL AND TRIM(r.format) <> ''
-      ORDER BY r.format ASC
-    `;
+  const formatsSql = `
+    SELECT DISTINCT r.format AS value
+    FROM resource r
+    WHERE r.format IS NOT NULL AND TRIM(r.format) != ''
+    ORDER BY r.format ASC
+  `;
 
   const [organizationTypeRows, formatRows, tagRows] = await Promise.all([
     pool.execute(organizationTypeSql),
@@ -474,7 +293,7 @@ app.get('/api/datasets/search', asyncHandler(async (req, res) => {
       o.name AS organization_name,
       o.title AS organization_title
     FROM dataset d
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+    LEFT JOIN organization o ON d.org_name = o.name
   `;
   const params = [];
 
@@ -487,7 +306,7 @@ app.get('/api/datasets/search', asyncHandler(async (req, res) => {
         OR LOWER(COALESCE(o.title, '')) LIKE LOWER(?)
       )
     `;
-    const like = `%${q}%`;
+    const like = '%' + q + '%';
     params.push(like, like, like, like);
   }
 
@@ -495,8 +314,9 @@ app.get('/api/datasets/search', asyncHandler(async (req, res) => {
     ORDER BY
       CASE WHEN d.title IS NULL OR TRIM(d.title) = '' THEN d.name ELSE d.title END ASC,
       d.name ASC
-    LIMIT ${limit}
+    LIMIT ?
   `;
+  params.push(limit);
 
   const [rows] = await pool.execute(sql, params);
   res.json({ success: true, data: rows });
@@ -508,46 +328,27 @@ app.get('/api/datasets/:datasetName/details', asyncHandler(async (req, res) => {
     return badRequest(res, 'datasetName is required');
   }
 
-  let datasetDescriptionColumn = 'NULL';
-  if (schemaInfo.hasColumn('dataset', 'notes')) {
-    datasetDescriptionColumn = 'd.notes';
-  } else if (schemaInfo.hasColumn('dataset', 'description')) {
-    datasetDescriptionColumn = 'd.description';
-  }
-
-  const datasetIdColumn = schemaInfo.hasColumn('dataset', 'dataset_id') ? 'd.dataset_id' : 'NULL';
-
-  const primaryFormatSql = schemaInfo.hasColumn('resource', 'dataset_id')
-    ? `(
-      SELECT MIN(rf.format)
-      FROM resource rf
-      WHERE rf.dataset_id = d.dataset_id
-        AND rf.format IS NOT NULL
-        AND TRIM(rf.format) <> ''
-    )`
-    : `(
-      SELECT MIN(rf.format)
-      FROM dataset_resource drf
-      JOIN resource rf ON rf.url = drf.url
-      WHERE drf.dataset_name = d.name
-        AND rf.format IS NOT NULL
-        AND TRIM(rf.format) <> ''
-    )`;
-
   const datasetSql = `
     SELECT
-      ${datasetIdColumn} AS dataset_id,
+      NULL AS dataset_id,
       d.name AS dataset_name,
       d.title AS dataset_title,
-      ${datasetDescriptionColumn} AS dataset_description,
+      d.description AS dataset_description,
       d.access_level,
       d.license_title,
-      ${primaryFormatSql} AS primary_format,
+      (
+        SELECT MIN(rf.format)
+        FROM dataset_resource drf
+        JOIN resource rf ON rf.url = drf.url
+        WHERE drf.dataset_name = d.name
+          AND rf.format IS NOT NULL
+          AND TRIM(rf.format) != ''
+      ) AS primary_format,
       o.name AS organization_name,
       o.title AS organization_title,
       o.org_type
     FROM dataset d
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+    LEFT JOIN organization o ON d.org_name = o.name
     WHERE d.name = ?
     LIMIT 1
   `;
@@ -559,53 +360,31 @@ app.get('/api/datasets/:datasetName/details', asyncHandler(async (req, res) => {
 
   const dataset = datasetRows[0];
 
-  const tagsSql = schemaInfo.hasColumn('dataset_tag', 'dataset_id')
-    ? 'SELECT DISTINCT tag_name FROM dataset_tag WHERE dataset_id = ? ORDER BY tag_name ASC'
-    : 'SELECT DISTINCT tag_name FROM dataset_tag WHERE dataset_name = ? ORDER BY tag_name ASC';
-  const tagsArg = schemaInfo.hasColumn('dataset_tag', 'dataset_id') ? dataset.dataset_id : dataset.dataset_name;
+  const tagsSql = 'SELECT DISTINCT tag_name FROM dataset_tag WHERE dataset_name = ? ORDER BY tag_name ASC';
+  const tagsArg = dataset.dataset_name;
 
-  const topicsSql = schemaInfo.hasColumn('dataset_topic', 'dataset_id')
-    ? 'SELECT DISTINCT topic_name FROM dataset_topic WHERE dataset_id = ? ORDER BY topic_name ASC'
-    : 'SELECT DISTINCT topic_name FROM dataset_topic WHERE dataset_name = ? ORDER BY topic_name ASC';
-  const topicsArg = schemaInfo.hasColumn('dataset_topic', 'dataset_id') ? dataset.dataset_id : dataset.dataset_name;
+  const topicsSql = 'SELECT DISTINCT topic_name FROM dataset_topic WHERE dataset_name = ? ORDER BY topic_name ASC';
+  const topicsArg = dataset.dataset_name;
 
-  const resourcesSql = schemaInfo.hasColumn('resource', 'dataset_id')
-    ? `
-      SELECT name, format, url
-      FROM resource
-      WHERE dataset_id = ?
-      ORDER BY name ASC
-    `
-    : `
-      SELECT r.name, r.format, r.url
-      FROM dataset_resource dr
-      JOIN resource r ON r.url = dr.url
-      WHERE dr.dataset_name = ?
-      ORDER BY r.name ASC
-    `;
-  const resourcesArg = schemaInfo.hasColumn('resource', 'dataset_id') ? dataset.dataset_id : dataset.dataset_name;
+  const resourcesSql = `
+    SELECT r.name, r.format, r.url
+    FROM dataset_resource dr
+    JOIN resource r ON r.url = dr.url
+    WHERE dr.dataset_name = ?
+    ORDER BY r.name ASC
+  `;
+  const resourcesArg = dataset.dataset_name;
 
-  const usageSql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT u.email) AS user_count,
-        GROUP_CONCAT(DISTINCT u.project_category ORDER BY u.project_category SEPARATOR ', ') AS project_types
-      FROM dataset_usage u
-      WHERE ${schemaInfo.hasColumn('dataset_usage', 'dataset_id') ? 'u.dataset_id = ?' : 'u.dataset_name = ?'}
-    `
-    : `
-      SELECT
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT pd.email) AS user_count,
-        GROUP_CONCAT(DISTINCT p.project_type ORDER BY p.project_type SEPARATOR ', ') AS project_types
-      FROM project_dataset pd
-      LEFT JOIN project p ON ${usageProjectJoinCondition('p', 'pd')}
-      WHERE pd.dataset_name = ?
-    `;
-  const usageArg = schemaInfo.schemaMode === 'dataset_usage' && schemaInfo.hasColumn('dataset_usage', 'dataset_id')
-    ? dataset.dataset_id
-    : dataset.dataset_name;
+  const usageSql = `
+    SELECT
+      COUNT(*) AS usage_count,
+      COUNT(DISTINCT pd.email) AS user_count,
+      GROUP_CONCAT(DISTINCT p.project_type ORDER BY p.project_type SEPARATOR ', ') AS project_types
+    FROM project_dataset pd
+    LEFT JOIN project p ON p.email = pd.email AND p.project_name = pd.project_name
+    WHERE pd.dataset_name = ?
+  `;
+  const usageArg = dataset.dataset_name;
 
   const [tagRows, topicRows, resourceRows, usageRows] = await Promise.all([
     pool.execute(tagsSql, [tagsArg]),
@@ -639,16 +418,15 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
 
   if (q) {
     whereClauses.push("(LOWER(o.name) LIKE LOWER(?) OR LOWER(o.title) LIKE LOWER(?) OR LOWER(COALESCE(o.org_type, '')) LIKE LOWER(?))");
-    params.push(`%${q}%`, `%${q}%`, `%${q}%`);
+    params.push('%' + q + '%', '%' + q + '%', '%' + q + '%');
   }
 
-  const whereClause = whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : '';
+  const whereClause = whereClauses.length ? 'WHERE ' + whereClauses.join(' AND ') : '';
 
   const countSql = `
     SELECT COUNT(DISTINCT o.name) AS total
     FROM organization o
-    ${whereClause}
-  `;
+  ` + whereClause;
 
   const sql = `
     SELECT
@@ -657,16 +435,16 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
       o.org_type,
       COUNT(d.name) AS dataset_count
     FROM organization o
-    LEFT JOIN dataset d ON ${datasetOrgJoinCondition()}
-    ${whereClause}
+    LEFT JOIN dataset d ON d.org_name = o.name
+  ` + whereClause + `
     GROUP BY o.name, o.title, o.org_type
     ORDER BY o.title ASC, o.name ASC
-    LIMIT ${limit} OFFSET ${offset}
+    LIMIT ? OFFSET ?
   `;
 
   const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
-    pool.execute(sql, params),
+    pool.execute(sql, [...params, limit, offset]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
@@ -697,36 +475,24 @@ app.get('/api/organizations/:organizationName/details', asyncHandler(async (req,
       d.access_level,
       d.license_title
     FROM dataset d
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+    LEFT JOIN organization o ON d.org_name = o.name
     WHERE o.name = ?
     ORDER BY d.title ASC
     LIMIT 100
   `;
 
-  const projectTypeSql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT
-        u.project_category AS project_type,
-        COUNT(*) AS usage_count
-      FROM dataset_usage u
-      JOIN dataset d ON ${usageDatasetJoinCondition('u', 'd')}
-      LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-      WHERE o.name = ?
-      GROUP BY u.project_category
-      ORDER BY usage_count DESC, u.project_category ASC
-    `
-    : `
-      SELECT
-        p.project_type,
-        COUNT(*) AS usage_count
-      FROM project_dataset pd
-      JOIN dataset d ON ${usageDatasetJoinCondition('pd', 'd')}
-      LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-      LEFT JOIN project p ON ${usageProjectJoinCondition('p', 'pd')}
-      WHERE o.name = ?
-      GROUP BY p.project_type
-      ORDER BY usage_count DESC, p.project_type ASC
-    `;
+  const projectTypeSql = `
+    SELECT
+      p.project_type,
+      COUNT(*) AS usage_count
+    FROM project_dataset pd
+    JOIN dataset d ON pd.dataset_name = d.name
+    LEFT JOIN organization o ON d.org_name = o.name
+    LEFT JOIN project p ON p.email = pd.email AND p.project_name = pd.project_name
+    WHERE o.name = ?
+    GROUP BY p.project_type
+    ORDER BY usage_count DESC, p.project_type ASC
+  `;
 
   const [datasetRows, projectTypeRows] = await Promise.all([
     pool.execute(datasetSql, [organizationName]),
@@ -753,69 +519,44 @@ app.get('/api/projects', asyncHandler(async (req, res) => {
   const params = [];
 
   if (q) {
-    params.push(`%${q}%`, `%${q}%`);
+    params.push('%' + q + '%', '%' + q + '%');
   }
 
-  const countSql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT COUNT(DISTINCT u.project_name, u.project_category) AS total
-      FROM dataset_usage u
-      WHERE u.project_name IS NOT NULL
-        AND TRIM(u.project_name) <> ''
-        AND u.project_category IS NOT NULL
-        AND TRIM(u.project_category) <> ''
-        ${q ? 'AND (LOWER(u.project_name) LIKE LOWER(?) OR LOWER(u.project_category) LIKE LOWER(?))' : ''}
-    `
-    : `
-      SELECT COUNT(DISTINCT p.project_name, p.project_type) AS total
-      FROM project p
-      WHERE p.project_name IS NOT NULL
-        AND TRIM(p.project_name) <> ''
-        AND p.project_type IS NOT NULL
-        AND TRIM(p.project_type) <> ''
-        ${q ? 'AND (LOWER(p.project_name) LIKE LOWER(?) OR LOWER(p.project_type) LIKE LOWER(?))' : ''}
-    `;
+  const searchClause = q
+    ? 'AND (LOWER(p.project_name) LIKE LOWER(?) OR LOWER(p.project_type) LIKE LOWER(?))'
+    : '';
 
-  const sql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT
-        u.project_name,
-        u.project_category AS project_type,
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT u.email) AS contributor_count,
-        MAX(u.usage_date) AS last_usage_date
-      FROM dataset_usage u
-      WHERE u.project_name IS NOT NULL
-        AND TRIM(u.project_name) <> ''
-        AND u.project_category IS NOT NULL
-        AND TRIM(u.project_category) <> ''
-        ${q ? 'AND (LOWER(u.project_name) LIKE LOWER(?) OR LOWER(u.project_category) LIKE LOWER(?))' : ''}
-      GROUP BY u.project_name, u.project_category
-      ORDER BY u.project_name ASC, u.project_category ASC
-      LIMIT ${limit} OFFSET ${offset}
-    `
-    : `
-      SELECT
-        p.project_name,
-        p.project_type,
-        COUNT(DISTINCT pd.dataset_name) AS dataset_count,
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT p.email) AS contributor_count
-      FROM project p
-      LEFT JOIN project_dataset pd ON ${usageProjectJoinCondition('p', 'pd')}
-      WHERE p.project_name IS NOT NULL
-        AND TRIM(p.project_name) <> ''
-        AND p.project_type IS NOT NULL
-        AND TRIM(p.project_type) <> ''
-        ${q ? 'AND (LOWER(p.project_name) LIKE LOWER(?) OR LOWER(p.project_type) LIKE LOWER(?))' : ''}
-      GROUP BY p.project_name, p.project_type
-      ORDER BY p.project_name ASC, p.project_type ASC
-      LIMIT ${limit} OFFSET ${offset}
-    `;
+  const countSql = `
+    SELECT COUNT(DISTINCT p.project_name, p.project_type) AS total
+    FROM project p
+    WHERE p.project_name IS NOT NULL
+      AND TRIM(p.project_name) != ''
+      AND p.project_type IS NOT NULL
+      AND TRIM(p.project_type) != ''
+  ` + searchClause;
+
+  const sql = `
+    SELECT
+      p.project_name,
+      p.project_type,
+      COUNT(DISTINCT pd.dataset_name) AS dataset_count,
+      COUNT(*) AS usage_count,
+      COUNT(DISTINCT p.email) AS contributor_count
+    FROM project p
+    LEFT JOIN project_dataset pd ON p.email = pd.email AND p.project_name = pd.project_name
+    WHERE p.project_name IS NOT NULL
+      AND TRIM(p.project_name) != ''
+      AND p.project_type IS NOT NULL
+      AND TRIM(p.project_type) != ''
+  ` + searchClause + `
+    GROUP BY p.project_name, p.project_type
+    ORDER BY p.project_name ASC, p.project_type ASC
+    LIMIT ? OFFSET ?
+  `;
 
   const [countResult, [rows]] = await Promise.all([
     pool.execute(countSql, params),
-    pool.execute(sql, params),
+    pool.execute(sql, [...params, limit, offset]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
@@ -832,69 +573,6 @@ app.get('/api/projects/details', asyncHandler(async (req, res) => {
     return badRequest(res, 'projectName or projectType is required');
   }
 
-  if (schemaInfo.schemaMode === 'dataset_usage') {
-    const whereClauses = [];
-    const params = [];
-
-    if (projectName) {
-      whereClauses.push('u.project_name = ?');
-      params.push(projectName);
-    }
-
-    if (projectType) {
-      whereClauses.push('u.project_category = ?');
-      params.push(projectType);
-    }
-
-    const summarySql = `
-      SELECT
-        u.project_name,
-        u.project_category AS project_type,
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT u.email) AS contributor_count,
-        MIN(u.usage_date) AS first_usage_date,
-        MAX(u.usage_date) AS last_usage_date
-      FROM dataset_usage u
-      WHERE ${whereClauses.join(' AND ')}
-      GROUP BY u.project_name, u.project_category
-      ORDER BY u.project_name ASC, u.project_category ASC
-      LIMIT 1
-    `;
-
-    const datasetsSql = `
-      SELECT
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        o.name AS organization_name,
-        o.title AS organization_title,
-        COUNT(*) AS usage_count
-      FROM dataset_usage u
-      JOIN dataset d ON ${usageDatasetJoinCondition('u', 'd')}
-      LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-      WHERE ${whereClauses.join(' AND ')}
-      GROUP BY d.name, d.title, o.name, o.title
-      ORDER BY usage_count DESC, d.title ASC
-      LIMIT 100
-    `;
-
-    const [summaryRows, datasetRows] = await Promise.all([
-      pool.execute(summarySql, params),
-      pool.execute(datasetsSql, params),
-    ]);
-
-    if (!summaryRows[0].length) {
-      return res.status(404).json({ success: false, message: 'Project not found' });
-    }
-
-    return res.json({
-      success: true,
-      data: {
-        project: summaryRows[0][0],
-        datasets: datasetRows[0],
-      },
-    });
-  }
-
   const whereClauses = [];
   const params = [];
 
@@ -908,6 +586,8 @@ app.get('/api/projects/details', asyncHandler(async (req, res) => {
     params.push(projectType);
   }
 
+  const whereSql = whereClauses.join(' AND ');
+
   const summarySql = `
     SELECT
       p.project_name,
@@ -916,8 +596,8 @@ app.get('/api/projects/details', asyncHandler(async (req, res) => {
       COUNT(DISTINCT pd.dataset_name) AS dataset_count,
       COUNT(*) AS usage_count
     FROM project p
-    LEFT JOIN project_dataset pd ON ${usageProjectJoinCondition('p', 'pd')}
-    WHERE ${whereClauses.join(' AND ')}
+    LEFT JOIN project_dataset pd ON p.email = pd.email AND p.project_name = pd.project_name
+    WHERE ` + whereSql + `
     GROUP BY p.project_name, p.project_type
     ORDER BY p.project_name ASC, p.project_type ASC
     LIMIT 1
@@ -930,10 +610,10 @@ app.get('/api/projects/details', asyncHandler(async (req, res) => {
       o.name AS organization_name,
       o.title AS organization_title
     FROM project p
-    JOIN project_dataset pd ON ${usageProjectJoinCondition('p', 'pd')}
-    JOIN dataset d ON ${usageDatasetJoinCondition('pd', 'd')}
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-    WHERE ${whereClauses.join(' AND ')}
+    JOIN project_dataset pd ON p.email = pd.email AND p.project_name = pd.project_name
+    JOIN dataset d ON pd.dataset_name = d.name
+    LEFT JOIN organization o ON d.org_name = o.name
+    WHERE ` + whereSql + `
     GROUP BY d.name, d.title, o.name, o.title
     ORDER BY d.title ASC
     LIMIT 100
@@ -969,27 +649,15 @@ app.post('/api/auth/register', asyncHandler(async (req, res) => {
     return badRequest(res, 'email, username, and gender are required');
   }
 
-  const allowedGenders = schemaInfo.enumValues('app_user', 'gender');
-  if (allowedGenders.length && !allowedGenders.includes(gender)) {
-    return badRequest(res, `gender must be one of: ${allowedGenders.join(', ')}`);
-  }
-
   if (!birthdate && req.body.birthdate) {
     return badRequest(res, 'birthdate must be YYYY-MM-DD');
   }
 
   try {
-    if (schemaInfo.supportsAge) {
-      await pool.execute(
-        'INSERT INTO app_user (email, username, gender, age, birthdate, country) VALUES (?, ?, ?, ?, ?, ?)',
-        [email, username, gender, age === '' || age === null || age === undefined ? null : Number(age), birthdate, country]
-      );
-    } else {
-      await pool.execute(
-        'INSERT INTO app_user (email, username, gender, birthdate, country) VALUES (?, ?, ?, ?, ?)',
-        [email, username, gender, birthdate, country]
-      );
-    }
+    await pool.execute(
+      'INSERT INTO app_user (email, username, gender, age, birthdate, country) VALUES (?, ?, ?, ?, ?, ?)',
+      [email, username, gender, age === '' || age === null || age === undefined ? null : Number(age), birthdate, country]
+    );
   } catch (error) {
     if (error.code === 'ER_DUP_ENTRY') {
       return res.status(409).json({ success: false, message: 'A user with that email or username already exists' });
@@ -1027,13 +695,8 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
     return badRequest(res, 'email, projectName, and projectType are required');
   }
 
-  const projectTypeOptions = schemaInfo.enumValues(
-    schemaInfo.schemaMode === 'dataset_usage' ? 'dataset_usage' : 'project',
-    schemaInfo.schemaMode === 'dataset_usage' ? 'project_category' : 'project_type'
-  );
-
-  if (projectTypeOptions.length && !projectTypeOptions.includes(projectType)) {
-    return badRequest(res, `projectType must be one of: ${projectTypeOptions.join(', ')}`);
+  if (!ALLOWED_PROJECT_TYPES.includes(projectType)) {
+    return badRequest(res, `projectType must be one of: ${ALLOWED_PROJECT_TYPES.join(', ')}`);
   }
 
   await withTransaction(async (connection) => {
@@ -1046,7 +709,7 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
     if (selectedDatasetNames.length) {
       const placeholders = selectedDatasetNames.map(() => '?').join(', ');
       const [rows] = await connection.execute(
-        `SELECT name${schemaInfo.hasColumn('dataset', 'dataset_id') ? ', dataset_id' : ''} FROM dataset WHERE name IN (${placeholders})`,
+        'SELECT name FROM dataset WHERE name IN (' + placeholders + ')',
         selectedDatasetNames
       );
       datasetRows = rows;
@@ -1058,48 +721,22 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
       }
     }
 
-    if (schemaInfo.schemaMode === 'dataset_usage') {
-      const [existingProjectRows] = await connection.execute(
-        'SELECT project_category FROM dataset_usage WHERE project_name = ? LIMIT 1',
-        [projectName]
+    const [existingProjectRows] = await connection.execute(
+      'SELECT project_type FROM project WHERE project_name = ? LIMIT 1',
+      [projectName]
+    );
+    const resolvedProjectType = existingProjectRows[0]?.project_type || projectType;
+
+    await connection.execute(
+      'INSERT INTO project (email, project_name, project_type) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE project_type = VALUES(project_type)',
+      [email, projectName, resolvedProjectType]
+    );
+
+    for (const datasetName of selectedDatasetNames) {
+      await connection.execute(
+        'INSERT INTO project_dataset (email, project_name, dataset_name) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE dataset_name = VALUES(dataset_name)',
+        [email, projectName, datasetName]
       );
-      const resolvedProjectType = existingProjectRows[0]?.project_category || projectType;
-
-      if (schemaInfo.hasTable('project')) {
-        await connection.execute(
-          'INSERT INTO project (email, project_name, project_type) VALUES (?, ?, ?) ON DUPLICATE KEY UPDATE project_type = VALUES(project_type)',
-          [email, projectName, resolvedProjectType]
-        );
-      }
-
-      if (selectedDatasetNames.length === 0) {
-        return;
-      }
-
-      const datasetKeyByName = new Map(datasetRows.map((row) => [
-        row.name,
-        schemaInfo.hasColumn('dataset_usage', 'dataset_id') ? (row.dataset_id || row.name) : row.name,
-      ]));
-
-      for (const datasetName of selectedDatasetNames) {
-        const datasetKey = datasetKeyByName.get(datasetName);
-        await connection.execute(
-          usageInsertSql(),
-          [email, datasetKey, projectName, resolvedProjectType, usageDate]
-        );
-      }
-    } else {
-      const [existingProjectRows] = await connection.execute(
-        'SELECT project_type FROM project WHERE project_name = ? LIMIT 1',
-        [projectName]
-      );
-      const resolvedProjectType = existingProjectRows[0]?.project_type || projectType;
-
-      await connection.execute(usageProjectInsertSql(), [email, projectName, resolvedProjectType]);
-
-      for (const datasetName of selectedDatasetNames) {
-        await connection.execute(usageInsertSql(), [email, projectName, datasetName]);
-      }
     }
   }).catch((error) => {
     if (error.statusCode === 404) {
@@ -1116,7 +753,7 @@ app.post('/api/usage', asyncHandler(async (req, res) => {
       datasetNames: selectedDatasetNames,
       projectName,
       projectType,
-      usageDate: schemaInfo.schemaMode === 'dataset_usage' ? usageDate : null,
+      usageDate: usageDate,
     },
   });
 }));
@@ -1128,46 +765,24 @@ app.get('/api/usage/:email', asyncHandler(async (req, res) => {
     return badRequest(res, 'email is required');
   }
 
-  let rows = [];
-
-  if (schemaInfo.schemaMode === 'dataset_usage') {
-    const sql = `
-      SELECT
-        u.email,
-        u.project_name,
-        u.project_category AS project_type,
-        u.usage_date,
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        o.name AS organization_name,
-        o.title AS organization_title
-      FROM dataset_usage u
-      JOIN dataset d ON ${usageDatasetJoinCondition('u', 'd')}
-      LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-      WHERE u.email = ?
-      ORDER BY u.usage_date DESC, u.project_name ASC, d.title ASC
-    `;
-    [rows] = await pool.execute(sql, [email]);
-  } else {
-    const sql = `
-      SELECT
-        pd.email,
-        pd.project_name,
-        p.project_type,
-        NULL AS usage_date,
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        o.name AS organization_name,
-        o.title AS organization_title
-      FROM project_dataset pd
-      JOIN project p ON ${usageProjectJoinCondition('p', 'pd')}
-      JOIN dataset d ON ${usageDatasetJoinCondition('pd', 'd')}
-      LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
-      WHERE pd.email = ?
-      ORDER BY p.project_type ASC, pd.project_name ASC, d.title ASC
-    `;
-    [rows] = await pool.execute(sql, [email]);
-  }
+  const sql = `
+    SELECT
+      pd.email,
+      pd.project_name,
+      p.project_type,
+      NULL AS usage_date,
+      d.name AS dataset_name,
+      d.title AS dataset_title,
+      o.name AS organization_name,
+      o.title AS organization_title
+    FROM project_dataset pd
+    JOIN project p ON p.email = pd.email AND p.project_name = pd.project_name
+    JOIN dataset d ON pd.dataset_name = d.name
+    LEFT JOIN organization o ON d.org_name = o.name
+    WHERE pd.email = ?
+    ORDER BY p.project_type ASC, pd.project_name ASC, d.title ASC
+  `;
+  const [rows] = await pool.execute(sql, [email]);
 
   res.json({ success: true, data: rows });
 }));
@@ -1188,12 +803,12 @@ app.get('/api/datasets/by-organization-type/:orgType', asyncHandler(async (req, 
       d.access_level,
       d.license_title
     FROM organization o
-    JOIN dataset d ON ${datasetOrgJoinCondition()}
+    JOIN dataset d ON d.org_name = o.name
     WHERE LOWER(TRIM(o.org_type)) LIKE LOWER(TRIM(?))
     ORDER BY o.name ASC, d.title ASC
   `;
 
-  const [rows] = await pool.execute(sql, [`%${orgType}%`]);
+  const [rows] = await pool.execute(sql, ['%' + orgType + '%']);
   res.json({ success: true, data: rows });
 }));
 
@@ -1203,7 +818,6 @@ app.get('/api/datasets/by-tag/:tagName', asyncHandler(async (req, res) => {
     return badRequest(res, 'tagName is required');
   }
 
-  const tagJoin = datasetTagJoinCondition('d', 'dt');
   const sql = `
     SELECT DISTINCT
       d.name AS dataset_name,
@@ -1212,13 +826,13 @@ app.get('/api/datasets/by-tag/:tagName', asyncHandler(async (req, res) => {
       o.name AS organization_name,
       o.org_type
     FROM dataset_tag dt
-    JOIN dataset d ON ${tagJoin}
-    LEFT JOIN organization o ON ${datasetOrgJoinCondition()}
+    JOIN dataset d ON dt.dataset_name = d.name
+    LEFT JOIN organization o ON d.org_name = o.name
     WHERE LOWER(TRIM(dt.tag_name)) LIKE LOWER(TRIM(?))
     ORDER BY d.title ASC
   `;
 
-  const [rows] = await pool.execute(sql, [`%${tagName}%`]);
+  const [rows] = await pool.execute(sql, ['%' + tagName + '%']);
   res.json({ success: true, data: rows });
 }));
 
@@ -1228,40 +842,22 @@ app.get('/api/datasets/by-format/:format', asyncHandler(async (req, res) => {
     return badRequest(res, 'format is required');
   }
 
-  let sql = '';
+  const sql = `
+    SELECT
+      d.name AS dataset_name,
+      d.title AS dataset_title,
+      r.format,
+      COUNT(*) AS resource_count,
+      GROUP_CONCAT(DISTINCT r.name ORDER BY r.name SEPARATOR ', ') AS resource_names
+    FROM dataset d
+    JOIN dataset_resource dr ON dr.dataset_name = d.name
+    JOIN resource r ON r.url = dr.url
+    WHERE LOWER(TRIM(r.format)) LIKE LOWER(TRIM(?))
+    GROUP BY d.name, d.title, r.format
+    ORDER BY resource_count DESC, d.title ASC
+  `;
 
-  if (schemaInfo.hasColumn('resource', 'dataset_id')) {
-    sql = `
-      SELECT
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        r.format,
-        COUNT(*) AS resource_count,
-        GROUP_CONCAT(DISTINCT r.name ORDER BY r.name SEPARATOR ', ') AS resource_names
-      FROM dataset d
-      JOIN resource r ON r.dataset_id = d.dataset_id
-      WHERE LOWER(TRIM(r.format)) LIKE LOWER(TRIM(?))
-      GROUP BY d.name, d.title, r.format
-      ORDER BY resource_count DESC, d.title ASC
-    `;
-  } else {
-    sql = `
-      SELECT
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        r.format,
-        COUNT(*) AS resource_count,
-        GROUP_CONCAT(DISTINCT r.name ORDER BY r.name SEPARATOR ', ') AS resource_names
-      FROM dataset d
-      JOIN dataset_resource dr ON dr.dataset_name = d.name
-      JOIN resource r ON r.url = dr.url
-      WHERE LOWER(TRIM(r.format)) LIKE LOWER(TRIM(?))
-      GROUP BY d.name, d.title, r.format
-      ORDER BY resource_count DESC, d.title ASC
-    `;
-  }
-
-  const [rows] = await pool.execute(sql, [`%${format}%`]);
+  const [rows] = await pool.execute(sql, ['%' + format + '%']);
   res.json({ success: true, data: rows });
 }));
 
@@ -1273,7 +869,7 @@ app.get('/api/stats/top-organizations', asyncHandler(async (req, res) => {
       o.org_type,
       COUNT(d.name) AS dataset_count
     FROM organization o
-    LEFT JOIN dataset d ON ${datasetOrgJoinCondition()}
+    LEFT JOIN dataset d ON d.org_name = o.name
     GROUP BY o.name, o.title, o.org_type
     ORDER BY dataset_count DESC, organization_name ASC
     LIMIT 5
@@ -1291,7 +887,7 @@ app.get('/api/stats/contributions', asyncHandler(async (req, res) => {
       o.org_type,
       COUNT(d.name) AS dataset_count
     FROM organization o
-    LEFT JOIN dataset d ON ${datasetOrgJoinCondition()}
+    LEFT JOIN dataset d ON d.org_name = o.name
     GROUP BY o.name, o.title, o.org_type
     ORDER BY dataset_count DESC, organization_name ASC
   `;
@@ -1299,40 +895,30 @@ app.get('/api/stats/contributions', asyncHandler(async (req, res) => {
   const topicSql = `
     SELECT
       dt.topic_name,
-      COUNT(DISTINCT ${schemaInfo.schemaMode === 'dataset_usage' ? 'dt.dataset_id' : 'dt.dataset_name'}) AS dataset_count
+      COUNT(DISTINCT dt.dataset_name) AS dataset_count
     FROM dataset_topic dt
     GROUP BY dt.topic_name
     ORDER BY dataset_count DESC, dt.topic_name ASC
   `;
 
-  const formatSql = schemaInfo.hasColumn('resource', 'dataset_id')
-    ? `
-      SELECT
-        r.format,
-        COUNT(DISTINCT r.dataset_id) AS dataset_count
-      FROM resource r
-      WHERE r.format IS NOT NULL AND TRIM(r.format) <> ''
-      GROUP BY r.format
-      ORDER BY dataset_count DESC, r.format ASC
-    `
-    : `
-      SELECT
-        r.format,
-        COUNT(DISTINCT dr.dataset_name) AS dataset_count
-      FROM resource r
-      JOIN dataset_resource dr ON dr.url = r.url
-      WHERE r.format IS NOT NULL AND TRIM(r.format) <> ''
-      GROUP BY r.format
-      ORDER BY dataset_count DESC, r.format ASC
-    `;
+  const formatSql = `
+    SELECT
+      r.format,
+      COUNT(DISTINCT dr.dataset_name) AS dataset_count
+    FROM resource r
+    JOIN dataset_resource dr ON dr.url = r.url
+    WHERE r.format IS NOT NULL AND TRIM(r.format) != ''
+    GROUP BY r.format
+    ORDER BY dataset_count DESC, r.format ASC
+  `;
 
   const orgTypeSql = `
     SELECT
       o.org_type,
       COUNT(d.name) AS dataset_count
     FROM organization o
-    LEFT JOIN dataset d ON ${datasetOrgJoinCondition()}
-    WHERE o.org_type IS NOT NULL AND TRIM(o.org_type) <> ''
+    LEFT JOIN dataset d ON d.org_name = o.name
+    WHERE o.org_type IS NOT NULL AND TRIM(o.org_type) != ''
     GROUP BY o.org_type
     ORDER BY dataset_count DESC, o.org_type ASC
   `;
@@ -1356,121 +942,55 @@ app.get('/api/stats/contributions', asyncHandler(async (req, res) => {
 }));
 
 app.get('/api/stats/top-datasets', asyncHandler(async (req, res) => {
-  const sql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        COUNT(DISTINCT u.email) AS user_count,
-        COUNT(*) AS usage_count
-      FROM dataset d
-      LEFT JOIN dataset_usage u ON u.dataset_id = d.dataset_id
-      GROUP BY d.name, d.title
-      ORDER BY user_count DESC, usage_count DESC, d.title ASC
-      LIMIT 5
-    `
-    : `
-      SELECT
-        d.name AS dataset_name,
-        d.title AS dataset_title,
-        COUNT(DISTINCT pd.email) AS user_count,
-        COUNT(*) AS usage_count
-      FROM dataset d
-      LEFT JOIN project_dataset pd ON pd.dataset_name = d.name
-      GROUP BY d.name, d.title
-      ORDER BY user_count DESC, usage_count DESC, d.title ASC
-      LIMIT 5
-    `;
+  const sql = `
+    SELECT
+      d.name AS dataset_name,
+      d.title AS dataset_title,
+      COUNT(DISTINCT pd.email) AS user_count,
+      COUNT(*) AS usage_count
+    FROM dataset d
+    LEFT JOIN project_dataset pd ON pd.dataset_name = d.name
+    GROUP BY d.name, d.title
+    ORDER BY user_count DESC, usage_count DESC, d.title ASC
+    LIMIT 5
+  `;
 
   const [rows] = await pool.execute(sql);
   res.json({ success: true, data: rows });
 }));
 
 app.get('/api/stats/usage-by-project-type', asyncHandler(async (req, res) => {
-  const sql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      SELECT
-        u.project_category AS project_type,
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT u.email) AS userCount,
-        COUNT(DISTINCT u.email) AS users,
-        COUNT(DISTINCT u.dataset_id) AS dataset_count
-      FROM dataset_usage u
-      LEFT JOIN app_user au ON au.email = u.email
-      GROUP BY u.project_category
-      ORDER BY usage_count DESC, u.project_category ASC
-    `
-    : `
-      SELECT
-        p.project_type AS project_type,
-        COUNT(*) AS usage_count,
-        COUNT(DISTINCT CONCAT_WS('::', p.email, p.project_name)) AS project_count,
-        COUNT(DISTINCT pd.email) AS userCount,
-        COUNT(DISTINCT pd.email) AS users,
-        COUNT(DISTINCT pd.dataset_name) AS dataset_count
-      FROM project p
-      LEFT JOIN project_dataset pd ON pd.email = p.email AND pd.project_name = p.project_name
-      GROUP BY p.project_type
-      ORDER BY usage_count DESC, p.project_type ASC
-    `;
+  const sql = `
+    SELECT
+      p.project_type AS project_type,
+      COUNT(*) AS usage_count,
+      COUNT(DISTINCT CONCAT_WS('::', p.email, p.project_name)) AS project_count,
+      COUNT(DISTINCT pd.email) AS userCount,
+      COUNT(DISTINCT pd.email) AS users,
+      COUNT(DISTINCT pd.dataset_name) AS dataset_count
+    FROM project p
+    LEFT JOIN project_dataset pd ON p.email = pd.email AND p.project_name = pd.project_name
+    GROUP BY p.project_type
+    ORDER BY usage_count DESC, p.project_type ASC
+  `;
 
   const [rows] = await pool.execute(sql);
   res.json({ success: true, data: rows });
 }));
 
 app.get('/api/stats/top-tags-by-project-type', asyncHandler(async (req, res) => {
-  const tagJoin = datasetTagJoinCondition('d', 'dt');
-
-  const sql = schemaInfo.schemaMode === 'dataset_usage'
-    ? `
-      WITH tag_counts AS (
-        SELECT
-          u.project_category AS project_type,
-          dt.tag_name,
-          COUNT(*) AS tag_count
-        FROM dataset_usage u
-        JOIN dataset d ON u.dataset_id = d.dataset_id
-        JOIN dataset_tag dt ON ${tagJoin}
-        GROUP BY u.project_category, dt.tag_name
-      ),
-      ranked AS (
-        SELECT
-          project_type,
-          tag_name,
-          tag_count,
-          ROW_NUMBER() OVER (PARTITION BY project_type ORDER BY tag_count DESC, tag_name ASC) AS rn
-        FROM tag_counts
-      )
-      SELECT project_type, tag_name, tag_count
-      FROM ranked
-      WHERE rn <= 10
-      ORDER BY project_type ASC, tag_count DESC, tag_name ASC
-    `
-    : `
-      WITH tag_counts AS (
-        SELECT
-          p.project_type AS project_type,
-          dt.tag_name,
-          COUNT(*) AS tag_count
-        FROM project p
-        JOIN project_dataset u ON u.email = p.email AND u.project_name = p.project_name
-        JOIN dataset d ON u.dataset_name = d.name
-        JOIN dataset_tag dt ON ${tagJoin}
-        GROUP BY p.project_type, dt.tag_name
-      ),
-      ranked AS (
-        SELECT
-          project_type,
-          tag_name,
-          tag_count,
-          ROW_NUMBER() OVER (PARTITION BY project_type ORDER BY tag_count DESC, tag_name ASC) AS rn
-        FROM tag_counts
-      )
-      SELECT project_type, tag_name, tag_count
-      FROM ranked
-      WHERE rn <= 10
-      ORDER BY project_type ASC, tag_count DESC, tag_name ASC
-    `;
+  const sql = `
+    SELECT
+      p.project_type AS project_type,
+      dt.tag_name,
+      COUNT(*) AS tag_count
+    FROM project p
+    JOIN project_dataset pd ON pd.email = p.email AND pd.project_name = p.project_name
+    JOIN dataset d ON pd.dataset_name = d.name
+    JOIN dataset_tag dt ON d.name = dt.dataset_name
+    GROUP BY p.project_type, dt.tag_name
+    ORDER BY p.project_type ASC, tag_count DESC, dt.tag_name ASC
+  `;
 
   const [rows] = await pool.execute(sql);
 
@@ -1478,10 +998,14 @@ app.get('/api/stats/top-tags-by-project-type', asyncHandler(async (req, res) => 
     if (!accumulator[row.project_type]) {
       accumulator[row.project_type] = [];
     }
-    accumulator[row.project_type].push({
-      tag_name: row.tag_name,
-      tag_count: row.tag_count,
-    });
+
+    if (accumulator[row.project_type].length < 10) {
+      accumulator[row.project_type].push({
+        tag_name: row.tag_name,
+        tag_count: row.tag_count,
+      });
+    }
+
     return accumulator;
   }, {});
 
@@ -1498,23 +1022,11 @@ app.use((error, req, res, next) => {
 });
 
 async function start() {
-  schemaInfo = await inspectSchema();
-  const meta = {
-    schemaMode: schemaInfo.schemaMode,
-    supportsAge: schemaInfo.supportsAge,
-    supportsUsageDate: schemaInfo.supportsUsageDate,
-    genderOptions: schemaInfo.enumValues('app_user', 'gender'),
-    projectTypeOptions: schemaInfo.enumValues(
-      schemaInfo.schemaMode === 'dataset_usage' ? 'dataset_usage' : 'project',
-      schemaInfo.schemaMode === 'dataset_usage' ? 'project_category' : 'project_type'
-    ),
-  };
-
-  app.locals.schemaMeta = meta;
+  app.locals.schemaMeta = META;
 
   app.listen(PORT, () => {
     console.log(`API server listening on port ${PORT}`);
-    console.log(`Schema mode: ${schemaInfo.schemaMode}`);
+    console.log(`Schema mode: ${META.schemaMode}`);
   });
 }
 
