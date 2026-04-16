@@ -170,11 +170,6 @@ function DatasetCard({ item, onOpen }) {
     }}>
       <div className="card-chip">Dataset</div>
       <h3>{item.dataset_title || item.dataset_name || 'Untitled Dataset'}</h3>
-      {hasText(item.dataset_description) ? (
-        <p className="card-description">{item.dataset_description}</p>
-      ) : (
-        <p className="card-description card-description-empty">Description unavailable</p>
-      )}
       <div className="card-meta-list">
         {hasText(item.organization_title || item.organization_name) ? (
           <div>
