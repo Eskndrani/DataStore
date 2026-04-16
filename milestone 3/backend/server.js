@@ -229,12 +229,12 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
     LEFT JOIN organization o ON d.org_name = o.name
   ` + whereClause + `
     ORDER BY d.title ASC
-    LIMIT ? OFFSET ?
+    LIMIT ${limit} OFFSET ${offset}
   `;
 
   const [countResult, [rows]] = await Promise.all([
-    pool.execute(countSql, params),
-    pool.execute(sql, [...params, limit, offset]),
+    pool.execute(countSql, [...params]),
+    pool.execute(sql, [...params]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
@@ -314,9 +314,8 @@ app.get('/api/datasets/search', asyncHandler(async (req, res) => {
     ORDER BY
       CASE WHEN d.title IS NULL OR TRIM(d.title) = '' THEN d.name ELSE d.title END ASC,
       d.name ASC
-    LIMIT ?
+    LIMIT ${limit}
   `;
-  params.push(limit);
 
   const [rows] = await pool.execute(sql, params);
   res.json({ success: true, data: rows });
@@ -439,12 +438,12 @@ app.get('/api/organizations', asyncHandler(async (req, res) => {
   ` + whereClause + `
     GROUP BY o.name, o.title, o.org_type
     ORDER BY o.title ASC, o.name ASC
-    LIMIT ? OFFSET ?
+    LIMIT ${limit} OFFSET ${offset}
   `;
 
   const [countResult, [rows]] = await Promise.all([
-    pool.execute(countSql, params),
-    pool.execute(sql, [...params, limit, offset]),
+    pool.execute(countSql, [...params]),
+    pool.execute(sql, [...params]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
@@ -551,12 +550,12 @@ app.get('/api/projects', asyncHandler(async (req, res) => {
   ` + searchClause + `
     GROUP BY p.project_name, p.project_type
     ORDER BY p.project_name ASC, p.project_type ASC
-    LIMIT ? OFFSET ?
+    LIMIT ${limit} OFFSET ${offset}
   `;
 
   const [countResult, [rows]] = await Promise.all([
-    pool.execute(countSql, params),
-    pool.execute(sql, [...params, limit, offset]),
+    pool.execute(countSql, [...params]),
+    pool.execute(sql, [...params]),
   ]);
 
   const totalCount = countResult[0]?.[0]?.total || 0;
