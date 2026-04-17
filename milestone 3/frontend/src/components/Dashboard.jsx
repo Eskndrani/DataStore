@@ -503,6 +503,7 @@ export default function Dashboard() {
   const [overview, setOverview] = useState(defaultOverview);
   const [topTags, setTopTags] = useState({});
   const [datasets, setDatasets] = useState([]);
+  const [datasetSearch, setDatasetSearch] = useState('');
   const [organizations, setOrganizations] = useState([]);
   const [projects, setProjects] = useState([]);
   const [filterOptions, setFilterOptions] = useState(defaultFilterOptions);
@@ -708,12 +709,15 @@ export default function Dashboard() {
     }
   }
 
-  async function loadDatasets(filters = datasetFilters, page = 1) {
+  async function loadDatasets(filters = datasetFilters, page = 1, searchValue = datasetSearch) {
     updateLoading('datasets', true);
     try {
       const params = new URLSearchParams();
       params.set('page', page);
       params.set('limit', '20');
+      if (hasText(searchValue)) {
+        params.set('q', searchValue.trim());
+      }
       filters.orgType.forEach((value) => params.append('orgType', value));
       filters.format.forEach((value) => params.append('format', value));
       filters.tag.forEach((value) => params.append('tag', value));
@@ -911,22 +915,29 @@ export default function Dashboard() {
     loadDatasets(datasetFilters, 1);
   }
 
+  function handleDatasetSearchSubmit(event) {
+    event.preventDefault();
+    setCurrentPageDatasets(1);
+    loadDatasets(datasetFilters, 1, datasetSearch);
+  }
+
   function clearDatasetFilters() {
     const emptyFilters = { orgType: [], format: [], tag: [] };
     setDatasetFilters(emptyFilters);
+    setDatasetSearch('');
     setCurrentPageDatasets(1);
-    loadDatasets(emptyFilters, 1);
+    loadDatasets(emptyFilters, 1, '');
   }
 
   function goToPreviousDatasetPage() {
     if (currentPageDatasets > 1) {
-      loadDatasets(datasetFilters, currentPageDatasets - 1);
+      loadDatasets(datasetFilters, currentPageDatasets - 1, datasetSearch);
     }
   }
 
   function goToNextDatasetPage() {
     if (currentPageDatasets < totalPagesDatasets) {
-      loadDatasets(datasetFilters, currentPageDatasets + 1);
+      loadDatasets(datasetFilters, currentPageDatasets + 1, datasetSearch);
     }
   }
 
@@ -1014,6 +1025,17 @@ export default function Dashboard() {
           <div className="catalog-layout">
             <aside className="catalog-sidebar">
               <h3>Refine Results</h3>
+              <form onSubmit={handleDatasetSearchSubmit}>
+                <label>
+                  Search
+                  <input
+                    type="text"
+                    value={datasetSearch}
+                    onChange={(event) => setDatasetSearch(event.target.value)}
+                    placeholder="Search datasets by keyword..."
+                  />
+                </label>
+              </form>
               <FilterChecklist
                 title="Organization Type"
                 items={filterOptions.organizationTypes}

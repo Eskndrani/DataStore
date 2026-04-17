@@ -151,6 +151,7 @@ app.get('/api/countries', asyncHandler(async (req, res) => {
 }));
 
 app.get('/api/datasets', asyncHandler(async (req, res) => {
+  const q = normalizeText(req.query.q);
   const orgTypes = parseFilterValues(req.query.orgType);
   const tags = parseFilterValues(req.query.tag);
   const formats = parseFilterValues(req.query.format);
@@ -196,6 +197,18 @@ app.get('/api/datasets', asyncHandler(async (req, res) => {
       )
     `);
     params.push(...formatParams);
+  }
+
+  if (q) {
+    whereClauses.push(`
+      (
+        LOWER(COALESCE(d.title, '')) LIKE LOWER(?)
+        OR LOWER(d.name) LIKE LOWER(?)
+        OR LOWER(COALESCE(d.description, '')) LIKE LOWER(?)
+      )
+    `);
+    const like = '%' + q + '%';
+    params.push(like, like, like);
   }
 
   const whereClause = whereClauses.length ? 'WHERE ' + whereClauses.join(' AND ') : '';
