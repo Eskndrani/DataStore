@@ -46,7 +46,7 @@ app.use(express.json({ limit: '1mb' }));
 
 const META = {
   schemaMode: 'project',
-  supportsAge: true,
+  supportsAge: false,
   supportsUsageDate: false,
   genderOptions: [],
   projectTypeOptions: ALLOWED_PROJECT_TYPES,
@@ -640,8 +640,7 @@ app.post('/api/auth/register', asyncHandler(async (req, res) => {
   const email = normalizeText(req.body.email);
   const username = normalizeText(req.body.username);
   const gender = normalizeText(req.body.gender);
-  const age = req.body.age;
-  const birthdate = parseBirthdate(age, req.body.birthdate);
+  const birthdate = parseBirthdate(undefined, req.body.birthdate);
   const country = normalizeText(req.body.country);
 
   if (!email || !username || !gender) {
@@ -654,8 +653,8 @@ app.post('/api/auth/register', asyncHandler(async (req, res) => {
 
   try {
     await pool.execute(
-      'INSERT INTO app_user (email, username, gender, age, birthdate, country) VALUES (?, ?, ?, ?, ?, ?)',
-      [email, username, gender, age === '' || age === null || age === undefined ? null : Number(age), birthdate, country]
+      'INSERT INTO app_user (email, username, gender, birthdate, country) VALUES (?, ?, ?, ?, ?)',
+      [email, username, gender, birthdate, country]
     );
   } catch (error) {
     if (error.code === 'ER_DUP_ENTRY') {

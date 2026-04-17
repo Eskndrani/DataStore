@@ -29,7 +29,6 @@ const defaultRegisterForm = {
   email: '',
   username: '',
   gender: 'Male',
-  age: '',
   birthdate: '',
   country: '',
 };
@@ -1332,19 +1331,6 @@ export default function Dashboard() {
                     onChange={(event) => setRegisterForm((current) => ({ ...current, birthdate: event.target.value }))}
                   />
                 </label>
-                {meta.supportsAge ? (
-                  <label>
-                    Age
-                    <input
-                      type="number"
-                      min="1"
-                      max="120"
-                      value={registerForm.age}
-                      onChange={(event) => setRegisterForm((current) => ({ ...current, age: event.target.value }))}
-                      placeholder="optional"
-                    />
-                  </label>
-                ) : null}
                 <label>
                   Country
                   <input
