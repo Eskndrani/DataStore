@@ -510,6 +510,7 @@ export default function Dashboard() {
   const [organizationSearch, setOrganizationSearch] = useState('');
   const [projectSearch, setProjectSearch] = useState('');
   const [registerForm, setRegisterForm] = useState(defaultRegisterForm);
+  const [countryOptions, setCountryOptions] = useState([]);
   const [usageForm, setUsageForm] = useState(defaultUsageForm);
   const [usageDatasetSearch, setUsageDatasetSearch] = useState('');
   const [usageDatasetSuggestions, setUsageDatasetSuggestions] = useState([]);
@@ -698,6 +699,15 @@ export default function Dashboard() {
     }
   }
 
+  async function loadCountries() {
+    try {
+      const response = await fetchJson('/api/countries');
+      setCountryOptions(Array.isArray(response.data) ? response.data : []);
+    } catch {
+      setCountryOptions([]);
+    }
+  }
+
   async function loadDatasets(filters = datasetFilters, page = 1) {
     updateLoading('datasets', true);
     try {
@@ -828,6 +838,7 @@ export default function Dashboard() {
     loadMeta();
     loadOverview();
     loadFilterOptions();
+    loadCountries();
     loadDatasets();
     loadOrganizations();
     loadProjects();
@@ -949,7 +960,6 @@ export default function Dashboard() {
     { key: 'dataset_name', label: 'Dataset' },
     { key: 'dataset_title', label: 'Dataset Title' },
     { key: 'organization_name', label: 'Organization' },
-    { key: 'usage_date', label: 'Usage Date', render: (row) => row.usage_date || 'N/A' },
   ];
 
   return (
@@ -1333,12 +1343,15 @@ export default function Dashboard() {
                 </label>
                 <label>
                   Country
-                  <input
-                    type="text"
+                  <select
                     value={registerForm.country}
                     onChange={(event) => setRegisterForm((current) => ({ ...current, country: event.target.value }))}
-                    placeholder="Country"
-                  />
+                  >
+                    <option value="" disabled>Select a country...</option>
+                    {countryOptions.map((country) => (
+                      <option key={country} value={country}>{country}</option>
+                    ))}
+                  </select>
                 </label>
                 <div className="form-actions">
                   <button type="submit" className="button" disabled={loading.submit}>

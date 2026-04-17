@@ -93,20 +93,9 @@ function buildOrEqualsClause(columnSql, values, params) {
   return '(' + clause + ')';
 }
 
-function parseBirthdate(age, birthdate) {
+function parseBirthdate(birthdate) {
   const normalizedBirthdate = normalizeText(birthdate);
-  if (normalizedBirthdate) {
-    return normalizedBirthdate;
-  }
-
-  const parsedAge = Number(age);
-  if (!Number.isFinite(parsedAge) || parsedAge <= 0) {
-    return null;
-  }
-
-  const date = new Date();
-  date.setFullYear(date.getFullYear() - Math.floor(parsedAge));
-  return date.toISOString().slice(0, 10);
+  return normalizedBirthdate;
 }
 
 
@@ -149,6 +138,17 @@ app.get('/api/meta', (req, res) => {
     data: META,
   });
 });
+
+app.get('/api/countries', asyncHandler(async (req, res) => {
+  const sql = `
+    SELECT name
+    FROM country
+    ORDER BY name ASC
+  `;
+
+  const [rows] = await pool.execute(sql);
+  res.json({ success: true, data: rows.map((row) => row.name) });
+}));
 
 app.get('/api/datasets', asyncHandler(async (req, res) => {
   const orgTypes = parseFilterValues(req.query.orgType);
@@ -640,7 +640,7 @@ app.post('/api/auth/register', asyncHandler(async (req, res) => {
   const email = normalizeText(req.body.email);
   const username = normalizeText(req.body.username);
   const gender = normalizeText(req.body.gender);
-  const birthdate = parseBirthdate(undefined, req.body.birthdate);
+  const birthdate = parseBirthdate(req.body.birthdate);
   const country = normalizeText(req.body.country);
 
   if (!email || !username || !gender) {
